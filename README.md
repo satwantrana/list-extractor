@@ -9,6 +9,14 @@ The following is the recommended practice:
 
 Place the ClearNLP jar files in './clearnlp'.
 
-From the root directory use 		'''javac -d lib -cp ":lib:clearnlp/*" java/listextractor/<file-name>.java''' to compile the java code.
+From the root directory use
 
-From the lib directory use  		'''java -cp ":../clearnlp/*" -Xmx4G -XX:+UseConcMarkSweepGC listextractor.<class-name>''' to run the compiled classes.
+'''javac -d lib -cp ":lib:clearnlp/*" java/listextractor/<file-name>.java''' 
+
+to compile the java code.
+
+From the lib directory use
+
+'''java -cp ":../clearnlp/*" -Xmx4G -XX:+UseConcMarkSweepGC listextractor.<class-name>'''
+
+to run the compiled classes.
