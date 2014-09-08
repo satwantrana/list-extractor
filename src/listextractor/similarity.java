@@ -1,4 +1,4 @@
-package org.deeplearning4j.example.word2vec;
+package listextractor;
 
 import org.deeplearning4j.util.SerializationUtils;
 import org.deeplearning4j.word2vec.Word2Vec;
