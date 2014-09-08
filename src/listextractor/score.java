@@ -4,38 +4,39 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 import java.lang.Math;
+import listextractor.deptree;
 import listextractor.extract;
 import listextractor.gold;
 import listextractor.hungarian;
 
 public class score{
-	int[][][] cand,gold;	int len;
+	Integer[][][] cand,gold;	Integer len;
 	double[] sc;	public double pre,pcnt,rec,rcnt;
-	public score(int[][][] c,int[][][] g,int l){
+	public score(Integer[][][] c,Integer[][][] g,Integer l){
 		cand = c;
 		gold = g;
 		len = l;
 		pre = rec = 0;
 		pcnt = rcnt = 0;
 	}
-	double lscore(int x,int y){
+	double lscore(Integer x,Integer y){
 		if(x>=cand.length || y>=gold.length) return 0;
-		int n = Math.max(cand[x].length,gold[y].length);
+		Integer n = Math.max(cand[x].length,gold[y].length);
 		double[][] cost = new double[n][n];
 		boolean[] pc = new boolean[len];
 		boolean[] pg = new boolean[len]; 
-		for(int i=0;i<n;i++){
-			for(int j=0;j<n;j++){
+		for(Integer i=0;i<n;i++){
+			for(Integer j=0;j<n;j++){
 				cost[i][j]=0;
 				if(i>=cand[x].length || j>=gold[y].length) continue;
 				Arrays.fill(pc,false);
 				Arrays.fill(pg,false);
-				for(int l=0;l<len;l++)
+				for(Integer l=0;l<len;l++)
 					if(cand[x][i][l]==1) pc[l] = true;
-				for(int l=0;l<len;l++)
+				for(Integer l=0;l<len;l++)
 					if(gold[y][j][l]==1) pg[l] = true;
 				double tot=0;
-				for(int k=0;k<len;k++){
+				for(Integer k=0;k<len;k++){
 					if(pg[k]&&pc[k]) cost[i][j]++;
 					if(pg[k]||pc[k]) tot++;
 				}
@@ -49,24 +50,24 @@ public class score{
 		return h.match()/n;
 	}
 	double[] solve(){
-		int n = Math.max(cand.length,gold.length);
+		Integer n = Math.max(cand.length,gold.length);
 		double[][] cost = new double[n][n];
 		boolean[] pc = new boolean[len];
 		boolean[] pg = new boolean[len];
-		for(int i=0;i<n;i++){
-			for(int j=0;j<n;j++){
+		for(Integer i=0;i<n;i++){
+			for(Integer j=0;j<n;j++){
 				cost[i][j]=0;
 				if(i>=cand.length || j>=gold.length) continue;
 				Arrays.fill(pc,false);
 				Arrays.fill(pg,false);
-				for(int k=0;k<cand[i].length-1;k++)
-					for(int l=0;l<len;l++)
+				for(Integer k=0;k<cand[i].length-1;k++)
+					for(Integer l=0;l<len;l++)
 						if(cand[i][k][l]==1) pc[l] = true;
-				for(int k=0;k<gold[j].length-1;k++)
-					for(int l=0;l<len;l++)
+				for(Integer k=0;k<gold[j].length-1;k++)
+					for(Integer l=0;l<len;l++)
 						if(gold[j][k][l]==1) pg[l] = true;
 				double tot=0;
-				for(int k=0;k<len;k++){
+				for(Integer k=0;k<len;k++){
 					if(pg[k]&&pc[k]) cost[i][j]++;
 					if(pg[k]||pc[k]) tot++;
 				}
@@ -75,9 +76,9 @@ public class score{
 		}
 		hungarian h = new hungarian(cost,n);
 		h.solve();
-		int[] match = h.assign();
+		Integer[] match = h.assign();
 		sc = new double[cand.length];
-		for(int idx=0;idx<cand.length;idx++){
+		for(Integer idx=0;idx<cand.length;idx++){
 			sc[idx] = lscore(idx,match[idx]);
 		}
 		return sc;
@@ -85,34 +86,36 @@ public class score{
 
 	public static void main(String[] args) throws FileNotFoundException,Exception{
 		
-		extract e = new extract();
+		deptree d = new deptree();
+		extract e = new extract(d);
 		Scanner in = new Scanner(new File("inp.txt"));
 		String inp = "";
 		while(in.hasNext()) inp += in.nextLine() + "\n";
 		e.process(inp);
-		int[][][][] gold,cand = e.listmat(); int[][] temp; int[] sentsz = e.sentsize(); int t,n,m,x,y;
+		Integer[][][][] gold,cand = e.lists(); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
 		
 		t = cand.length;
 		
-		for(int i=0;i<t;i++){
+		for(Integer i=0;i<t;i++){
 			n = cand[i].length;
-			for(int j=0;j<n;j++){
+			for(Integer j=0;j<n;j++){
 				m = cand[i][j].length;
-				temp = new int[m][sentsz[i]];
-				for(int k=0;k<m;k++){
-					for(int l=0;l<cand[i][j][k].length;l++){
-						temp[k][l] = cand[i][j][k][l];
+				temp = new Integer[m][sentsz[i]];
+				for(Integer k=0;k<m;k++){
+					Arrays.fill(temp[k],0);
+					for(Integer l=cand[i][j][k][0];l<=cand[i][j][k][1];l++){
+						temp[k][l] = 1;
 					}
 				}
-				cand[i][j] = new int[m+1][sentsz[i]];
-				for(int k=0;k<m;k++){
-					for(int l=0;l<cand[i][j][k].length;l++){
+				cand[i][j] = new Integer[m+1][sentsz[i]];
+				for(Integer k=0;k<m;k++){
+					for(Integer l=0;l<cand[i][j][k].length;l++){
 						cand[i][j][k][l] = temp[k][l];
 					}
 				}
 				Arrays.fill(cand[i][j][m],1);
-				for(int k=0;k<m;k++){
-					for(int l=0;l<cand[i][j][k].length;l++){
+				for(Integer k=0;k<m;k++){
+					for(Integer l=0;l<cand[i][j][k].length;l++){
 						if(cand[i][j][k][l]==1) cand[i][j][m][l]=0;
 					}
 				}
@@ -126,12 +129,12 @@ public class score{
 
 		double[] sentsc; double avg=0,cnt=0,cntc=0,cntg=0,pre=0,rec=0;
 
-		for(int i=0;i<29;i++){
+		for(Integer i=0;i<29;i++){
 			System.out.println("Sentence #"+i+":");
 			System.out.println("Candidate Lists: "+cand[i].length+"\tGold Lists: "+gold[i].length);
 			s = new score(cand[i],gold[i],sentsz[i]);
 			sentsc = s.solve();
-			for(int j=0;j<sentsc.length;j++){
+			for(Integer j=0;j<sentsc.length;j++){
 				System.out.print("List #"+j+": "+sentsc[j]+"\t");
 				avg += sentsc[j];
 			}

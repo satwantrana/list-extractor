@@ -7,26 +7,26 @@ import java.lang.Math;
 
 public class hungarian{
 	double cost[][];
-	int n, max_match;
+	Integer n, max_match;
 	double lx[], ly[];
-	int xy[];
-	int yx[];
+	Integer xy[];
+	Integer yx[];
 	boolean S[], T[];
 	double slack[];
-	int slackx[];
-	int prev[];
-	public hungarian(double ec[][],int num){
+	Integer slackx[];
+	Integer prev[];
+	public hungarian(double ec[][],Integer num){
 		n=num;
 	    cost = ec;
 		lx = new double[n];
 		ly = new double[n];
-		xy = new int[n];
-		yx = new int[n];
+		xy = new Integer[n];
+		yx = new Integer[n];
 		S = new boolean[n];
 		T = new boolean[n];
 		slack = new double[n];
-		slackx = new int[n];
-		prev = new int[n];
+		slackx = new Integer[n];
+		prev = new Integer[n];
 		Arrays.fill(xy,-1);
 	    Arrays.fill(yx,-1);
 	}
@@ -34,13 +34,13 @@ public class hungarian{
 	{
 	    Arrays.fill(lx,0);
 	    Arrays.fill(ly,0);
-	    for (int x = 0; x < n; x++)
-	        for (int y = 0; y < n; y++)
+	    for (Integer x = 0; x < n; x++)
+	        for (Integer y = 0; y < n; y++)
 	            lx[x] = Math.max(lx[x], cost[x][y]);
 	}
 	void update_labels()
 	{
-	    int x, y;
+	    Integer x, y;
 	    double delta = 10;
 	    for (y = 0; y < n; y++)
 	        if (!T[y])
@@ -53,11 +53,11 @@ public class hungarian{
 	        if (!T[y])
 	            slack[y] -= delta;
 	}
-	void add_to_tree(int x, int prevx) 
+	void add_to_tree(Integer x, Integer prevx) 
 	{
 	    S[x] = true;
 	    prev[x] = prevx;               
-	    for (int y = 0; y < n; y++) 
+	    for (Integer y = 0; y < n; y++) 
 	        if (lx[x] + ly[y] - cost[x][y] < slack[y])
 	        {
 	            slack[y] = lx[x] + ly[y] - cost[x][y];
@@ -67,8 +67,8 @@ public class hungarian{
 	void augment()                         
 	{
 	    if (max_match == n) return;
-	    int x, y, root=-1;
-	    int q[] = new int[n], wr = 0, rd = 0;
+	    Integer x, y, root=-1;
+	    Integer q[] = new Integer[n], wr = 0, rd = 0;
 	    Arrays.fill(S,false);
 	    Arrays.fill(T,false);
 	    Arrays.fill(prev,-1);
@@ -127,7 +127,7 @@ public class hungarian{
 	    if (y < n)
 	    {
 	        max_match++;
-	        for (int cx = x, cy = y, ty; cx != -2; cx = prev[cx], cy = ty)
+	        for (Integer cx = x, cy = y, ty; cx != -2; cx = prev[cx], cy = ty)
 	        {
 	            ty = xy[cx];
 	            yx[cy] = cx;
@@ -144,29 +144,29 @@ public class hungarian{
 	}
 	double match(){
 		double ret = 0;
-		for (int x = 0; x < n; x++)
+		for (Integer x = 0; x < n; x++)
 	        ret += cost[x][xy[x]];
 	    return ret;
 	}
 	double mcount(){
 		double ret = 0;
-		for (int x = 0; x < n; x++)
+		for (Integer x = 0; x < n; x++)
 	        if(cost[x][xy[x]]!=0) ret++;
 	    return ret;
 	}
 	double ymatch(){
 		double ret = 0;
-		for (int y = 0; y < n; y++)
+		for (Integer y = 0; y < n; y++)
 	        ret += cost[y][yx[y]];
 	    return ret;
 	}
 	double ymcount(){
 		double ret = 0;
-		for (int y = 0; y < n; y++)
+		for (Integer y = 0; y < n; y++)
 	        if(cost[y][yx[y]]!=0) ret++;
 	    return ret;
 	}
-	int[] assign(){
+	Integer[] assign(){
 		return xy;
 	}
 	public static void main(String args[]){
