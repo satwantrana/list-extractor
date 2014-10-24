@@ -5,7 +5,7 @@ import java.lang.*;
 import java.util.*;
 import java.lang.Math;
 import listextractor.deptree;
-import listextractor.extract;
+import listextractor.gextract;
 import listextractor.gold;
 import listextractor.hungarian;
 
@@ -87,12 +87,12 @@ public class score{
 	public static void main(String[] args) throws FileNotFoundException,Exception{
 		
 		deptree d = new deptree();
-		extract e = new extract(d);
+		gextract e = new gextract(d,args[0],args[1],args[2]);
 		Scanner in = new Scanner(new File("inp.txt"));
 		String inp = "";
 		while(in.hasNext()) inp += in.nextLine() + "\n";
 		e.process(inp);
-		Integer[][][][] gold,cand = e.lists(); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
+		Integer[][][][] gold,cand = e.lists(Double.parseDouble(args[3]),Double.parseDouble(args[4])); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
 		
 		t = cand.length;
 		
