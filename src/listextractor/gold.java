@@ -9,7 +9,7 @@ public class gold{
 	public Integer[][][][] list(Integer[] sentsz) throws FileNotFoundException{
 		Integer t,n,m,x,y;
 		Integer[][][][] gold;
-		Scanner in = new Scanner(new File("gold.txt"));
+		Scanner in = new Scanner(new File("dgold.txt"));
 		t = in.nextInt();
 		gold = new Integer[t][][][];
 		for(Integer i=0;i<t;i++){

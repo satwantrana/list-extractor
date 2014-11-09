@@ -7,16 +7,17 @@ import java.lang.Math;
 import org.javatuples.*;
 import listextractor.deptree;
 
-public class extract
+public class dextract
 {
 	deptree t;
 	String[][][] dep;
 	ArrayList< ArrayList<Pair<Integer,String> > > adj;
+	Integer vp;
 	Integer[] vis;
 	Integer[][] cclist;
 	Integer[][][][] list;
 
-	public extract(deptree tree) throws Exception{
+	public dextract(deptree tree) throws Exception{
 		t = tree;
 	}
 
@@ -24,6 +25,7 @@ public class extract
 		dep = t.get(sent);
 		cclist = new Integer[dep.length][];
 		list = new Integer[dep.length][][][];
+		for(Integer i=0;i<dep.length;i++) listextractor(i);
 	}
 	
 	public String[][][] getdeptree(){
@@ -37,7 +39,6 @@ public class extract
 	}
 
 	public Integer[][][][] lists(){
-		for(Integer i=0;i<dep.length;i++) listextractor(i);
 		return list;
 	}
 
@@ -52,12 +53,14 @@ public class extract
 			if(adj.get(nd).get(i).getValue1().equals("conj") || adj.get(nd).get(i).getValue1().equals("cc")) listheads(adj.get(nd).get(i).getValue0());
 		}
 	}
-	void listelems(Integer nd){
+	void listelems(Integer nd, Boolean flag){
 		if(vis[nd]==1) return;
 		vis[nd]=1;
 		for(Integer i=0;i<adj.get(nd).size();i++){
 			if(adj.get(nd).get(i).getValue1().equals("conj") || adj.get(nd).get(i).getValue1().equals("cc")) continue;
-			listelems(adj.get(nd).get(i).getValue0());
+			//if(!flag && adj.get(nd).get(i).getValue0()<nd && adj.get(nd).get(i).getValue1().startsWith("nsubj") && vp == 1) continue;
+			//if(flag && adj.get(nd).get(i).getValue1().startsWith("nsubj")) vp = 0;
+			listelems(adj.get(nd).get(i).getValue0(),flag);
 		}
 	}
 	void listextractor(Integer idx){
@@ -84,15 +87,17 @@ public class extract
 			listheads(st.get(i));
 			vis[st.get(i)]=0;
 			System.arraycopy(vis,0,lh,0,vis.length);
-			Integer cnt=0,it=0;
+			Integer cnt=0,it=0; vp=0;
 			for(Integer j=0;j<lh.length;j++){
 				cnt += lh[j];
+				if(lh[j]==1 && dep[idx][j][3].startsWith("VB")) vp=1;
 			}
+			it=cnt-1;
 			list[idx][i] = new Integer[cnt][2];
-			for(Integer j=0;j<lh.length;j++){
+			for(Integer j=lh.length-1;j>=0;j--){
 				if(lh[j]==0) continue;
 				Arrays.fill(vis,0);
-				listelems(j);
+				listelems(j,it>0);
 				Integer mn=vis.length+1,mx=-1;
 				for(Integer k=j;k<vis.length;k++){
 					if(vis[k]==0) break;
@@ -102,18 +107,17 @@ public class extract
 					if(vis[k]==0) break;
 					mn = Math.min(mn,k);
 				}
-				if(it==0) mn=j;
-				if(it==cnt-1) mx=j;
+				// if(it==0) mn=j;
+				// if(it==cnt-1) mx=j;
 				if(dep[idx][mx][1].equals(",") || dep[idx][mx][1].equals(".")) mx--;
 				list[idx][i][it][0]=mn;
 				list[idx][i][it][1]=mx;
 				//list[idx][i][it][2]=j;
-				it++;
+				it--;
 			}
 		}
 	}
 	public String[][][] getlists(){
-		Integer[][][][] list = lists();
 		String[][][] ret = new String[list.length][][];
 		for(Integer idx=0;idx<list.length;idx++){
 			ret[idx] = new String[list[idx].length][];
@@ -124,8 +128,11 @@ public class extract
 					for(Integer k=list[idx][i][j][0];k<=list[idx][i][j][1];k++){
 						ret[idx][i][j]+=(dep[idx][k][1]+" ");
 					}
+					System.out.println(ret[idx][i][j]);
 				}
-			}	
+				System.out.println();
+			}
+			System.out.println();	
 		}
 		return ret;
 	}
@@ -154,13 +161,14 @@ public class extract
 	}
 	public static void main(String[] args) throws Exception{
 		deptree tree = new deptree();
-		extract e = new extract(tree);
+		dextract e = new dextract(tree);
 		Scanner in = new Scanner(System.in);
 		String text = "";
 		while(in.hasNext()){
 			text = in.nextLine();
 			e.process(text);
-			e.print();
+			e.getlists();
+			// e.print();
 		}
 	}
 }

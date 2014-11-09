@@ -5,7 +5,9 @@ import java.lang.*;
 import java.util.*;
 import java.lang.Math;
 import listextractor.deptree;
-import listextractor.gextract;
+import listextractor.parsetree;
+import listextractor.dextract;
+import listextractor.pextract;
 import listextractor.gold;
 import listextractor.hungarian;
 
@@ -45,8 +47,14 @@ public class score{
 		}
 		hungarian h = new hungarian(cost,n);
 		h.solve();
-		pre += h.match()/h.mcount(); rec += h.ymatch()/h.ymcount();
-		pcnt++; rcnt++;
+		if(cand[x].length>0 && gold[y].length>0){
+			pre += h.match()/(1.*cand[x].length); rec += h.ymatch()/(1.*gold[y].length);
+			pcnt++; rcnt++;
+		}
+		// if(h.mcount()>0 && h.ymcount()>0){
+		// 	pre += h.match()/h.mcount(); rec += h.ymatch()/h.ymcount();
+		// 	pcnt++; rcnt++;
+		// }
 		return h.match()/n;
 	}
 	double[] solve(){
@@ -86,13 +94,15 @@ public class score{
 
 	public static void main(String[] args) throws FileNotFoundException,Exception{
 		
+		// parsetree d = new parsetree(args[1],args[0]);
+		// pextract e = new pextract(d);
 		deptree d = new deptree();
-		gextract e = new gextract(d,args[0],args[1],args[2]);
+		dextract e = new dextract(d);
 		Scanner in = new Scanner(new File("inp.txt"));
 		String inp = "";
 		while(in.hasNext()) inp += in.nextLine() + "\n";
 		e.process(inp);
-		Integer[][][][] gold,cand = e.lists(Double.parseDouble(args[3]),Double.parseDouble(args[4])); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
+		Integer[][][][] gold,cand = e.lists(); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
 		
 		t = cand.length;
 		
