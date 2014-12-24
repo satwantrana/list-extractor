@@ -13,5 +13,3 @@ java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../..
 //word2vec client
 java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.similarity localhost 8002
 
-//test language model client
-java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.testword2vec localhost 8001
