@@ -1,0 +1,11 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/satwant/list-extraction/code/lib/deeplearning4j/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/satwant/list-extraction/code/lib/deeplearning4j/logback-classic-1.0.6.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:WARN No appenders could be found for logger (org.deeplearning4j.word2vec.loader.Word2VecLoader).
+log4j:WARN Please initialize the log4j system properly.
+Waiting for client on port 8002...
+Just connected to /127.0.0.1:37600
+Exception in thread "Thread-0" java.lang.NullPointerException
+	at listextractor.word2vec.run(word2vec.java:58)

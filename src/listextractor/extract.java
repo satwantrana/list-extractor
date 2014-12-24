@@ -102,16 +102,16 @@ public class extract
 					if(vis[k]==0) break;
 					mn = Math.min(mn,k);
 				}
-				//if(it==0) mn=0;
-				//if(it==cnt-1) mx=vis.length-1;
-				if(dep[idx][mx][6].equals("punct")) mx--;
+				if(it==0) mn=j;
+				if(it==cnt-1) mx=j;
+				if(dep[idx][mx][1].equals(",") || dep[idx][mx][1].equals(".")) mx--;
 				list[idx][i][it][0]=mn;
 				list[idx][i][it][1]=mx;
+				//list[idx][i][it][2]=j;
 				it++;
 			}
 		}
 	}
-
 	public String[][][] getlists(){
 		Integer[][][][] list = lists();
 		String[][][] ret = new String[list.length][][];
@@ -129,30 +129,38 @@ public class extract
 		}
 		return ret;
 	}
-	
+	void print(){
+		String[][][] sdep; Integer[][][][] lmat; Integer[][] conj;
+		sdep = getdeptree();
+		lmat = lists();
+		conj = conjunctions();
+		System.out.println(lmat.length); // #Sentences
+		for(Integer i=0;i<lmat.length;i++){
+			System.out.println(sdep[i].length); // #Tokens
+			for(Integer j=0;j<sdep[i].length;j++){
+				System.out.println(sdep[i][j][1]); // Token
+			}
+			System.out.println(lmat[i].length); // #Conjunctions
+			for(Integer j=0;j<lmat[i].length;j++){
+				System.out.println(conj[i][j]); // Conj token number - 0 indexed
+				System.out.println(lmat[i][j].length); // #	Conjuncts
+				for(Integer k=0;k<lmat[i][j].length;k++){
+					System.out.println(lmat[i][j][k][0]+" "+lmat[i][j][k][1]); // Conjunct range
+				}
+				//System.out.println();
+			}
+			//System.out.println();
+		}
+	}
 	public static void main(String[] args) throws Exception{
 		deptree tree = new deptree();
 		extract e = new extract(tree);
-		String[][][] s; String p;
 		Scanner in = new Scanner(System.in);
-		System.out.println("Good to Go!");
+		String text = "";
 		while(in.hasNext()){
-			p = in.nextLine();
-			System.out.println(p);
-			e.process(p);
-			s = e.getlists();
-			for(Integer i=0;i<s.length;i++){
-				System.out.println("Sentence #"+i+":");
-				for(Integer j=0;j<s[i].length;j++){
-					System.out.println("List #"+j+":");
-					for(Integer k=0;k<s[i][j].length;k++){
-						System.out.println(s[i][j][k]);
-					}
-					System.out.println();
-				}
-				System.out.println();
-			}
+			text = in.nextLine();
+			e.process(text);
+			e.print();
 		}
-
 	}
 }

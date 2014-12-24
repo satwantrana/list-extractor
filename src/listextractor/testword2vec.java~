@@ -9,10 +9,11 @@ import java.lang.Math;
 import java.net.*;
 import java.io.*;
 import java.util.zip.*;
+import java.util.*; 
 
-public class similarity {
+public class testword2vec {
 	Socket server; String serverName; int port;
-	public similarity(String _serverName, int _port) throws Exception{
+	public testword2vec(String _serverName, int _port) throws Exception{
 		serverName = _serverName;
 		port = _port;
 	}
@@ -21,7 +22,7 @@ public class similarity {
 		    InputStream socketStream = server.getInputStream();
 		    ObjectInputStream objectInput = new ObjectInputStream(new GZIPInputStream(socketStream));
 		    // System.out.println("Reading from client");
-		    double a = (Float) objectInput.readObject();
+		    Double a = (Double) objectInput.readObject();
 		    objectInput.close();
 	        socketStream.close();
 	        // System.out.println("Read from client: "+a);
@@ -116,7 +117,18 @@ public class similarity {
 
     public static void main(String[] args) throws Exception{
         similarity s = new similarity(args[0], Integer.parseInt(args[1]));
-        System.out.println("Similarity of " + s.wordsim("China","Taiwan"));
+	Scanner input = new Scanner(System.in);
+	while(true){
+		System.out.println("enter two words"); 
+		
+		String a = input.next(); 
+		
+		if( a.charAt(0) == 'a') break;
+		String b = input.next(); 
+		System.out.println("received");
+		System.out.println(s.wordsim(a, b));  
+	}
+	System.out.println("Similarity of " + s.wordsim("China","Taiwan"));
 
         ArrayList<String> a,b;
         a = new ArrayList<String>();

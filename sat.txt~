@@ -1,0 +1,15 @@
+//compile anything
+javac -d classes -Xlint  -cp :../../lib/deeplearning4j/*:../../lib/berkeleylm/*:../../lib/clearnlp/*:classes:../../lib/random/* src/listextractor/similarity.java
+
+//langmodel server
+java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.berkeleylm ../../../lib/berkeleylm/vocab_cs.gz ../../../lib/berkeleylm/eng.blm.gz 8001
+
+//langmodel client
+java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.langmodel localhost 8001
+
+//word2vec server
+java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.word2vec ../../../lib/word2vec/GoogleNews-vectors-negative300.bin.gz 8002
+
+//word2vec client
+java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.similarity localhost 8002
+
