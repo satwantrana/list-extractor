@@ -21,7 +21,7 @@ public class similarity {
 		    InputStream socketStream = server.getInputStream();
 		    ObjectInputStream objectInput = new ObjectInputStream(new GZIPInputStream(socketStream));
 		    // System.out.println("Reading from client");
-		    Double a = (Double) objectInput.readObject();
+		    double a = (Float) objectInput.readObject();
 		    objectInput.close();
 	        socketStream.close();
 	        // System.out.println("Read from client: "+a);
@@ -61,6 +61,37 @@ public class similarity {
 		catch(Exception e){
 			e.printStackTrace();
 		}
+=======
+
+public class similarity {
+	private Socket server;
+	public similarity(String servername, String port) throws Exception{
+		server = new Socket(serverName, port);
+	}
+	public Double readData() {
+	    try {
+		    InputStream socketStream = server.getInputStream();
+		    ObjectInputStream objectInput = new ObjectInputStream(new GZIPInputStream(socketStream));
+		    Double a = (Double) objectInput.readObject();
+		    return a;
+		} catch(Exception e) {
+		    return null;
+	    }
+	}
+	public void writeData(String a, String b) {
+	    try {
+	        OutputStream socketStream = socket.getOutputStream();
+	        ObjectOutputStream objectOutput = new ObjectOutputStream(socketStream);
+	        objectOutput.writeObject(new String[] {a,b});
+	        objectOutput.close();
+	        socketStream.close();
+	    } catch (Exception e) {
+	        System.out.println(e.toString());
+	    }
+	}
+	public Double wordsim(String a, String b, Integer port){
+		writeData(new String[] {a,b});
+>>>>>>> fe4d18d3baa41a5087f680061bb0b390b91ec671
 		return readData();
 	}
     public Double listsim(ArrayList<String> a, ArrayList<String> b){
@@ -134,4 +165,3 @@ public class similarity {
     }
 
 }
-

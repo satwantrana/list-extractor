@@ -1,0 +1,1263 @@
+[The, Foremost, Formation, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.4955926565896895
+[Oldman, Formation, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.709596902132034
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 5.393665464597761
+Pair: 0:9 5.393665464597761 5.393665464597761
+[The, Foremost, Formation, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.390546697378158
+[Oldman, Formation, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.557654010622125
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 4.980001903639829
+Pair: 0:10 4.980001903639829 5.393665464597761
+[The, Foremost, Formation, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.593599532779894
+[Oldman, Formation, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.725715743170844
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 4.884486534104301
+Pair: 0:11 4.884486534104301 5.393665464597761
+[The, Foremost, Formation, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.552980515691969
+[Oldman, Formation, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.631655384512508
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 4.600015334527536
+Pair: 0:12 4.600015334527536 5.393665464597761
+[The, Foremost, Formation, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.51948442178614
+[Oldman, Formation, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.538482964038849
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 4.295013347516766
+Pair: 0:13 4.295013347516766 5.393665464597761
+[The, Foremost, Formation, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.364904955029488
+[Oldman, Formation, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.308198102315267
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 3.824157798876546
+Pair: 0:14 3.824157798876546 5.393665464597761
+[The, Foremost, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.171680545806884
+[Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.025692888668606
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 3.264942594155522
+Pair: 0:15 3.264942594155522 5.393665464597761
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+[Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.264359474182129
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 3.401423298801442
+Pair: 0:16 3.401423298801442 5.393665464597761
+[The, Foremost, Formation, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.97348271883451
+[Oldman, Formation, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.703313966592153
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 3.2814157231339
+Pair: 0:17 3.2814157231339 5.393665464597761
+[The, Foremost, Formation, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.483054836591085
+[Oldman, Formation, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.143740935759111
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 2.7284629517744285
+Pair: 0:18 2.7284629517744285 5.393665464597761
+[The, Foremost, Formation, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.602215029976584
+[Oldman, Formation, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.140885758399963
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 2.5042569752674266
+Pair: 0:19 2.5042569752674266 5.393665464597761
+[The, Foremost, Formation, studied, dinosaur, bearing, strata, in, Alberta, .] -8.923879241943359
+[Oldman, Formation, studied, dinosaur, bearing, strata, in, Alberta, .] -7.335920519298977
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 2.160356245971909
+Pair: 0:20 2.160356245971909 5.393665464597761
+[The, Foremost, Formation, dinosaur, bearing, strata, in, Alberta, .] -8.714431126912435
+[Oldman, Formation, dinosaur, bearing, strata, in, Alberta, .] -6.9017965495586395
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 2.1482983036950527
+Pair: 0:21 2.1482983036950527 5.393665464597761
+[The, Foremost, Formation, bearing, strata, in, Alberta, .] -7.905215859413147
+[Oldman, Formation, bearing, strata, in, Alberta, .] -5.718031304223197
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 1.9130667779000732
+Pair: 0:22 1.9130667779000732 5.393665464597761
+[The, Foremost, Formation, strata, in, Alberta, .] -7.822192192077637
+[Oldman, Formation, strata, in, Alberta, .] -5.25663959980011
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 1.5983369267060887
+Pair: 0:23 1.5983369267060887 5.393665464597761
+[The, Foremost, Formation, in, Alberta, .] -7.5957426230112715
+[Oldman, Formation, in, Alberta, .] -4.471789598464966
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 1.258821000614466
+Pair: 0:24 1.258821000614466 5.393665464597761
+[The, Foremost, Formation, Alberta, .] -9.132117891311646
+[Oldman, Formation, Alberta, .] -5.611270427703857
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 1.2012135177537209
+Pair: 0:25 1.2012135177537209 5.393665464597761
+[The, Foremost, Formation, .] -8.133822321891785
+[Oldman, Formation, .] -3.1065938472747803
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 0.797393158828217
+Pair: 0:26 0.797393158828217 5.393665464597761
+[The, Foremost, Formation] -12.913825988769531
+[Oldman, Formation] -7.762985110282898
+[Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.12922279607682
+0.0 0.6686261608340688
+Pair: 0:27 0.6686261608340688 5.393665464597761
+[The, Foremost, Formation, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.4955926565896895
+[The, Oldman, Formation, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.1184388399124146
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 10.737865755715989
+Pair: 1:9 10.737865755715989 10.737865755715989
+[The, Foremost, Formation, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.390546697378158
+[The, Oldman, Formation, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.99453518986702
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 9.059837410305228
+Pair: 1:10 9.059837410305228 10.737865755715989
+[The, Foremost, Formation, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.593599532779894
+[The, Oldman, Formation, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.176745314347117
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 10.155663463578243
+Pair: 1:11 10.155663463578243 10.737865755715989
+[The, Foremost, Formation, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.552980515691969
+[The, Oldman, Formation, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.1129677295684814
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 9.455742327133933
+Pair: 1:12 9.455742327133933 10.737865755715989
+[The, Foremost, Formation, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.51948442178614
+[The, Oldman, Formation, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.053588530596564
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 8.713888643669751
+Pair: 1:13 8.713888643669751 10.737865755715989
+[The, Foremost, Formation, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.364904955029488
+[The, Oldman, Formation, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.869890570640564
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 7.086702461551976
+Pair: 1:14 7.086702461551976 10.737865755715989
+[The, Foremost, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.171680545806884
+[The, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.6436652024587
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 5.414852194480496
+Pair: 1:15 5.414852194480496 10.737865755715989
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+[The, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.909425054277692
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 6.858443408407993
+Pair: 1:16 6.858443408407993 10.737865755715989
+[The, Foremost, Formation, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.97348271883451
+[The, Oldman, Formation, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.36423424574045
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 6.247150121460768
+Pair: 1:17 6.247150121460768 10.737865755715989
+[The, Foremost, Formation, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.483054836591085
+[The, Oldman, Formation, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.823035657405853
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 3.9160226346166853
+Pair: 1:18 3.9160226346166853 10.737865755715989
+[The, Foremost, Formation, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.602215029976584
+[The, Oldman, Formation, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.8821941072290596
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 3.530541978800888
+Pair: 1:19 3.530541978800888 10.737865755715989
+[The, Foremost, Formation, studied, dinosaur, bearing, strata, in, Alberta, .] -8.923879241943359
+[The, Oldman, Formation, studied, dinosaur, bearing, strata, in, Alberta, .] -8.131856226921082
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 2.7996694257051264
+Pair: 1:20 2.7996694257051264 10.737865755715989
+[The, Foremost, Formation, dinosaur, bearing, strata, in, Alberta, .] -8.714431126912435
+[The, Oldman, Formation, dinosaur, bearing, strata, in, Alberta, .] -7.83440555466546
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 3.1862210939887197
+Pair: 1:21 3.1862210939887197 10.737865755715989
+[The, Foremost, Formation, bearing, strata, in, Alberta, .] -7.905215859413147
+[The, Oldman, Formation, bearing, strata, in, Alberta, .] -6.9151870906353
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 4.2853668898558865
+Pair: 1:22 4.2853668898558865 10.737865755715989
+[The, Foremost, Formation, strata, in, Alberta, .] -7.822192192077637
+[The, Oldman, Formation, strata, in, Alberta, .] -6.690730742045811
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 3.7050760769245117
+Pair: 1:23 3.7050760769245117 10.737865755715989
+[The, Foremost, Formation, in, Alberta, .] -7.5957426230112715
+[The, Oldman, Formation, in, Alberta, .] -6.275704264640808
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 2.9696037894656167
+Pair: 1:24 2.9696037894656167 10.737865755715989
+[The, Foremost, Formation, Alberta, .] -9.132117891311646
+[The, Oldman, Formation, Alberta, .] -7.54807186126709
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 2.216112966050875
+Pair: 1:25 2.216112966050875 10.737865755715989
+[The, Foremost, Formation, .] -8.133822321891785
+[The, Oldman, Formation, .] -6.15376478433609
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 2.117510789182739
+Pair: 1:26 2.117510789182739 10.737865755715989
+[The, Foremost, Formation] -12.913825988769531
+[The, Oldman, Formation] -10.273749272028605
+[The, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.408997725356709
+0.0 0.7704987476866976
+Pair: 1:27 0.7704987476866976 10.737865755715989
+[The, Foremost, Formation, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.4955926565896895
+[The, Foremost, Oldman, Formation, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.529343545436859
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 11.668950366000887
+Pair: 2:9 11.668950366000887 11.668950366000887
+[The, Foremost, Formation, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.390546697378158
+[The, Foremost, Oldman, Formation, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.430906959942409
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 8.816973208092659
+Pair: 2:10 8.816973208092659 11.668950366000887
+[The, Foremost, Formation, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.593599532779894
+[The, Foremost, Oldman, Formation, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.6258251667022705
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 16.849480458051605
+Pair: 2:11 16.849480458051605 16.849480458051605
+[The, Foremost, Formation, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.552980515691969
+[The, Foremost, Oldman, Formation, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.589040078614888
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 14.303518685400611
+Pair: 2:12 14.303518685400611 16.849480458051605
+[The, Foremost, Formation, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.51948442178614
+[The, Foremost, Oldman, Formation, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.559408187866211
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 12.73064245496364
+Pair: 2:13 12.73064245496364 16.849480458051605
+[The, Foremost, Formation, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.364904955029488
+[The, Foremost, Oldman, Formation, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.416270087747013
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 8.395175221922015
+Pair: 2:14 8.395175221922015 16.849480458051605
+[The, Foremost, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.171680545806884
+[The, Foremost, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.238332524895668
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 5.891484545682383
+Pair: 2:15 5.891484545682383 16.849480458051605
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+[The, Foremost, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.526019541422526
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 11.189598475358535
+Pair: 2:16 11.189598475358535 16.849480458051605
+[The, Foremost, Formation, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.97348271883451
+[The, Foremost, Oldman, Formation, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.992384825434003
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 23.283556401796684
+Pair: 2:17 23.283556401796684 23.283556401796684
+[The, Foremost, Formation, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.483054836591085
+[The, Foremost, Oldman, Formation, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.464213096178495
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 5.671356103196572
+Pair: 2:18 5.671356103196572 23.283556401796684
+[The, Foremost, Formation, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.602215029976584
+[The, Foremost, Oldman, Formation, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.571873128414154
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 4.824893006648828
+Pair: 2:19 4.824893006648828 23.283556401796684
+[The, Foremost, Formation, studied, dinosaur, bearing, strata, in, Alberta, .] -8.923879241943359
+[The, Foremost, Oldman, Formation, studied, dinosaur, bearing, strata, in, Alberta, .] -8.861536784605546
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 3.439997741501984
+Pair: 2:20 3.439997741501984 23.283556401796684
+[The, Foremost, Formation, dinosaur, bearing, strata, in, Alberta, .] -8.714431126912435
+[The, Foremost, Oldman, Formation, dinosaur, bearing, strata, in, Alberta, .] -8.666799235343934
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 4.244640721784748
+Pair: 2:21 4.244640721784748 23.283556401796684
+[The, Foremost, Formation, bearing, strata, in, Alberta, .] -7.905215859413147
+[The, Foremost, Oldman, Formation, bearing, strata, in, Alberta, .] -7.942204342948066
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 35.726045431262186
+Pair: 2:22 35.726045431262186 35.726045431262186
+[The, Foremost, Formation, strata, in, Alberta, .] -7.822192192077637
+[The, Foremost, Oldman, Formation, strata, in, Alberta, .] -7.874182194471359
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 73.18781749776478
+Pair: 2:23 73.18781749776478 73.18781749776478
+[The, Foremost, Formation, in, Alberta, .] -7.5957426230112715
+[The, Foremost, Oldman, Formation, in, Alberta, .] -7.687509707042149
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 18.302051668866262
+Pair: 2:24 18.302051668866262 73.18781749776478
+[The, Foremost, Formation, Alberta, .] -9.132117891311646
+[The, Foremost, Oldman, Formation, Alberta, .] -8.983116944630941
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 2.9669749064995026
+Pair: 2:25 2.9669749064995026 73.18781749776478
+[The, Foremost, Formation, .] -8.133822321891785
+[The, Foremost, Oldman, Formation, .] -8.154680299758912
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 11.525845488210729
+Pair: 2:26 11.525845488210729 73.18781749776478
+[The, Foremost, Formation] -12.913825988769531
+[The, Foremost, Oldman, Formation] -11.744897544384003
+[The, Foremost, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.825981280078059
+0.0 0.7960195970473952
+Pair: 2:27 0.7960195970473952 73.18781749776478
+[2, 23]
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.6892362502021476
+Pair: 0:17 1.6892362502021476 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.4358087197999068
+Pair: 0:18 1.4358087197999068 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.397908360243903
+Pair: 0:19 1.397908360243903 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.332163087073565
+Pair: 0:20 1.332163087073565 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.36723504083552
+Pair: 0:21 1.36723504083552 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.609807947052745
+Pair: 0:22 1.609807947052745 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.5752306335184947
+Pair: 0:23 1.5752306335184947 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.580446519744874
+Pair: 0:24 1.580446519744874 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.3042411384049295
+Pair: 0:25 1.3042411384049295 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.4760235924899614
+Pair: 0:26 1.4760235924899614 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+[are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.573231848803434
+0.0 1.0386903517706396
+Pair: 0:27 1.0386903517706396 1.6892362502021476
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 2.2473489356050873
+Pair: 1:17 2.2473489356050873 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 1.819979214823659
+Pair: 1:18 1.819979214823659 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 1.7595110930870412
+Pair: 1:19 1.7595110930870412 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 1.6566053740629676
+Pair: 1:20 1.6566053740629676 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 1.7111908237492237
+Pair: 1:21 1.7111908237492237 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 2.1089156450189854
+Pair: 1:22 2.1089156450189854 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 2.049966302872343
+Pair: 1:23 2.049966302872343 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 2.058808635737469
+Pair: 1:24 2.058808635737469 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 1.613646017257214
+Pair: 1:25 1.613646017257214 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 1.8850810557460453
+Pair: 1:26 1.8850810557460453 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+[The, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -6.989052434762319
+0.0 1.2258867259485335
+Pair: 1:27 1.2258867259485335 2.2473489356050873
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 2.2937470402405804
+Pair: 2:17 2.2937470402405804 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 1.8502895212970059
+Pair: 2:18 1.8502895212970059 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 1.7878250944291247
+Pair: 2:19 1.7878250944291247 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 1.6816807134358567
+Pair: 2:20 1.6816807134358567 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 1.7379592126243522
+Pair: 2:21 1.7379592126243522 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 2.1497218004557754
+Pair: 2:22 2.1497218004557754 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 2.0885022357581047
+Pair: 2:23 2.0885022357581047 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 2.0976808796433897
+Pair: 2:24 2.0976808796433897 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 1.6374283686078628
+Pair: 2:25 1.6374283686078628 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 1.917617967499458
+Pair: 2:26 1.917617967499458 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+[The, Foremost, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.014510723260733
+0.0 1.239564126055945
+Pair: 2:27 1.239564126055945 2.2937470402405804
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 3.6615920912656907
+Pair: 3:17 3.6615920912656907 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 2.648351803718898
+Pair: 3:18 2.648351803718898 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 2.5222194258095003
+Pair: 3:19 2.5222194258095003 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 2.315991155538388
+Pair: 3:20 2.315991155538388 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 2.424096244680241
+Pair: 3:21 2.424096244680241 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 3.3078206723647647
+Pair: 3:22 3.3078206723647647 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 3.165063663721668
+Pair: 3:23 3.165063663721668 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 3.1861916693574903
+Pair: 3:24 3.1861916693574903 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 2.2328849087795866
+Pair: 3:25 2.2328849087795866 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 2.7884849228529163
+Pair: 3:26 2.7884849228529163 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+[The, Foremost, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.475155779293606
+0.0 1.5531023524530223
+Pair: 3:27 1.5531023524530223 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 3.1788281111654975
+Pair: 4:17 3.1788281111654975 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.3862394176284223
+Pair: 4:18 2.3862394176284223 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.2833536645944164
+Pair: 4:19 2.2833536645944164 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.11301828037971
+Pair: 4:20 2.11301828037971 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.202638469960666
+Pair: 4:21 2.202638469960666 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.908752914253192
+Pair: 4:22 2.908752914253192 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.797785791923647
+Pair: 4:23 2.797785791923647 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.8142820803718367
+Pair: 4:24 2.8142820803718367 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.04362229908752
+Pair: 4:25 2.04362229908752 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 2.4994140342276876
+Pair: 4:26 2.4994140342276876 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.357843669255574
+0.0 1.4591113328190928
+Pair: 4:27 1.4591113328190928 3.6615920912656907
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 10.953758946492778
+Pair: 5:17 10.953758946492778 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 5.107749067217956
+Pair: 5:18 5.107749067217956 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 4.658446682439683
+Pair: 5:19 4.658446682439683 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 4.00050892629062
+Pair: 5:20 4.00050892629062 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 4.334399005976334
+Pair: 5:21 4.334399005976334 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 8.298654137265755
+Pair: 5:22 8.298654137265755 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 7.455062988904398
+Pair: 5:23 7.455062988904398 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 7.573351782826824
+Pair: 5:24 7.573351782826824 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 3.7588511337268087
+Pair: 5:25 3.7588511337268087 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 5.655939037455499
+Pair: 5:26 5.655939037455499 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.9893988519907
+0.0 2.16422022547831
+Pair: 5:27 2.16422022547831 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 4.947423227748534
+Pair: 6:17 4.947423227748534 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 3.261434831818943
+Pair: 6:18 3.261434831818943 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 3.0722307185229667
+Pair: 6:19 3.0722307185229667 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 2.7716128258835564
+Pair: 6:20 2.7716128258835564 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 2.927871432971103
+Pair: 6:21 2.927871432971103 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 4.322753625856039
+Pair: 6:22 4.322753625856039 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 4.082139375714564
+Pair: 6:23 4.082139375714564 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 4.1173529477729
+Pair: 6:24 4.1173529477729 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 2.653425763491361
+Pair: 6:25 2.653425763491361 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 3.476593808435698
+Pair: 6:26 3.476593808435698 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.675917036393109
+0.0 1.7455274290529397
+Pair: 6:27 1.7455274290529397 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 3.3843124491929646
+Pair: 7:17 3.3843124491929646 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 2.5001932190661833
+Pair: 7:18 2.5001932190661833 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 2.3874783882959187
+Pair: 7:19 2.3874783882959187 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 2.201884993017224
+Pair: 7:20 2.201884993017224 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 2.299375871832175
+Pair: 7:21 2.299375871832175 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 3.0798646061706703
+Pair: 7:22 3.0798646061706703 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 2.955736433561997
+Pair: 7:23 2.955736433561997 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 2.9741540455838478
+Pair: 7:24 2.9741540455838478 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 2.126633065621652
+Pair: 7:25 2.126633065621652 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 2.624717171808454
+Pair: 7:26 2.624717171808454 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.411867605315314
+0.0 1.5009418789993771
+Pair: 7:27 1.5009418789993771 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 7.777110921060644
+Pair: 8:17 7.777110921060644 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 4.2905463911731765
+Pair: 8:18 4.2905463911731765 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 3.968987601244992
+Pair: 8:19 3.968987601244992 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 3.481193698678718
+Pair: 8:20 3.481193698678718 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 3.7313142636210004
+Pair: 8:21 3.7313142636210004 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 6.337494711199753
+Pair: 8:22 6.337494711199753 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 5.833399724090677
+Pair: 8:23 5.833399724090677 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 5.905574937675361
+Pair: 8:24 5.905574937675361 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 3.296757715926938
+Pair: 8:25 3.296757715926938 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 4.670826062023524
+Pair: 8:26 4.670826062023524 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.883927960144846
+0.0 2.0026042769047723
+Pair: 8:27 2.0026042769047723 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 4.759184429437904
+Pair: 9:17 4.759184429437904 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 3.1785573959481526
+Pair: 9:18 3.1785573959481526 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 2.9985816515391472
+Pair: 9:19 2.9985816515391472 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 2.7115307892809657
+Pair: 9:20 2.7115307892809657 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 2.860905630465095
+Pair: 9:21 2.860905630465095 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 4.178354902967697
+Pair: 9:22 4.178354902967697 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 3.953128505717671
+Pair: 9:23 3.953128505717671 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 3.986142487503244
+Pair: 9:24 3.986142487503244 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 2.5983075615343623
+Pair: 9:25 2.5983075615343623 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 3.3825783305982684
+Pair: 9:26 3.3825783305982684 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.653304851055145
+0.0 1.7215041495338066
+Pair: 9:27 1.7215041495338066 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 8.838488745563424
+Pair: 10:17 8.838488745563424 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 4.594962985264514
+Pair: 10:18 4.594962985264514 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 4.228106674292507
+Pair: 10:19 4.228106674292507 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 3.6789478088555945
+Pair: 10:20 3.6789478088555945 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 3.959437220886177
+Pair: 10:21 3.959437220886177 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 7.024932617439119
+Pair: 10:22 7.024932617439119 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 6.410844830517632
+Pair: 10:23 6.410844830517632 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 6.498123350376594
+Pair: 10:24 6.498123350376594 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 3.4735804478250287
+Pair: 10:25 3.4735804478250287 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 5.033879193326879
+Pair: 10:26 5.033879193326879 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -7.927601530438378
+0.0 2.066504928695487
+Pair: 10:27 2.066504928695487 10.953758946492778
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.24761405816445
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 59.51360947003268
+Pair: 11:17 59.51360947003268 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.543151021003723
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 8.244636529486325
+Pair: 11:18 8.244636529486325 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.596559847394625
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 7.133998435474198
+Pair: 11:19 7.133998435474198 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, studied, dinosaur, bearing, strata, in, Alberta, .] -8.69641567831454
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 5.698713122146945
+Pair: 11:20 5.698713122146945 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, dinosaur, bearing, strata, in, Alberta, .] -8.641952324997295
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 6.40112616247678
+Pair: 11:21 6.40112616247678 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, bearing, strata, in, Alberta, .] -8.330228470620655
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 21.73370409944967
+Pair: 11:22 21.73370409944967 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, strata, in, Alberta, .] -8.368795663118362
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 16.765289413349965
+Pair: 11:23 16.765289413349965 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, in, Alberta, .] -8.362869833645068
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 17.375605997527018
+Pair: 11:24 17.375605997527018 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, Alberta, .] -8.74187002579371
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 5.220603041141652
+Pair: 11:25 5.220603041141652 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group, .] -8.48947975916021
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 9.773707587793583
+Pair: 11:26 9.773707587793583 59.51360947003268
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, comprise, the, Judith, River, Group] -9.296302415430546
+2 Formation
+2 Formation : ,
+[The, Foremost, Formation, ,, Oldman, Formation, and, Dinosaur, Park, Formations, collectively, are, the, most, thoroughly, studied, dinosaur, bearing, strata, in, Alberta, .] -8.20008833841844
+0.0 2.580177708039921
+Pair: 11:27 2.580177708039921 59.51360947003268
+[11, 17]
+Sent #0:
+List #0:
+Formation 
+Oldman Formation 
+Dinosaur Park Formations collectively comprise the Judith River Group and are the most thoroughly studied dinosaur bearing 
+List #1:
+comprise the Judith River Group 
+are 

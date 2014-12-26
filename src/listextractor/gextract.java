@@ -19,37 +19,49 @@ public class gextract{
 	Integer[][][][] list;
 	public gextract(deptree t, String simserver, int simport, String lmserver, int lmport) throws Exception{
 		e = new extract(t);
-		s = new similarity(simserver, simport);
+		//s = new similarity(simserver, simport);
 		l = new langmodel(lmserver, lmport);
 	}
 	public Integer[] sentsize(){
 		return e.sentsize();
 	}
+        Double minVariance(Double avg, ArrayList<Double> lis){
+	    Double var=0.;
+	    for(Integer i=0;i<lis.size();i++) var += (lis.get(i)-avg)*(lis.get(i)-avg);
+	    var = Math.sqrt(var);
+	    var /= lis.size();
+	    return 1./var;
+        }
 	Double problist(Integer[][] clist, String[][] cdep, Double p, Double q){
 		ArrayList< ArrayList< String> > a = new ArrayList< ArrayList <String> > ();
 		ArrayList<String> b;
 		Double sprob=0., lprob = 0.;
+		ArrayList<Double> lprobs = new ArrayList<Double>();
 		for(Integer i=0;i<clist.length;i++){
-			b = new ArrayList<String>();
-		//	for(Integer j=0;j<clist[0][0]; j++){
-		//		b.add(cdep[j][1]);
-		//	}
+		        b = new ArrayList<String>();
+			for(Integer j=0;j<clist[0][0]; j++){
+				b.add(cdep[j][1]);
+			}
 			for(Integer j=clist[i][0]; j<=clist[i][1]; j++){
 				b.add(cdep[j][1]);
 			}
-		//	for(Integer j=clist[clist.length-1][1]+1; j<cdep.length; j++){
-		//		b.add(cdep[j][1]);
-		//	}
-			a.add(b);
-			if(i>0) sprob += s.listsim(a.get(i),a.get(0));
-			if(i==clist.length-1){
-				for(int j=1;j<clist.length-1;j++) sprob += s.listsim(a.get(i),a.get(j));
+			for(Integer j=clist[clist.length-1][1]+1; j<cdep.length; j++){
+				b.add(cdep[j][1]);
 			}
-			//lprob += l.computeProb(b);
+			//a.add(b);
+			//if(i>0) sprob += s.listsim(a.get(i),a.get(0));
+			//if(i==clist.length-1){
+			//	for(int j=1;j<clist.length-1;j++) sprob += s.listsim(a.get(i),a.get(j));
+			//}
+			Double cur_lprob=l.computeProb(b);
+			System.out.println(b+" "+cur_lprob);
+			lprob += cur_lprob;
+			lprobs.add(cur_lprob);
 		}
 		if(clist.length>0) lprob /= clist.length;
+		lprob = minVariance(lprob, lprobs);
 		if(clist.length>1) sprob /= 2.*clist.length-3.;
-		//System.out.println(sprob+" "+lprob);
+		System.out.println(sprob+" "+lprob);
 		return p*sprob+q*lprob;
 	}
 	Pair<Integer, Integer> bestpair(Integer[][] clist, String[][] cdep, Double p, Double q){
@@ -59,6 +71,7 @@ public class gextract{
 		for(Integer i=0;i<=le;i++){
 			for(Integer j=re;j<cdep.length;j++){
 				clist[0][0] = i; clist[clist.length-1][1]=j;
+				//System.out.println("Pair: "+i+":"+j);
 				Double curprob = problist(clist,cdep,p,q);
 				if(prob < curprob){
 					prob = curprob;
@@ -116,13 +129,19 @@ public class gextract{
 	}
 	public static void main(String[] args) throws Exception{
 		deptree tree = new deptree();
-		gextract e = new gextract(tree,args[0],Integer.parseInt(args[1]),args[2],Integer.parseInt(args[3]));
+		/* args:
+		   0:Similarity port
+		   1:Language port
+		   2:Similarity weight
+		   3:Language model weight
+		*/
+		gextract e = new gextract(tree,"localhost",Integer.parseInt(args[0]),"localhost",Integer.parseInt(args[1]));
 		Scanner in = new Scanner(System.in);
 		String text = "";
 		while(in.hasNext()){
 			text = in.nextLine();
 			e.process(text);
-			e.print(Double.parseDouble(args[3]),Double.parseDouble(args[4]));
+			e.print(Double.parseDouble(args[2]),Double.parseDouble(args[3]));
 		}
 	}
 }

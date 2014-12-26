@@ -1,15 +1,17 @@
 //compile anything
-javac -d classes -Xlint  -cp :../../lib/deeplearning4j/*:../../lib/berkeleylm/*:../../lib/clearnlp/*:classes:../../lib/random/* src/listextractor/similarity.java
+javac -d classes -Xlint  -cp :../../lib/deeplearning4j/*:../../lib/berkeleylm/*:../../lib/clearnlp/*:classes:../../lib/random/* src/listextractor/<file-name>
 
 //langmodel server
-java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.berkeleylm ../../../lib/berkeleylm/vocab_cs.gz ../../../lib/berkeleylm/eng.blm.gz 8001
+java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.berkeleylm ../../../lib/berkeleylm/vocab_cs.gz ../../../lib/berkeleylm/eng.blm.gz 8001 > langmodel.out &
 
 //langmodel client
 java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.langmodel localhost 8001
 
 //word2vec server
-java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.word2vec ../../../lib/word2vec/deps.words 8002
+java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.word2vec ../../../lib/word2vec/deps.words 8002 > wordvec.out &
 
 //word2vec client
 java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.similarity localhost 8002
 
+//gextract
+java -Xmx16G -XX:+UseConcMarkSweepGC -cp :../../../lib/deeplearning4j/*:../../../lib/berkeleylm/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor.gextract 8002 8001 0 1

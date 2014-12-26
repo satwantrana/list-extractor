@@ -87,12 +87,12 @@ public class score{
 	public static void main(String[] args) throws FileNotFoundException,Exception{
 		
 		deptree d = new deptree();
-		gextract e = new gextract(d,args[0],Integer.parseInt(args[1]),args[2],Integer.parseInt(args[3]));
+		gextract e = new gextract(d,"localhost",Integer.parseInt(args[0]),"localhost",Integer.parseInt(args[1]));
 		Scanner in = new Scanner(new File("inp.txt"));
 		String inp = "";
 		while(in.hasNext()) inp += in.nextLine() + "\n";
 		e.process(inp);
-		Integer[][][][] gold,cand = e.lists(Double.parseDouble(args[3]),Double.parseDouble(args[4])); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
+		Integer[][][][] gold,cand = e.lists(Double.parseDouble(args[2]),Double.parseDouble(args[3])); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
 		
 		t = cand.length;
 		
@@ -129,7 +129,7 @@ public class score{
 
 		double[] sentsc; double avg=0,cnt=0,cntc=0,cntg=0,pre=0,rec=0;
 
-		for(Integer i=0;i<29;i++){
+		for(Integer i=0;i<cand.length;i++){
 			System.out.println("Sentence #"+i+":");
 			System.out.println("Candidate Lists: "+cand[i].length+"\tGold Lists: "+gold[i].length);
 			s = new score(cand[i],gold[i],sentsz[i]);
