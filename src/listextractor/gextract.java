@@ -19,7 +19,7 @@ public class gextract{
 	Integer[][][][] list;
 	public gextract(deptree t, String simserver, int simport, String lmserver, int lmport) throws Exception{
 		e = new extract(t);
-		//s = new similarity(simserver, simport);
+		s = new similarity(simserver, simport);
 		l = new langmodel(lmserver, lmport);
 	}
 	public Integer[] sentsize(){
@@ -48,20 +48,20 @@ public class gextract{
 			for(Integer j=clist[clist.length-1][1]+1; j<cdep.length; j++){
 				b.add(cdep[j][1]);
 			}
-			//a.add(b);
-			//if(i>0) sprob += s.listsim(a.get(i),a.get(0));
+			a.add(b);
+			if(i>0) sprob += s.listsim(a.get(i),a.get(i-1));
 			//if(i==clist.length-1){
 			//	for(int j=1;j<clist.length-1;j++) sprob += s.listsim(a.get(i),a.get(j));
 			//}
 			Double cur_lprob=l.computeProb(b);
-			System.out.println(b+" "+cur_lprob);
+			//System.out.println(b+" "+cur_lprob);
 			lprob += cur_lprob;
 			lprobs.add(cur_lprob);
 		}
 		if(clist.length>0) lprob /= clist.length;
-		lprob = minVariance(lprob, lprobs);
+		//lprob = minVariance(lprob, lprobs);
 		if(clist.length>1) sprob /= 2.*clist.length-3.;
-		System.out.println(sprob+" "+lprob);
+		//System.out.println(sprob+" "+lprob);
 		return p*sprob+q*lprob;
 	}
 	Pair<Integer, Integer> bestpair(Integer[][] clist, String[][] cdep, Double p, Double q){
@@ -77,10 +77,10 @@ public class gextract{
 					prob = curprob;
 					pair  = Pair.with(i,j);
 				}
-				System.out.println("Pair: "+i+":"+j+" "+curprob+" "+prob);
+				//System.out.println("Pair: "+i+":"+j+" "+curprob+" "+prob);
 			}
 		}
-		System.out.println(pair);
+		//System.out.println(pair);
 		return pair;
 	}
 	public void process(String sent) throws Exception{
@@ -138,10 +138,14 @@ public class gextract{
 		gextract e = new gextract(tree,"localhost",Integer.parseInt(args[0]),"localhost",Integer.parseInt(args[1]));
 		Scanner in = new Scanner(System.in);
 		String text = "";
+		Double p,q;
 		while(in.hasNext()){
 			text = in.nextLine();
+			//String[] vals = in.nextLine().split(" ");
+			p = Double.parseDouble(args[2]);
+			q = Double.parseDouble(args[3]);
 			e.process(text);
-			e.print(Double.parseDouble(args[2]),Double.parseDouble(args[3]));
+			e.print(p,q);
 		}
 	}
 }

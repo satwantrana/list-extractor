@@ -5,26 +5,28 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 import java.lang.Math;
-
+import java.util.*;
 import java.net.*;
 import java.io.*;
 import java.util.zip.*;
+import org.javatuples.*;
 
 public class similarity {
-	Socket server; String serverName; int port;
+    Socket server; String serverName; int port; Map< Pair<String,String>, Double> simMap;
 	public similarity(String _serverName, int _port) throws Exception{
 		serverName = _serverName;
 		port = _port;
+		simMap = new HashMap< Pair<String,String>, Double>();
 	}
 	public Double readData() {
 	    try {
 		    InputStream socketStream = server.getInputStream();
 		    ObjectInputStream objectInput = new ObjectInputStream(new GZIPInputStream(socketStream));
-		    // System.out.println("Reading from client");
+		    //System.out.println("Reading from client");
 		    Double a = (Double) objectInput.readObject();
 		    objectInput.close();
-	        socketStream.close();
-	        // System.out.println("Read from client: "+a);
+		    socketStream.close();
+		    //System.out.println("Read from client: "+a);
 		    return a;
 		} catch(Exception e) {
 		    e.printStackTrace();
@@ -37,18 +39,19 @@ public class similarity {
 	        ObjectOutputStream objectOutput = new ObjectOutputStream(new GZIPOutputStream(socketStream));
 	        ArrayList<String> arr = new ArrayList<String>();
 	        arr.add(a); arr.add(b);
-	       	// System.out.println("Writing from client "+ arr);
+	        //System.out.println("Writing from client "+ arr);
 	        objectOutput.writeObject(arr);
 	        objectOutput.close();
 	        socketStream.close();
-	        // System.out.println("Written from client: "+a+" "+b);
+	        //System.out.println("Written from client: "+a+" "+b);
 
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
 	}
 	public Double wordsim(String a, String b){
-		try{
+	    if(simMap.get(Pair.with(a,b)) != null) return simMap.get(Pair.with(a,b));
+	        try{
 			server = new Socket(serverName, port);
 		}
 		catch(Exception e){
@@ -61,7 +64,9 @@ public class similarity {
 		catch(Exception e){
 			e.printStackTrace();
 		}
-		return readData();
+		Double ret = readData();
+		simMap.put(Pair.with(a,b),ret);
+		return ret;
 	}
     public Double listsim(ArrayList<String> a, ArrayList<String> b){
     	Integer n = a.size(), m = b.size();
@@ -84,7 +89,7 @@ public class similarity {
 				if(dp[i][j] == dp[i-1][j-1]+wordsim(a.get(i-1),b.get(j-1)) && cnt[i][j] > cnt[i-1][j-1]+1){
 					path[i][j][0] = i-1;
 					path[i][j][1] = j-1;
-	    			cnt[i][j] = cnt[i-1][j-1]+1;
+					cnt[i][j] = cnt[i-1][j-1]+1;
 				}
 				if(dp[i][j] == dp[i][j-1]+wordsim(a.get(i-1),b.get(j-1)) && cnt[i][j] > cnt[i][j-1]+1){
 					path[i][j][0] = i;
@@ -97,21 +102,21 @@ public class similarity {
 					cnt[i][j] = cnt[i-1][j]+1;
 				}
     		}
-		Integer px = path[n][m][0], py = path[n][m][1];
-		for(Integer i=0;i<a.size();i++) System.out.print(a.get(i)+" ");
-		System.out.println();
-		for(Integer i=0;i<b.size();i++) System.out.print(b.get(i)+" ");
-		System.out.println();
+		Integer px = n, py = m;
+		//for(Integer i=0;i<a.size();i++) System.out.print(a.get(i)+" ");
+		//System.out.println();
+		//for(Integer i=0;i<b.size();i++) System.out.print(b.get(i)+" ");
+		//System.out.println();
 		while(px>0 || py > 0){
-			System.out.print(a.get(px-1)+":"+b.get(py-1)+"  ");
+		    // System.out.print(a.get(px-1)+":"+b.get(py-1)+"  ");
 			Integer tpx = path[px][py][0], tpy = path[px][py][1];
 			px = tpx;
 			py = tpy;
 		}
-		System.out.println();
+		//System.out.println();
 		if(cnt[n][m]>0) dp[n][m]/=cnt[n][m];
-			System.out.println(Math.log(dp[n][m])+"\n");
-		return Math.log(dp[n][m]);
+	      	//System.out.println(dp[n][m]+"\n");
+		return dp[n][m];
     }
 
     public static void main(String[] args) throws Exception{

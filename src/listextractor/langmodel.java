@@ -20,13 +20,15 @@ import java.util.List;
 import java.util.zip.GZIPInputStream;
 import java.lang.*;
 import java.util.zip.*;
+import org.javatuples.*;
 
 public class langmodel{
-	Socket server; String serverName; int port;
+    Socket server; String serverName; int port; Map<List<String>,Float> langMap;
 
 	public langmodel(String _serverName, int _port) throws Exception {
 		serverName = _serverName;
 		port = _port;
+		langMap = new HashMap<List<String>,Float>();
 	}
 	public float readData() {
 	    try {
@@ -57,6 +59,7 @@ public class langmodel{
 	    }
 	}
 	public float ngramprob(List<String> a){
+	    if(langMap.get(a)!=null) return langMap.get(a);
 		try{
 			server = new Socket(serverName, port);
 		}
@@ -70,7 +73,9 @@ public class langmodel{
 		catch(Exception e){
 			e.printStackTrace();
 		}
-		return readData();
+		Float ret = readData();
+		langMap.put(a,ret);
+		return ret;
 	}
 	double computeProb(List<String> words){
 		double prob=0.; double cnt=0.;
@@ -79,7 +84,7 @@ public class langmodel{
 				float cur = ngramprob(words.subList(i,Math.min(words.size(),i+2)));
 				if (Float.isNaN(cur)){
 					cur = (float)0.4*ngramprob(words.subList(i,i+1));
-					if(Float.isNan(cur)){
+					if(Float.isNaN(cur)){
 					    System.out.println("Probability is Nan "+i+" "+words.get(i));
 					    continue;
 					}
