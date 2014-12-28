@@ -49,19 +49,19 @@ public class gextract{
 				b.add(cdep[j][1]);
 			}
 			a.add(b);
+			//System.out.println("Element: "+b); 
 			if(i>0) sprob += s.listsim(a.get(i),a.get(i-1));
 			//if(i==clist.length-1){
 			//	for(int j=1;j<clist.length-1;j++) sprob += s.listsim(a.get(i),a.get(j));
 			//}
 			Double cur_lprob=l.computeProb(b);
-			//System.out.println(b+" "+cur_lprob);
 			lprob += cur_lprob;
 			lprobs.add(cur_lprob);
 		}
 		if(clist.length>0) lprob /= clist.length;
 		//lprob = minVariance(lprob, lprobs);
 		if(clist.length>1) sprob /= 2.*clist.length-3.;
-		//System.out.println(sprob+" "+lprob);
+		//System.out.println("Prob: "+sprob+" "+lprob);
 		return p*sprob+q*lprob;
 	}
 	Pair<Integer, Integer> bestpair(Integer[][] clist, String[][] cdep, Double p, Double q){
@@ -71,13 +71,13 @@ public class gextract{
 		for(Integer i=0;i<=le;i++){
 			for(Integer j=re;j<cdep.length;j++){
 				clist[0][0] = i; clist[clist.length-1][1]=j;
-				//System.out.println("Pair: "+i+":"+j);
+				//System.out.println("Pair: "+i+":"+j+" starts.");
 				Double curprob = problist(clist,cdep,p,q);
 				if(prob < curprob){
 					prob = curprob;
 					pair  = Pair.with(i,j);
 				}
-				//System.out.println("Pair: "+i+":"+j+" "+curprob+" "+prob);
+				//System.out.println("Pair: "+i+":"+j+" "+curprob+" "+prob+"\n\n");
 			}
 		}
 		//System.out.println(pair);

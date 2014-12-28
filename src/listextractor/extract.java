@@ -117,15 +117,20 @@ public class extract
 		String[][][] ret = new String[list.length][][];
 		for(Integer idx=0;idx<list.length;idx++){
 			ret[idx] = new String[list[idx].length][];
+			System.out.println("Sent #"+idx+":");
 			for(Integer i=0;i<list[idx].length;i++){
 				ret[idx][i] = new String[list[idx][i].length];
+				System.out.println("List #"+i+":");
 				for(Integer j=0;j<list[idx][i].length;j++){
-					ret[idx][i][j] = "";
+				        ret[idx][i][j] = "";
 					for(Integer k=list[idx][i][j][0];k<=list[idx][i][j][1];k++){
 						ret[idx][i][j]+=(dep[idx][k][1]+" ");
 					}
+					System.out.println(ret[idx][i][j]);
 				}
-			}	
+				System.out.println();
+			}
+			System.out.println();
 		}
 		return ret;
 	}
@@ -160,7 +165,8 @@ public class extract
 		while(in.hasNext()){
 			text = in.nextLine();
 			e.process(text);
-			e.print();
+			e.getlists();
+			//e.print();
 		}
 	}
 }

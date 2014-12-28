@@ -87,12 +87,16 @@ public class score{
 	public static void main(String[] args) throws FileNotFoundException,Exception{
 		
 		deptree d = new deptree();
-		gextract e = new gextract(d,"localhost",Integer.parseInt(args[0]),"localhost",Integer.parseInt(args[1]));
+		extract e = new extract(d);
+		//gextract e = new gextract(d,"localhost",Integer.parseInt(args[0]),"localhost",Integer.parseInt(args[1]));
 		Scanner in = new Scanner(new File("inp.txt"));
 		String inp = "";
 		while(in.hasNext()) inp += in.nextLine() + "\n";
 		e.process(inp);
-		Integer[][][][] gold,cand = e.lists(Double.parseDouble(args[2]),Double.parseDouble(args[3])); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
+		Integer[][][][] gold,cand;
+		//cand = e.lists(Double.parseDouble(args[2]),Double.parseDouble(args[3]));
+		cand = e.lists();
+		Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
 		
 		t = cand.length;
 		

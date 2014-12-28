@@ -1,0 +1,121 @@
+Probability is Nan 0 ServisFirst
+Probability is Nan 1 ServisFirst
+Probability is Nan 2 ServisFirst
+Probability is Nan 3 ServisFirst
+Probability is Nan 4 ServisFirst
+Probability is Nan 5 ServisFirst
+Probability is Nan 6 ServisFirst
+Probability is Nan 7 ServisFirst
+Probability is Nan 8 ServisFirst
+Probability is Nan 9 ServisFirst
+Probability is Nan 10 ServisFirst
+Probability is Nan 11 ServisFirst
+Probability is Nan 11 ,
+Probability is Nan 11 ,
+Probability is Nan 12 ServisFirst
+Probability is Nan 13 ServisFirst
+Probability is Nan 14 ServisFirst
+Probability is Nan 15 ServisFirst
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Probability is Nan 16 40,000
+Sentence #0:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 1.0	List #1: 0.7634920634920634	
+Sentence #1:
+Candidate Lists: 0	Gold Lists: 1
+
+Sentence #2:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 1.0	List #1: 1.0	
+Sentence #3:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8611111111111112	
+Sentence #4:
+Candidate Lists: 2	Gold Lists: 1
+List #0: 0.0	List #1: 0.7129629629629629	
+Sentence #5:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.1728395061728395	
+Sentence #6:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.7992229992229992	
+Sentence #7:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.7685185185185185	
+Sentence #8:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.5261363636363636	
+Sentence #9:
+Candidate Lists: 0	Gold Lists: 1
+
+Sentence #10:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 1.0	
+Sentence #11:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8376068376068376	
+Sentence #12:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 0.21296296296296294	List #1: 0.8730158730158729	
+Sentence #13:
+Candidate Lists: 3	Gold Lists: 2
+List #0: 0.0	List #1: 0.6349206349206349	List #2: 1.0	
+Sentence #14:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.3836333753774414	
+Sentence #15:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8618421052631579	
+Sentence #16:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.37222222222222223	
+Sentence #17:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 1.0	List #1: 1.0	
+Sentence #18:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.6044973544973544	
+Sentence #19:
+Candidate Lists: 3	Gold Lists: 3
+List #0: 0.4880952380952381	List #1: 1.0	List #2: 0.31578947368421056	
+Sentence #20:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8375	
+Sentence #21:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.2711038961038961	
+Sentence #22:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.7521645021645021	
+Sentence #23:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.6166666666666667	
+Sentence #24:
+Candidate Lists: 3	Gold Lists: 2
+List #0: 0.6959459459459459	List #1: 1.0	List #2: 0.0	
+Sentence #25:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.7996031746031745	
+Sentence #26:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.7111111111111111	
+Sentence #27:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.9010416666666666	
+Sentence #28:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 1.0	
+Average Score: 0.6782633306848619	Precision: 0.7664564188474147	Recall: 0.7705834029743989
