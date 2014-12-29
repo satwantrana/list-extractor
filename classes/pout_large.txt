@@ -1,0 +1,1100 @@
+Sentence #0:
+0.8095238095238096 
+Sentence #1:
+1.0 
+Sentence #2:
+1.0 0.5490196078431372 0.6960600375234521 
+Sentence #3:
+0.4230769230769231 1.0 1.0 1.0 
+Sentence #4:
+0.23025016458196182 0.6058570198105082 0.6455026455026455 0.8828282828282829 
+Sentence #5:
+0.7555555555555555 0.4594202898550725 
+Sentence #6:
+0.7222222222222222 
+Sentence #7:
+0.8703703703703703 
+Sentence #8:
+0.8225806451612904 
+Sentence #9:
+0.8222222222222223 
+Sentence #10:
+0.8205128205128206 
+Sentence #11:
+1.0 
+Sentence #12:
+0.8209876543209876 
+Sentence #13:
+0.3547619047619047 0.6486486486486487 
+Sentence #14:
+0.5805080652950836 1.0 
+Sentence #15:
+1.0 
+Sentence #16:
+1.0 
+Sentence #17:
+0.8125 
+Sentence #18:
+0.6749999999999999 
+Sentence #19:
+1.0 
+Sentence #20:
+0.5277777777777778 
+Sentence #21:
+0.691304347826087 0.7979797979797979 0.6586879432624113 
+Sentence #22:
+1.0 1.0 
+Sentence #23:
+0.4295101553166069 
+Sentence #24:
+1.0 
+Sentence #25:
+0.6666666666666666 
+Sentence #26:
+0.6571428571428571 0.571969696969697 
+Sentence #27:
+0.38518518518518513 
+Sentence #28:
+1.0 0.7261904761904762 0.8137254901960785 
+Sentence #29:
+0.32471264367816094 
+Sentence #30:
+0.45 0.8225806451612904 
+Sentence #31:
+0.8225806451612904 
+Sentence #32:
+0.375 
+Sentence #33:
+0.7997557997557997 
+Sentence #34:
+0.3586956521739131 
+Sentence #35:
+0.6507936507936508 
+Sentence #36:
+0.8737373737373737 
+Sentence #37:
+0.3796296296296296 0.7016129032258065 
+Sentence #38:
+0.4309523809523809 
+Sentence #39:
+1.0 0.8835125448028673 0.8282828282828283 
+Sentence #40:
+0.8137254901960785 0.2037037037037037 
+Sentence #41:
+0.5833333333333334 
+Sentence #42:
+0.8765432098765431 
+Sentence #43:
+0.32905982905982906 
+Sentence #44:
+1.0 0.7243589743589745 
+Sentence #45:
+0.7916666666666666 
+Sentence #46:
+1.0 
+Sentence #47:
+0.6818181818181818 0.8214285714285715 1.0 0.6978021978021977 
+Sentence #48:
+1.0 0.8338870431893688 
+Sentence #49:
+0.7166666666666667 
+Sentence #50:
+0.7083333333333334 1.0 
+Sentence #51:
+0.8690476190476191 
+Sentence #52:
+1.0 
+Sentence #53:
+0.6785714285714285 
+Sentence #54:
+0.8765432098765431 
+Sentence #55:
+0.5833333333333334 
+Sentence #56:
+0.5720108695652174 
+Sentence #57:
+0.3862068965517242 
+Sentence #58:
+1.0 
+Sentence #59:
+0.7045454545454546 
+Sentence #60:
+0.43209876543209874 0.7654320987654321 0.6363636363636364 
+Sentence #61:
+
+Sentence #62:
+0.2932551319648094 
+Sentence #63:
+1.0 
+Sentence #64:
+0.3416666666666667 
+Sentence #65:
+1.0 
+Sentence #66:
+0.6524822695035462 0.38844086021505375 
+Sentence #67:
+0.7575757575757575 1.0 
+Sentence #68:
+0.24129901960784314 0.4962121212121212 
+Sentence #69:
+1.0 0.7321428571428571 0.8761904761904762 
+Sentence #70:
+0.4873015873015873 
+Sentence #71:
+0.7311320754716982 0.5131172839506173 0.5691823899371069 1.0 
+Sentence #72:
+0.26666666666666666 
+Sentence #73:
+1.0 
+Sentence #74:
+1.0 
+Sentence #75:
+1.0 
+Sentence #76:
+1.0 
+Sentence #77:
+0.43939393939393945 
+Sentence #78:
+0.5803571428571428 
+Sentence #79:
+0.5970695970695971 
+Sentence #80:
+0.5236842105263158 0.6242368742368742 
+Sentence #81:
+0.24761904761904763 0.6469038208168643 
+Sentence #82:
+1.0 
+Sentence #83:
+0.615909090909091 
+Sentence #84:
+
+Sentence #85:
+0.6181818181818182 
+Sentence #86:
+0.33796296296296297 0.5171428571428571 
+Sentence #87:
+
+Sentence #88:
+1.0 0.4910714285714286 1.0 
+Sentence #89:
+0.5476190476190476 1.0 0.5905172413793103 
+Sentence #90:
+0.6333333333333333 0.6625 
+Sentence #91:
+0.3797810421286031 0.826530612244898 
+Sentence #92:
+0.5456349206349206 
+Sentence #93:
+1.0 1.0 1.0 1.0 0.7456140350877193 0.8282828282828283 
+Sentence #94:
+1.0 
+Sentence #95:
+0.26417233560090697 
+Sentence #96:
+0.5177404295051354 
+Sentence #97:
+0.549808429118774 
+Sentence #98:
+1.0 
+Sentence #99:
+1.0 
+Sentence #100:
+0.5252192982456141 
+Sentence #101:
+1.0 0.8555555555555556 
+Sentence #102:
+1.0 
+Sentence #103:
+0.48789983164983164 1.0 
+Sentence #104:
+0.8560606060606061 
+Sentence #105:
+0.4696969696969697 
+Sentence #106:
+0.7566137566137566 0.5909090909090909 
+Sentence #107:
+0.1711229946524064 
+Sentence #108:
+0.5159313725490197 
+Sentence #109:
+0.7421875 0.5388235294117647 1.0 
+Sentence #110:
+1.0 0.3723076923076923 
+Sentence #111:
+0.39527027027027034 
+Sentence #112:
+1.0 1.0 
+Sentence #113:
+0.27777777777777773 
+Sentence #114:
+0.41111111111111115 
+Sentence #115:
+0.861111111111111 
+Sentence #116:
+0.6333333333333333 1.0 
+Sentence #117:
+1.0 
+Sentence #118:
+0.6888888888888888 
+Sentence #119:
+0.5197368421052632 
+Sentence #120:
+1.0 0.5720560303893638 
+Sentence #121:
+1.0 
+Sentence #122:
+0.6504201680672269 
+Sentence #123:
+1.0 
+Sentence #124:
+0.7291666666666666 0.7626262626262627 
+Sentence #125:
+1.0 1.0 
+Sentence #126:
+1.0 0.7412587412587412 
+Sentence #127:
+0.7474747474747474 0.8021978021978023 0.5727272727272728 
+Sentence #128:
+0.3233766233766234 0.25315656565656564 0.8287037037037037 
+Sentence #129:
+0.6730462519936203 
+Sentence #130:
+0.871345029239766 
+Sentence #131:
+1.0 
+Sentence #132:
+1.0 0.5274074074074074 0.46634615384615385 0.44305555555555554 
+Sentence #133:
+0.6410256410256411 1.0 
+Sentence #134:
+0.4305555555555555 
+Sentence #135:
+1.0 
+Sentence #136:
+0.8666666666666667 
+Sentence #137:
+0.8125 
+Sentence #138:
+0.8252032520325203 
+Sentence #139:
+1.0 0.3833333333333333 0.7721718565234529 0.39443277310924374 
+Sentence #140:
+1.0 
+Sentence #141:
+1.0 
+Sentence #142:
+0.6 
+Sentence #143:
+1.0 
+Sentence #144:
+0.784126984126984 0.46939655172413797 
+Sentence #145:
+1.0 
+Sentence #146:
+1.0 
+Sentence #147:
+1.0 
+Sentence #148:
+1.0 
+Sentence #149:
+0.7575757575757575 
+Sentence #150:
+0.5503875968992248 1.0 
+Sentence #151:
+1.0 
+Sentence #152:
+0.32653061224489793 
+Sentence #153:
+1.0 
+Sentence #154:
+1.0 0.8205128205128206 
+Sentence #155:
+0.5942857142857143 0.7272727272727272 
+Sentence #156:
+0.4373626373626374 0.37142857142857144 
+Sentence #157:
+1.0 0.8136645962732919 
+Sentence #158:
+0.8777777777777778 
+Sentence #159:
+1.0 
+Sentence #160:
+1.0 
+Sentence #161:
+1.0 1.0 
+Sentence #162:
+1.0 
+Sentence #163:
+0.9275 
+Sentence #164:
+0.8166666666666668 
+Sentence #165:
+0.8833333333333333 
+Sentence #166:
+1.0 
+Sentence #167:
+0.8055555555555555 
+Sentence #168:
+0.47500000000000003 
+Sentence #169:
+1.0 
+Sentence #170:
+0.7499999999999999 
+Sentence #171:
+0.798076923076923 
+Sentence #172:
+1.0 0.8412698412698413 
+Sentence #173:
+0.6785714285714286 
+Sentence #174:
+0.7083333333333334 0.8689024390243902 
+Sentence #175:
+0.6092436974789917 1.0 
+Sentence #176:
+1.0 1.0 
+Sentence #177:
+0.6547619047619048 0.4219554030874786 1.0 
+Sentence #178:
+1.0 
+Sentence #179:
+0.3961352657004831 
+Sentence #180:
+
+Sentence #181:
+0.6990740740740741 
+Sentence #182:
+0.7062499999999999 
+Sentence #183:
+
+Sentence #184:
+
+Sentence #185:
+
+Sentence #186:
+
+Sentence #187:
+
+Sentence #188:
+0.26161616161616164 
+Sentence #189:
+
+Sentence #190:
+
+Sentence #191:
+
+Sentence #192:
+
+Sentence #193:
+
+Sentence #194:
+
+Sentence #195:
+
+Sentence #196:
+
+Sentence #197:
+
+Sentence #198:
+
+Sentence #199:
+
+Sentence #200:
+
+Sentence #201:
+
+Sentence #202:
+
+Sentence #203:
+
+Sentence #204:
+
+Sentence #205:
+
+Sentence #206:
+
+Sentence #207:
+
+Sentence #208:
+
+Sentence #209:
+
+Sentence #210:
+
+Sentence #211:
+
+Sentence #212:
+
+Sentence #213:
+
+Sentence #214:
+
+Sentence #215:
+
+Sentence #216:
+
+Sentence #217:
+
+Sentence #218:
+
+Sentence #219:
+
+Sentence #220:
+
+Sentence #221:
+
+Sentence #222:
+
+Sentence #223:
+
+Sentence #224:
+
+Sentence #225:
+
+Sentence #226:
+
+Sentence #227:
+
+Sentence #228:
+
+Sentence #229:
+
+Sentence #230:
+
+Sentence #231:
+
+Sentence #232:
+
+Sentence #233:
+
+Sentence #234:
+
+Sentence #235:
+
+Sentence #236:
+
+Sentence #237:
+
+Sentence #238:
+
+Sentence #239:
+
+Sentence #240:
+
+Sentence #241:
+
+Sentence #242:
+
+Sentence #243:
+
+Sentence #244:
+
+Sentence #245:
+
+Sentence #246:
+
+Sentence #247:
+
+Sentence #248:
+
+Sentence #249:
+
+Sentence #250:
+
+Sentence #251:
+
+Sentence #252:
+
+Sentence #253:
+
+Sentence #254:
+
+Sentence #255:
+
+Sentence #256:
+
+Sentence #257:
+
+Sentence #258:
+
+Sentence #259:
+
+Sentence #260:
+
+Sentence #261:
+
+Sentence #262:
+
+Sentence #263:
+
+Sentence #264:
+
+Sentence #265:
+
+Sentence #266:
+
+Sentence #267:
+
+Sentence #268:
+
+Sentence #269:
+
+Sentence #270:
+
+Sentence #271:
+
+Sentence #272:
+
+Sentence #273:
+
+Sentence #274:
+
+Sentence #275:
+
+Sentence #276:
+
+Sentence #277:
+
+Sentence #278:
+
+Sentence #279:
+
+Sentence #280:
+
+Sentence #281:
+
+Sentence #282:
+
+Sentence #283:
+
+Sentence #284:
+
+Sentence #285:
+
+Sentence #286:
+
+Sentence #287:
+
+Sentence #288:
+
+Sentence #289:
+
+Sentence #290:
+
+Sentence #291:
+
+Sentence #292:
+
+Sentence #293:
+
+Sentence #294:
+
+Sentence #295:
+
+Sentence #296:
+
+Sentence #297:
+
+Sentence #298:
+
+Sentence #299:
+
+Sentence #300:
+
+Sentence #301:
+
+Sentence #302:
+
+Sentence #303:
+
+Sentence #304:
+
+Sentence #305:
+
+Sentence #306:
+
+Sentence #307:
+
+Sentence #308:
+
+Sentence #309:
+
+Sentence #310:
+
+Sentence #311:
+
+Sentence #312:
+0.20634920634920637 
+Sentence #313:
+
+Sentence #314:
+
+Sentence #315:
+
+Sentence #316:
+
+Sentence #317:
+
+Sentence #318:
+
+Sentence #319:
+
+Sentence #320:
+0.18571428571428572 0.4603174603174603 
+Sentence #321:
+
+Sentence #322:
+
+Sentence #323:
+
+Sentence #324:
+
+Sentence #325:
+
+Sentence #326:
+
+Sentence #327:
+
+Sentence #328:
+
+Sentence #329:
+
+Sentence #330:
+
+Sentence #331:
+
+Sentence #332:
+
+Sentence #333:
+
+Sentence #334:
+
+Sentence #335:
+
+Sentence #336:
+
+Sentence #337:
+
+Sentence #338:
+
+Sentence #339:
+
+Sentence #340:
+
+Sentence #341:
+
+Sentence #342:
+0.5362589480236539 
+Sentence #343:
+
+Sentence #344:
+
+Sentence #345:
+
+Sentence #346:
+
+Sentence #347:
+
+Sentence #348:
+
+Sentence #349:
+
+Sentence #350:
+
+Sentence #351:
+
+Sentence #352:
+
+Sentence #353:
+
+Sentence #354:
+
+Sentence #355:
+
+Sentence #356:
+
+Sentence #357:
+
+Sentence #358:
+
+Sentence #359:
+
+Sentence #360:
+
+Sentence #361:
+
+Sentence #362:
+
+Sentence #363:
+
+Sentence #364:
+
+Sentence #365:
+0.22666666666666668 0.13650793650793652 
+Sentence #366:
+0.3733974358974359 
+Sentence #367:
+
+Sentence #368:
+
+Sentence #369:
+
+Sentence #370:
+
+Sentence #371:
+
+Sentence #372:
+
+Sentence #373:
+
+Sentence #374:
+
+Sentence #375:
+
+Sentence #376:
+
+Sentence #377:
+
+Sentence #378:
+
+Sentence #379:
+
+Sentence #380:
+
+Sentence #381:
+
+Sentence #382:
+
+Sentence #383:
+
+Sentence #384:
+
+Sentence #385:
+
+Sentence #386:
+
+Sentence #387:
+
+Sentence #388:
+
+Sentence #389:
+
+Sentence #390:
+
+Sentence #391:
+
+Sentence #392:
+
+Sentence #393:
+
+Sentence #394:
+
+Sentence #395:
+
+Sentence #396:
+
+Sentence #397:
+
+Sentence #398:
+
+Sentence #399:
+
+Sentence #400:
+
+Sentence #401:
+
+Sentence #402:
+
+Sentence #403:
+
+Sentence #404:
+
+Sentence #405:
+
+Sentence #406:
+
+Sentence #407:
+
+Sentence #408:
+
+Sentence #409:
+
+Sentence #410:
+
+Sentence #411:
+
+Sentence #412:
+
+Sentence #413:
+
+Sentence #414:
+
+Sentence #415:
+
+Sentence #416:
+
+Sentence #417:
+
+Sentence #418:
+
+Sentence #419:
+
+Sentence #420:
+
+Sentence #421:
+
+Sentence #422:
+
+Sentence #423:
+
+Sentence #424:
+
+Sentence #425:
+
+Sentence #426:
+
+Sentence #427:
+
+Sentence #428:
+
+Sentence #429:
+
+Sentence #430:
+
+Sentence #431:
+
+Sentence #432:
+
+Sentence #433:
+
+Sentence #434:
+
+Sentence #435:
+
+Sentence #436:
+
+Sentence #437:
+
+Sentence #438:
+
+Sentence #439:
+
+Sentence #440:
+
+Sentence #441:
+
+Sentence #442:
+
+Sentence #443:
+
+Sentence #444:
+
+Sentence #445:
+
+Sentence #446:
+
+Sentence #447:
+
+Sentence #448:
+
+Sentence #449:
+
+Sentence #450:
+
+Sentence #451:
+
+Sentence #452:
+
+Sentence #453:
+
+Sentence #454:
+
+Sentence #455:
+
+Sentence #456:
+
+Sentence #457:
+
+Sentence #458:
+
+Sentence #459:
+
+Sentence #460:
+
+Sentence #461:
+
+Sentence #462:
+
+Sentence #463:
+
+Sentence #464:
+
+Sentence #465:
+
+Sentence #466:
+
+Sentence #467:
+
+Sentence #468:
+
+Sentence #469:
+
+Sentence #470:
+
+Sentence #471:
+
+Sentence #472:
+
+Sentence #473:
+
+Sentence #474:
+
+Sentence #475:
+
+Sentence #476:
+
+Sentence #477:
+
+Sentence #478:
+
+Sentence #479:
+
+Sentence #480:
+
+Sentence #481:
+
+Sentence #482:
+
+Sentence #483:
+
+Sentence #484:
+
+Sentence #485:
+
+Sentence #486:
+
+Sentence #487:
+
+Sentence #488:
+
+Sentence #489:
+
+Sentence #490:
+
+Sentence #491:
+
+Sentence #492:
+
+Sentence #493:
+
+Sentence #494:
+
+Sentence #495:
+
+Sentence #496:
+
+Sentence #497:
+
+Sentence #498:
+
+Sentence #499:
+
+Sentence #500:
+
+Sentence #501:
+
+Sentence #502:
+
+Sentence #503:
+
+Sentence #504:
+
+Sentence #505:
+
+Sentence #506:
+
+Sentence #507:
+
+Sentence #508:
+
+Sentence #509:
+
+Sentence #510:
+
+Sentence #511:
+
+Sentence #512:
+
+Sentence #513:
+
+Sentence #514:
+
+Sentence #515:
+
+Sentence #516:
+
+Sentence #517:
+
+Sentence #518:
+
+Sentence #519:
+
+Sentence #520:
+
+Sentence #521:
+
+Sentence #522:
+
+Sentence #523:
+
+Sentence #524:
+
+Sentence #525:
+
+Sentence #526:
+
+Sentence #527:
+
+Sentence #528:
+
+Sentence #529:
+
+Sentence #530:
+
+Sentence #531:
+
+Sentence #532:
+
+Sentence #533:
+
+Sentence #534:
+
+Sentence #535:
+
+Sentence #536:
+
+Sentence #537:
+
+Sentence #538:
+
+Sentence #539:
+
+Sentence #540:
+
+Sentence #541:
+
+Sentence #542:
+
+Sentence #543:
+
+Sentence #544:
+
+Sentence #545:
+
+Sentence #546:
+
+Sentence #547:
+
+Sentence #548:
+
+Sentence #549:
+0.47222222222222227 

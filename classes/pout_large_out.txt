@@ -1,0 +1,3342 @@
+0 0: toxins 
+0 0: excess 
+
+
+0 0: blue eyes 
+0 0: red hair 
+
+0 1: is possessed such as blue eyes or red hair 
+0 1: manifests itself in terms of relations with others 
+
+
+0 0: tired 
+0 0: queasy 
+
+0 1: ; 
+0 1: that night , when the leading man laid her on the sofa , suddenly turned her head and , without letting the audience see , vomited quietly down the sofa back 
+
+0 2: turned her head 
+0 2: without letting the audience 
+
+
+0 0: then 
+
+0 1: surprised 
+0 1: startled , confused her , so that the green eyes that flashed and sparked with anger softened and melted as she looked at him and heard each gently spoken syllable 
+
+0 2: flashed 
+0 2: sparked with anger 
+
+0 3: softened 
+0 3: melted as she looked at him and heard each gently spoken syllable 
+
+0 4: looked at him 
+0 4: heard each gently spoken syllable 
+
+
+0 0: when they died and the fleas had finished feasting on their blood , which was by then putrid and crawling with the bacilli , the fleas looked round for another host , and if they could not find another rat , or any small hairy creature to their liking 
+
+0 1: they died 
+0 1: the fleas had finished feasting on their blood , which was by then putrid and crawling with the bacilli , the fleas looked round for another host , and if they could not find another rat , or any small hairy creature to their liking 
+
+0 2: putrid 
+
+0 3: the bacilli , the fleas looked round for another host 
+0 3: if they could not find another rat , or any small hairy creature to their liking 
+
+0 4: find another rat 
+0 4: any small hairy creature to their liking 
+
+
+0 0: people 
+0 0: publications 
+
+0 1: quite proud of their command of the English language 
+
+
+0 0: giggled 
+
+0 1: giggled 
+0 1: even smiled 
+
+
+0 0: One part of me , despite George Crowninshield 's reassurances , anticipated that the twins would emerge as shambling twitching wrecks 
+0 0: for a second , believing my worst fears , I bitterly regretted accepting the senator 's charter 
+
+
+0 0: time 
+0 0: attendance 
+
+
+0 0: loud 
+0 0: hard 
+
+
+0 0: mouths 
+0 0: noses 
+
+
+0 0: the driver 
+0 0: the sergeant 
+
+
+0 0: good 
+0 0: some bad 
+
+
+0 0: itself 
+0 0: however 
+0 0: after a minute or two he became aware that as these thoughts whirled through his mind he had been staring down at the grilles confining the Chinese coolie families 
+
+0 1: two 
+
+
+0 0: choosing a specific group of notes 
+0 0: then , by presenting them in different orders or different rhythmic shapes , created melody which proliferates from what may be only a very limited stock of initial material 
+
+0 1: different orders 
+0 1: different rhythmic shapes 
+
+
+0 0: a prisoner 
+0 0: a sympathetic guard 
+
+
+0 0: this thought 
+
+0 1: foundationalism 
+0 1: its asymmetries 
+
+
+0 0: nothing of her circumstances 
+0 0: her reasons 
+
+
+0 0: the logic 
+0 0: impressed with the religious zeal 
+
+
+0 0: again 
+
+0 1: limbs 
+0 1: organs 
+
+
+0 0: two 
+0 0: a 
+
+
+0 0: rain 
+0 0: snow 
+0 0: ice blowing 
+
+0 1: sleet , rain , snow and ice blowing across the moss 
+0 1: wet clothes clinging to chilled skin 
+0 1: ahead and behind a long line of miners ' lanterns 
+
+0 2: ahead 
+0 2: behind a long line of miners ' lanterns 
+
+
+0 0: regional disarmament 
+0 0: nuclear-free zones 
+
+0 1: the late 1950s 
+0 1: 1960s 
+
+
+0 0: him 
+0 0: his face 
+
+
+0 0: back 
+0 0: forth 
+
+
+0 0: a thoughtful look , she suddenly waggled her scarlet-tipped fingers 
+0 0: walked away 
+
+
+0 0: birds sang 
+0 0: everything in the extensive , well-tended garden looked lush and green and fresh 
+
+0 1: lush 
+0 1: green and fresh 
+
+0 2: green 
+0 2: fresh 
+
+
+0 0: hurry 
+0 0: went over to the window , unrolling them carefully 
+
+
+0 0: validate 
+0 0: execute either a search , navigation or trail request 
+
+0 1: navigation 
+0 1: trail request 
+
+0 2: are parsed 
+0 2: then sent to the appropriate process 
+
+
+0 0: the crow 
+
+
+0 0: to ensure that resources reached their intended destination 
+
+0 1: industrial 
+0 1: agricultural 
+
+
+0 0: rightness 
+0 0: wrongness 
+
+
+0 0: entirely 
+
+
+0 0: with trimmings 
+
+0 1: has assumed `` the system as before '' , but with trimmings 
+0 1: this can be seen in the very use of the phrase `` audio-visual aids '' , a term which presupposes a type of use , as an adjunct , an added extra , a novel way of doing the same thing 
+
+
+0 0: mature 
+
+
+0 0: explored 
+0 0: probed as he held her head with both his hands 
+
+0 1: his hands 
+
+
+0 0: The gun itself had been a prop in a film version of Journey 's End in which my father had starred 
+0 0: when the filming was over he had `` forgotten '' to return the pistol which was still in good working order 
+
+
+0 0: the fingers of his right hand flexed and unflexed spasmodically 
+
+0 1: flexed 
+0 1: unflexed spasmodically 
+
+
+0 0: Earlier in 1946 Jones 's brilliance had cut short St Colman 's brave bid to capture their first MacRory Cup 
+0 0: they persevered and three years later captained by Sean Blaney , Greg 's father 
+
+0 1: they persevered 
+0 1: three years later captained by Sean Blaney , Greg 's father 
+
+
+0 0: quickwitted 
+0 0: charming 
+
+0 1: his easy grace 
+0 1: sweet but never cloying tone 
+
+0 2: sweet 
+0 2: never 
+
+0 3: most poised 
+0 3: affecting minutes 
+
+
+0 0: windows 
+0 0: sun 
+
+0 1: open 
+0 1: park 
+
+
+0 0: managed to pacify him 
+0 0: in return 
+
+
+0 0: bride 's 
+0 0: groom 's name 
+
+
+0 0: While this used to be common practice , it is now widely considered sexist : such usage represents the masculine as the norm 
+0 0: so 
+
+
+0 0: fresh 
+0 0: dried 
+
+0 1: flavoring 
+0 1: tenderizing , in stock 
+
+
+0 0: lined with marble pillars 
+0 0: stained glass 
+
+
+0 0: mud 
+0 0: water 
+
+
+0 0: wandered back into the living-room , with its rugged stone walls 
+0 0: polished wood and leather 
+
+0 1: wood 
+0 1: leather 
+
+0 2: wandered back into the living-room , with its rugged stone walls and polished wood and leather 
+0 2: looked out again at the darkened skies and pouring rain 
+
+0 3: looked out again at the darkened skies 
+0 3: pouring rain 
+
+
+0 0: The Getaway 
+0 0: Bullitt 
+
+0 1: The Getaway and Bullitt 
+0 1: Paul Newman in The Drowning Pool 
+
+
+0 0: dirty bookshops 
+0 0: prostitutes 
+
+0 1: prostitutes 
+0 1: Chinese restaurants 
+
+
+0 0: laughed 
+0 0: simultaneously mocking the stupidity of government by cosmetics 
+0 0: confessing that he was also a part of it , just as he was part of government by voice coach and acting coach 
+
+0 1: voice coach 
+0 1: acting coach 
+
+
+0 0: Robyn breathed a weary sigh of relief 
+0 0: threw the carrier of wet clothes on to the floor 
+
+
+0 0: South Korea 
+0 0: Japan 
+0 0: the Philippines 
+
+
+0 0: on 
+0 0: off in her pocket 
+
+
+0 0: He was two-thirds drunk 
+0 0: there again , I suppose any man ordered to discharge such a duty would need some wine to gladden the heart and dull the brain 
+
+0 1: the heart 
+0 1: dull the brain 
+
+
+0 0: manufactured cars 
+0 0: contracted with C that all cars exhibited by B 
+
+
+0 0: with a walled garden , ornamental trellis gate 
+0 0: roaming dogs 
+
+
+0 0: From under the hunched shoulders 
+0 0: clutching arms a broken voice emerged in a stammering howl a stray dog might have launched into the night after company in its loneliness 
+
+
+0 0: Norton Street 
+0 0: Fraser Street 
+0 0: Islington 
+
+
+0 0: reports 
+0 0: an orthodox stock control system 
+
+
+0 0: reluctant 
+0 0: distracted Cabinet by Edwin Montagu , who saw himself at the time as the architect of a new India -- an India of `` great self-governing Dominions and Provinces ... organized and coordinated with the great Principalities ... , federated by one central Government '' 
+
+0 1: Dominions 
+0 1: Provinces 
+
+0 2: organized 
+
+
+0 0: - 
+
+0 1: revised 
+0 1: differing 
+
+
+0 0: deciphering 
+0 0: extremely cheap -- the most expensive item being smoked baby back ribs in barbecue sauce at $ 2.50 
+
+
+0 0: bent 
+0 0: fiddled with a machine at her feet 
+
+
+0 0: oriental-style dishes 
+0 0: sprinkle it over meat before grilling it or use to liven up leftover boiled rice 
+
+0 1: it 
+0 1: use to liven up leftover boiled rice 
+
+
+0 0: dressed in her clothes 
+0 0: paraded around the campus for hours until he was arrested 
+
+
+0 0: neck 
+
+0 1: encounter the same pattern which so clearly distinguishes man from the apes -- notable absence of canine-tooth dimorphism , prominent displays of hair around the face and neck of the male 
+0 1: in the female , a secondary sexual display on the chest 
+
+
+0 0: carts 
+0 0: chariots 
+
+0 1: probing for enemies 
+0 1: scouting for small settlements to loot 
+
+
+0 0: she peered alternately at me 
+0 0: my picture , producing a range of squints , pouts and grimaces that Rowan Atkinson might envy 
+
+0 1: pouts 
+0 1: grimaces that Rowan Atkinson might envy 
+
+
+0 0: Rose 
+0 0: Mary 
+
+0 1: showing a united front 
+0 1: refused to leave the kitchen because they did n't quite like the way the young women from the town who had come to be waitresses were poking and prying into their cupboards with their noses in the air 
+
+0 2: poking 
+0 2: prying into their cupboards with their noses 
+
+
+0 0: this 
+0 0: attempt 
+
+
+0 0: reaching agreement about this 
+0 0: any greater measure of development 
+
+0 1: the CNAA 
+
+0 2: the CNAA 
+0 2: any of its internal structures or external partners or constituencies was homogeneous , and the evolution of `` partnership '' was therefore through a constant , complex and difficult process of negotiation 
+
+0 3: its internal structures 
+0 3: external partners or constituencies was homogeneous 
+
+0 4: external partners 
+0 4: constituencies 
+
+0 5: external partners or constituencies was homogeneous 
+0 5: the evolution of `` partnership '' was therefore through a constant , complex and difficult process of negotiation 
+
+0 6: constant 
+0 6: complex 
+0 6: difficult 
+
+
+0 0: in both these situations she is marked as unclean and is segregated 
+
+0 1: unclean 
+0 1: is segregated 
+
+
+0 0: Polish 
+0 0: Hungarian 
+
+0 1: Russia fell out with Turkey before the end of the month because the Sultan refused to extradite Polish and Hungarian refugees who had fled to his territory 
+0 1: this negative consequence of the invasion seemed hardly to matter 
+
+
+0 0: removed from the shop 
+0 0: detonated in a controlled explosion 
+
+
+0 0: more humane 
+0 0: dignified 
+
+
+0 0: has lengthened the putter , to stand more upright 
+0 0: quickened his routine on the green 
+
+
+0 0: national 
+
+
+0 0: Trying to avoid gazing at the grisly sight 
+0 0: the Leutnant sidled over to the statuesque Karnstein 
+0 0: handed the envelope to her 
+
+
+0 0: it involves him in a more considerable recasting of his planned activities than the university teacher 
+
+0 1: This he will normally be planning to do , but it involves him in a more considerable recasting of his planned activities than the university teacher 
+0 1: brings him into contact with many more parts of the school life 
+
+
+0 0: The fact that such an `` Expressive Revolution '' is not unrelated to other , much more obviously parricidal ones 
+0 0: that all of these insurrections against cultural restraint can be traced to childhood failures in the acquisition of the superego is nicely illustrated by an Italian terrorist who , having put his revolutionary ideology into practice by murdering seventeen people and kidnapping an American general , justified his activities at his trial by proudly explaining that `` My challenge began from the school benches of Centocelle -LSB- his home town -RSB- 
+
+0 1: seventeen people 
+0 1: kidnapping 
+
+
+0 0: murmured approvingly 
+0 0: basking in his appreciation of her promptitude 
+
+0 1: went with him to his car 
+0 1: as he set the Mercedes in motion 
+
+
+0 0: was knighted on 1 January 
+0 0: kicked in the teeth on 15 January 
+
+
+0 0: Melissa 
+0 0: thinking of the designer suits 
+0 0: the new luxury Peugeot in the garage 
+
+
+0 0: ; 
+0 0: -LRB- f -RRB- 
+
+
+0 0: rejoices at the fact that they started off with small-town views 
+0 0: began thinking globally 
+
+
+0 0: At first the Orcs looted 
+0 0: pillaged through Ostermark , feasting upon the few beasts that the people had carefully nurtured through the winter and driving the impoverished population westwards through the snow 
+
+0 1: winter 
+0 1: driving the impoverished population westwards through the snow 
+
+
+0 0: do it now rather than them pounce on you later and accuse you of hidin ' her 
+
+0 1: than them pounce on you later 
+0 1: accuse you of hidin ' her 
+
+
+0 0: card-dropping 
+0 0: smiling 
+0 0: niceness 
+
+0 1: crying 
+0 1: becoming otherwise unreasonable '' , say authors Leonard Koren and Peter Goodman 
+
+0 2: Leonard Koren 
+0 2: Peter Goodman 
+
+
+0 0: attend to the kids ' cultural upbringing 
+0 0: take them to school and mosque while Changez was , presumably , redecorating the shop , moving boxes and impregnating my girlfriend Jamila again 
+
+0 1: school 
+0 1: mosque 
+
+0 2: boxes 
+0 2: impregnating my girlfriend Jamila again 
+
+
+0 0: walks 
+0 0: beachcomber 
+
+0 1: shells 
+0 1: fruit 
+
+
+0 0: MC Wayne , `` Omega Amigo '' , `` Pro-Gen '' 
+0 0: `` Hyperreal '' become more ecstatic and lavish 
+
+0 1: ecstatic 
+0 1: lavish 
+
+
+0 0: appeared as an annotated catalog to the then National Book League 's touring exhibition 
+
+
+0 0: intellectual 
+0 0: emotional 
+
+0 1: 1924 
+0 1: 1927 
+
+0 2: political 
+0 2: social 
+
+0 3: academic excellence 
+0 3: success 
+
+0 4: subverted 
+0 4: emasculated the values and beliefs of his own social origins 
+
+0 5: values 
+0 5: beliefs 
+
+
+0 0: Faerie Queene 
+0 0: A View 
+
+
+0 0: must be un-linked 
+0 0: the words built into the standard 26-way node method , with new items added in linked lists hanging from these new nodes 
+
+0 1: For example , once a list goes beyond the optimal number , it must be un-linked , and the words built into the standard 26-way node method , with new items added in linked lists hanging from these new nodes , until they in turn reach the optimal value 
+0 1: so on 
+
+
+0 0: I always start with the eyes , because it gives the moisturizer a chance to sink in 
+0 0: it also means I can wipe away any spills without reapplying foundation . '' 
+
+
+0 0: They climbed in 
+0 0: no talk was made as they journeyed down Bath Street towards the Exchange ; , evidently Mrs Heatherton felt that she had done all that was required of her 
+
+
+0 0: repositioned his Karabiner in a pocket 
+0 0: removed as many loops as possible from his equipment 
+
+
+0 0: sandwiches 
+0 0: rolls 
+0 0: jam donuts 
+0 0: slices of gateaux 
+
+
+0 0: gasped 
+0 0: leapt , her nerves like coiled springs 
+
+
+0 0: agriculture 
+0 0: industry 
+
+0 1: the United Kingdom 
+0 1: the United States 
+
+
+0 0: looked over at the steam yacht 
+0 0: made a circling motion with his hand 
+
+
+0 0: were regarded as `` open territory '' 
+0 0: in that year 
+
+0 1: public expenditure restrictions occurred 
+0 1: the issues inherent in the compromise over the rural areas agreement between the Cambridge Board and the District emerged in sharply focussed ways 
+
+0 2: the Cambridge Board 
+0 2: the District 
+
+
+0 0: Although the authors accept that the niche for these systems is essentially `` up market '' 
+0 0: that the support structure needed for a successful , gasification programme precludes gasification from the `` appropriate technology '' approach 
+
+
+0 0: cloves 
+0 0: dry salt crackers 
+
+
+0 0: one made from milk whey protein 
+0 0: another made from egg white 
+
+0 1: are currently two forms of Simplesse P one made from milk whey protein and another made from egg white 
+0 1: skimmed milk proteins 
+
+
+0 0: shirts , shirtfronts , flannel vests , uniform , spare trousers , sheets , blankets , pillows 
+0 0: a featherbed 
+
+0 1: ; 
+
+0 2: `` 
+0 2: now 
+
+
+0 0: to use modern techniques to scrape 
+0 0: clean 
+
+
+0 0: general pendant lighting 
+0 0: inset downlights 
+
+0 1: inset downlights 
+0 1: wallwashers for the overall light 
+
+0 2: fix baffled light below cabinets to shine directly onto the worktop 
+0 2: try to install special lights over stove and sink 
+
+0 3: stove 
+0 3: sink 
+
+
+0 0: she 
+0 0: Frank 
+
+0 1: used to skip the puddles 
+0 1: sometimes 
+
+
+0 0: a second look 
+0 0: I 
+
+
+0 0: the empirical method of producing resource allocations based on statistical modeling of the available data 
+0 0: a more normative approach which allocates according to a more explicit theoretical rationale and political choices 
+
+0 1: a more explicit theoretical rationale 
+0 1: political choices 
+
+
+0 0: chair 
+0 0: hurtles 
+
+
+0 0: go camping abroad 
+
+
+0 0: had simply made a mental note to thank her 
+0 0: popped it into the in-tray on her desk 
+0 0: left the photograph tucked in a corner of her blotter 
+
+
+0 0: In the Worlds Edge Mountains the Night Goblins were multiplying deep within their tunnels 
+
+0 1: Orcs 
+0 1: Goblins 
+
+
+0 0: the first snail 
+0 0: the first nettle that sprouted up on this planet 
+
+
+0 0: reached our hotel 
+0 0: unlocked a suitcase we had kept 
+
+
+0 0: the faintest touch 
+0 0: yet immediately her body yearned to respond 
+
+
+0 0: the Equal Opportunities Commission 
+0 0: the Commission for Racial Equality 
+
+0 1: are empowered by the Sex Discrimination Act 1975 
+0 1: the Race Relations Act 1976 respectively to render assistance to individuals alleging discrimination 
+
+
+0 0: children 
+0 0: teachers 
+0 0: parents 
+
+
+0 0: to impede Acrow 's manufacture of machinery under licence from S.I. S.I. purported to ignore the injunction 
+0 0: instructed Rex Chainbelt , suppliers of components for Acrow 's process , to cease supply 
+
+
+0 0: took a bus to the Comprehensive 
+0 0: waited outside the gates until half-past , when she was almost submerged by the tide of pubescent humanity that surged through them 
+
+
+0 0: death 
+0 0: isolation 
+
+0 1: the hero 's death or isolation has the effect of a spirit passing out of nature 
+0 1: evokes a mood best described as elegiac '' 
+
+
+0 0: cotton wool beard 
+0 0: red dressing gown 
+
+0 1: those Australian curses 
+0 1: bandy legs stockinged in green wool 
+
+
+0 0: domes 
+0 0: vaults 
+
+0 1: if several were used together 
+0 1: making impressive bridges across rivers 
+
+
+0 0: action 
+0 0: omission 
+
+0 1: endangering 
+0 1: interfering with the lives , comfort , property or common 
+
+0 2: comfort 
+0 2: property 
+
+
+0 0: our cockpit , then the reflection was gone 
+0 0: we were at sea level 
+
+0 1: engines screaming 
+0 1: I fumbled for the camera 
+
+0 2: Sunlight reflected from a window among the palm trees to lance a sliver of dazzling light at our cockpit , then the reflection was gone and we were at sea level , engines screaming , and I fumbled for the camera , prayed it had not broken when it fell from the ceiling 
+0 2: took another picture just before Maggot lifted the aircraft 's nose so that we swooped up and over the palm trees that edged the beach 
+
+0 3: swooped up 
+0 3: over the palm trees that edged the beach 
+
+
+0 0: run perpendicularly to its surface 
+0 0: are initially occupied by cytoplasmic filaments from the epidermis 
+
+
+0 0: He had been ejected during the doctor 's visit 
+0 0: she let the dog back in to the room as she escorted Spilsby downstairs to the front door 
+
+
+0 0: holstered the weapon 
+0 0: walked away 
+
+
+0 0: great 
+0 0: serious 
+
+0 1: that can revive poetry , Thomson urges , is `` the choosing of great and serious subjects '' to amuse , enlighten 
+0 1: stimulate , and the eschewing of the forced fancies and `` glittering prettinesses '' which are to native poetry what buffoonery is to sound thought 
+
+0 2: stimulate 
+0 2: the eschewing of the forced 
+
+0 3: fancies 
+0 3: `` glittering prettinesses '' which are to native poetry what buffoonery is to sound thought 
+
+
+0 0: two 
+
+0 1: accepts a glass or two of firewater 
+0 1: is led to the sack , where he proceeds to give her the pasting of a lifetime 
+
+
+0 0: itself murmured through the kitchen 
+0 0: they sat silently 
+
+
+0 0: settling on one thing 
+0 0: flying off again at once 
+
+
+0 0: He was the dealing room bully 
+0 0: dealers quaked in their boots at the thought of being put in his team 
+
+
+0 0: The last one had caused her to slip 
+0 0: she had jarred her already sore wrist by flinging out a hand to save herself 
+
+
+0 0: size 
+0 0: long 
+
+
+0 0: First 
+0 0: foremost 
+
+0 1: to the team 's collective head 
+0 1: with Master James as a media star 
+
+0 2: -- 
+0 2: few have known how to manipulate the press with such skill , to make so many journos think they were `` particular '' friends or to understand the voracity of Fleet Street 's sports editors ' avidity for upbeat Brit stories -- the Hesketh operation became something of a Back Britain campaign , with patriotism overcoming business common sense 
+
+0 3: think they were `` particular '' friends 
+0 3: to understand the voracity of Fleet Street 's sports editors ' avidity for upbeat Brit stories -- the Hesketh operation became something of a Back Britain campaign , with patriotism overcoming business common sense 
+
+
+0 0: fear 
+0 0: laughter 
+
+
+0 0: snoozing 
+0 0: picking their noses 
+0 0: pretending to be interested in subjects which are of no interest to them 
+
+
+0 0: almost broke 
+
+
+0 0: nothing 
+0 0: wood and string 
+
+0 1: wood 
+0 1: string 
+
+
+0 0: a weed 
+0 0: an orchid at the moment 
+
+0 1: a weed and an orchid at the moment 
+0 1: even 
+
+
+0 0: danced in the air 
+0 0: settled reverently into their alcoves 
+
+
+0 0: tipped back her head 
+0 0: allowed the sharp , cool tang of champagne to enter her mouth 
+
+
+0 0: dead 
+0 0: buried 
+
+
+0 0: took it 
+0 0: flipped another cigarette butt into the toilet 
+
+
+0 0: both 
+0 0: exults in full-bodied fury unfit for prudish ears 
+
+
+0 0: had a fine sense of humor 
+0 0: loved to sing 
+
+0 1: lullabies 
+0 1: airs 
+
+
+0 0: wailed 
+0 0: rhubarbed in a lukewarm pagan frenzy 
+
+
+0 0: # 
+
+
+0 0: warped 
+0 0: corrupted by Marcos 
+
+
+0 0: Methods 
+0 0: principles 
+
+0 1: function 
+0 1: from fitting with another article 
+
+
+0 0: I remember you waylaying an army captain to let Sally mate with his dog 
+0 0: he ringing us up laughing and saying of course he could 
+
+0 1: ringing us up laughing 
+0 1: saying of course he could 
+
+0 2: Sally 's lovely nine puppies -- I remember you waylaying an army captain to let Sally mate with his dog , and he ringing us up laughing and saying of course he could 
+
+
+0 0: '' 
+0 0: who belongs to a world in which the beautiful say yes to the beautiful and wildly misbehave , a world which is said to be `` described on Sundays only '' , in papers like the News of the World 
+
+0 1: beautiful 
+
+0 2: -- 
+0 2: which 
+
+
+0 0: is enchanting 
+0 0: provokes a desire to discover more about its fascinating history -- how it was conquered by the Moors and recaptured centuries later by the Catholic Kings 
+
+0 1: how it was conquered by the Moors 
+0 1: recaptured centuries later by the Catholic Kings 
+
+
+0 0: had the wisdom 
+0 0: the patience to want to do so 
+
+
+0 0: a magician 
+0 0: a robber 
+
+
+0 0: is easy to operate 
+0 0: improves the stove 's performance 
+
+
+0 0: to explore the dynamic nature of excellence 
+0 0: to suggest that quality is really about training and unlocking the potential of the workforce 
+
+0 1: training 
+0 1: unlocking the potential of the workforce 
+
+
+0 0: glaring up at him 
+0 0: quite unaware that her hands remained splayed against his chest 
+
+
+0 0: So 
+0 0: a little artistic licence may be called for 
+0 0: you will have to use your skills to create a bouquet picture that gives the feeling of the wedding flowers without reproducing them exactly 
+
+
+0 0: expertise 
+0 0: experience 
+
+
+0 0: had felt very angry 
+0 0: felt like assaulting the appellant , who was convicted under section 5 
+
+
+0 0: a holy picture 
+0 0: a convincing representation of a woman tenderly cradling her son , seen in front of a north Italian landscape 
+
+
+0 0: Rose burst into tears 
+0 0: was escorted indoors by Dieter 
+
+
+0 0: Comprising a fleet of canoes 
+0 0: a display stand , it can be used to promote canoeing throughout Wales 
+
+
+0 0: terrifies residents 
+0 0: corrupts the lives of young children who learn to accept this behavior as normal 
+
+
+0 0: up 
+0 0: put on an aggressive looking frown 
+0 0: motored off 
+
+
+0 0: for Mark to take her into his arms 
+0 0: comfort her like a baby 
+
+
+0 0: came 
+0 0: kissed him like an anteater 
+
+0 1: She came and kissed him like an anteater 
+0 1: he went out of the door 
+
+
+0 0: as soon as she 'd said 
+
+0 1: leapt to his feet 
+0 1: made for the door 
+
+
+0 0: obeying their patrons ' orders 
+0 0: being regulated by religious , political and other advisers 
+
+0 1: religious 
+0 1: political 
+0 1: other 
+
+
+0 0: the Arsenal , where the weapons were kept 
+0 0: opposite that , a tall , gabled bell-tower , formerly a look-out , that dominates the ensemble and quite unbalances it 
+
+0 1: dominates the ensemble 
+0 1: quite unbalances it 
+
+
+0 0: risen very early 
+0 0: bathed and scented herself with special care in her suite at the Continental Palace that morning 
+
+0 1: bathed 
+0 1: scented herself with special care in her suite at the Continental Palace that morning 
+
+
+0 0: profit 
+0 0: loss 
+
+0 1: wholly exempt from delivering copies of the profit and loss account 
+
+0 2: the balance sheet 
+0 2: the information that has to be given in notes to the accounts 
+
+
+0 0: gritted her teeth against the chill 
+0 0: waded into the water with the others , lifting her dress inch by inch as it got deeper , until it was up to her waist 
+
+
+0 0: modern 
+
+
+0 0: 0.5 mM PMSF 
+0 0: 2ug/ml leupeptin 
+0 0: 2ug/ml trasylol 
+
+0 1: on ice for 5 minutes 
+
+
+0 0: their raw materials 
+0 0: also serviced a wide area 
+
+
+0 0: a young friend of Stepan Verkhovensky 
+0 0: when the notebooks record that Granovsky -LRB- Stepan 's prototype -RRB- has got out of hand they are also heralding the novelist 's escape into a fictional mode of enormous suppleness 
+
+
+0 0: it is just not reasonable for me to flounce about in the bathroom for hours 
+0 0: then make a man feel inadequate when I catch him using my dental floss 
+
+
+1 0: to bellow in disgust when I find out he blow-dries his hair 
+
+
+0 0: I have lurked like some ghost in this cold , dank church 
+0 0: now you appear , making a merry jest of it all ! '' 
+
+
+0 0: our clients 
+0 0: ourselves 
+
+0 1: our internal records 
+0 1: controls 
+
+
+0 0: elongated 
+0 0: blurred into melting crystalline shapes as bitter tears pricked in Vologsky 's eyes 
+
+
+0 0: -- 
+0 0: some similar meaningless platitude -- and launched Concorde 
+
+0 1: -- 
+0 1: launched Concorde 
+
+0 2: innovation 
+0 2: our intellectual heritage 
+
+
+0 0: This division of labor by artefact type epitomizes attitudes towards archeology generally at that time 
+0 0: such divisions have to a large extent persisted to this day , emphasizing how artefact-based early Anglo-Saxon studies have remained 
+
+
+0 0: There 's only one way you can cripple a bad scientist 
+0 0: that 's to demonstrate how bad his science is 
+
+
+0 0: The stench that the Doctor noted as he approached bore witness to the speed with which decay took place in the tropical climate 
+0 0: he found that he had to clap a handkerchief over his mouth as he knelt to examine the body 
+
+
+0 0: by later writers 
+0 0: in fact 
+
+0 1: eliminate the time-devouring process of embarking 
+0 1: disembarking an army of perhaps 200,000 men , with relatively few wagons but a great number of horses , mules and camels 
+
+0 2: disembarking an army of perhaps 200,000 men , with relatively few wagons 
+0 2: a great number of horses 
+
+0 3: mules 
+0 3: camels 
+
+
+0 0: I suggested that starlings had probably been in Australia longer than his family 
+0 0: if his argument was translated into human terms then an aboriginal would have a justifiable right in hoisting a spear into his chest 
+
+
+0 0: reboot 
+0 0: its documentation 
+
+
+0 0: stood up 
+0 0: began pacing restlessly to and fro along the balcony 
+
+0 1: to 
+0 1: fro along the balcony 
+
+
+0 0: villa 
+0 0: tomb 
+
+
+0 0: recognizable 
+0 0: predictably different 
+
+
+0 0: because they are good company or because 
+
+0 1: good company 
+
+0 2: a profit 
+0 2: the procuring of girls 
+
+
+0 0: discusses the situation 
+0 0: says she will ring the hospital and/or his GP to see what can be done 
+
+0 1: the hospital 
+
+
+0 0: Transformational Grammar 
+0 0: which postulates two main kinds of rules 
+0 0: Phrase Structure Rules 
+0 0: Transformational Rules 
+
+0 1: appeals to Transformational Grammar , which postulates two main kinds of rules , Phrase Structure Rules and Transformational Rules 
+0 1: argues that optional Transformational Rules are the ones which determine style 
+
+
+0 0: police 
+0 0: fire 
+0 0: ambulance officers 
+
+
+0 0: has led to misery for millions 
+0 0: none more so than workers made Redundant 
+
+0 1: has led to misery for millions but none more so than workers made Redundant 
+0 1: those whose homes have been Repossessed 
+
+
+0 0: polytechnics 
+0 0: colleges 
+
+0 1: validated 
+0 1: degrees awarded by the Council for National Academic Awards -LRB- CNAA -RRB- 
+
+0 2: develop 
+0 2: regulate courses and qualifications in public sector higher education 
+
+0 3: courses 
+0 3: qualifications 
+
+
+0 0: black 
+0 0: white 
+
+
+0 0: stilted 
+0 0: scripted 
+
+
+0 0: disengaging from that strategy 
+0 0: withdrawing to his study 
+
+
+0 0: translates these 
+0 0: reconstitutes the issues in terms of a legal discourse which has trans-situational applicability 
+
+
+0 0: squirmed with pain 
+0 0: was helpless in the grip of the renewing forest 
+
+0 1: She squirmed with pain , but was helpless in the grip of the renewing forest 
+0 1: she felt her body entered , a single motion that never stopped , just filled her , swelled out , tearing her apart inside , fingers of pain , shards of agony , curling snakes of pressure that reached inside to the tips of her toes , her fingers , up her spine and round her ribs , rising higher , filling her stomach , then her lungs , then her throat 
+
+0 2: fingers of pain , shards of agony , curling snakes of pressure that reached inside to the tips of her toes , her fingers , up her spine 
+
+
+0 0: by then utterly winded 
+0 0: hoping 
+
+
+0 0: appointed by 
+0 0: on the advice of , government they have come to be seen by some as a buffer between the state and the broadcasters but by others 
+
+0 1: the state 
+0 1: the broadcasters 
+
+0 2: come to be seen by some as a buffer between the state and the broadcasters 
+
+
+0 0: started in Madame Rochard 's stomach 
+0 0: gurgled up to her lips 
+
+
+0 0: David Holloway in The Daily Telegraph 
+
+0 1: the author 's `` inalienable cynicism '' 
+0 1: Nicci Gerrard in the Observer 
+
+
+0 0: laws 
+0 0: treaties 
+
+
+0 0: Mr Donn 
+0 0: property developer 
+0 0: former wife of Keith Aldridge 
+
+
+0 0: shambled over to the edge of the stream 
+0 0: threw himself face down on the grass , cupping handfuls of water and throwing it over his head , gulping it greedily 
+
+0 1: cupping handfuls of water 
+0 1: throwing it over his head , gulping it greedily 
+
+
+0 0: its sophisticated detonating system 
+0 0: the compact radio transmitter 
+
+0 1: Finland 
+0 1: Germany 
+
+
+0 0: controlled 
+0 0: if injury is caused -- other than perhaps a slight reddening -- a penalty rather than a score will result 
+
+
+0 0: the widgeon ducks 
+0 0: other wildfowl paddling in the lagoon close to the sea 
+
+
+0 0: gaze drifted towards Meh ` Lindi 
+0 0: he frowned as if adding the final piece to a puzzle which had been perplexing him 
+
+0 1: gaze drifted towards Meh ` Lindi , and he frowned as if adding the final piece to a puzzle which had been perplexing him 
+0 1: not liking the pattern that he saw 
+
+
+0 0: annular in form 
+0 0: each surrounds the compound eye of its side 
+
+
+0 0: Fred 
+0 0: Daisy 
+
+0 1: flung himself neatly across to the bed , thinking agreeably of life with Fred and Daisy as he went 
+0 1: another spring broke 
+
+
+0 0: Mallachy got to his feet 
+0 0: squared his iron jaw 
+
+0 1: Terence came close to being stroppy until Mallachy got to his feet and squared his iron jaw 
+0 1: the incident was enveloped by a late surge to the bar 
+
+
+0 0: let him get clear before I turned Armstrong around 
+0 0: cruised down Dwyer Street 
+
+
+0 0: Herefordshire 
+0 0: Wales 
+
+
+0 0: the runners 
+0 0: straggling cyclists 
+
+
+0 0: trees 
+0 0: streams 
+
+0 1: streams 
+0 1: stones 
+
+
+0 0: Marie-Sophie 
+0 0: Orla 
+0 0: Sarah Murray 
+0 0: Hortensia de Hutten , the 47-year-old Margiela model , all exemplify the new breed 
+
+
+0 0: in 
+0 0: Myles 
+0 0: to the fire 
+0 0: do n't be standin ' out there in the cold 
+
+
+0 0: ; 
+0 0: in discussing the period reviewed by the exhibition , various choices of media made by women artists are chronicled , for , `` Many women artists eschewed painting -- especially abstract painting -- as a domain polluted by long saturation with male dominant values , and developed their themes in performance . '' 
+
+0 1: especially abstract painting -- as a domain polluted by long saturation with male dominant values 
+0 1: developed their themes in performance 
+
+
+0 0: a silver trough with Tory snouts rampant 
+
+
+0 0: it is n't a man 
+
+0 1: its talons dig into my flesh 
+0 1: my blood drips out through the holes in my flesh 
+
+0 2: Now one of them seizes me , and it is n't a man , it 's an octopus with claws -- it holds me in its tentacles , its talons dig into my flesh and my blood drips out through the holes in my flesh 
+0 2: my blood is n't red human blood , it 's black like tar , like drops of liquid evil ... 
+
+
+0 0: dignity 
+0 0: pride 
+
+
+0 0: shivered 
+0 0: wrapped her arms ineffectually around her slim body 
+
+
+0 0: though he was never to make such almost innocent remarks again 
+
+0 1: though Eva and Dad continued to want to make love all the time 
+
+0 2: Eva 
+0 2: Dad 
+
+0 3: And though he was never to make such almost innocent remarks again , and though Eva and Dad continued to want to make love all the time 
+0 3: I caught her giggling while she did idiotic things with him , like snipping the hair in his ears and nostrils with a huge pair of scissors , there were looks that escaped all possible policing , looks that made me think he was capable only of a corrupted happiness 
+
+0 4: ears 
+0 4: nostrils 
+
+
+0 0: -- 
+0 0: it only just fit her shoulder 
+
+
+0 0: -- 
+0 0: they are used to weathering storms 
+
+
+0 0: political 
+0 0: economic 
+
+0 1: the possibility of political and economic instability in an era of change 
+0 1: the attendant dangers of hurrying South Africa back into such rugby prominence 
+
+
+0 0: they earned me respect 
+0 0: I wanted more 
+
+
+0 0: disrobed 
+0 0: stood naked 
+
+
+0 0: Both Walter Hilton 
+0 0: Dame Julian 
+
+0 1: is transcendent 
+0 1: can not be described or grasped by the human mind 
+
+0 2: described 
+0 2: grasped by the human mind 
+
+0 3: Both Walter Hilton and Dame Julian insist that God is transcendent and can not be described or grasped by the human mind 
+0 3: they belong more to the Western tradition than the author of The Cloud of Unknowing 
+
+
+0 0: draw the eyes of the predator 
+0 0: as he stares at them he fails to notice the larger shape which carries them 
+
+
+0 0: to find a place on television 
+
+
+0 0: Crime 
+0 0: Punishment 
+
+
+0 0: violence 
+0 0: alternatively 
+
+
+0 0: wobbled 
+0 0: his ear tingled but this time he managed to keep his guard up when a right and left followed 
+
+0 1: his ear tingled 
+0 1: this time he managed to keep his guard up when a right and left followed 
+
+0 2: a right 
+0 2: left followed 
+
+
+0 0: silence 
+0 0: blindness 
+
+
+0 0: men 
+0 0: women 
+
+0 1: men 
+0 1: women 
+
+0 2: coffee 
+0 2: tea 
+
+0 3: vermouth 
+0 3: wine 
+
+
+
+1 0: grumbled 
+1 0: glared angrily at Corbett 
+
+
+0 0: driving 
+0 0: well over two-thirds of them 
+
+0 1: knew 
+0 1: how long it took for alcohol to be burned up by the body -LRB- 71 per cent -RRB- nor what , if anything , was an effective way of sobering up -LRB- 71 per cent -RRB- 
+
+0 2: what , if anything , was an effective way of sobering up -LRB- 71 per cent -RRB- 
+
+
+0 0: is rolled out 
+0 0: heated to remove water 
+
+
+0 0: groaned 
+0 0: moved her head under the bedcovers so that the sunshine streaming far too cheerfully through the uncurtained window did n't blind her 
+
+
+0 0: it 
+
+0 1: artists 
+
+
+0 0: the axons degenerate 
+
+0 1: C57B1/6 
+0 1: C57B1/6-WLD mice 
+
+
+0 0: proposes to buy repossessed homes at auction 
+0 0: then flog them off or rent them at a huge profit 
+
+0 1: off 
+0 1: rent them at a huge profit 
+
+
+0 0: well cut 
+0 0: belted 
+
+
+0 0: CS 
+0 0: US 
+
+0 1: attributes of the stimuli are noticed 
+
+
+0 0: confusion 
+0 0: anxiety 
+
+0 1: sensitive 
+0 1: unclassified 
+
+
+0 0: -- 
+0 0: his end is enveloped in the consequences of his supposing that he has lit upon some Chatterton manuscripts 
+
+
+0 0: Many of the already tiny crofts were subdivided on inheritance 
+0 0: there were large numbers of `` cottars '' or landless squatters 
+
+0 1: '' 
+0 1: landless squatters 
+
+
+0 0: strange happenings 
+0 0: instil 
+
+
+0 0: stooped behind Stewart 
+0 0: made a piggy-back 
+
+0 1: suddenly stooped behind Stewart and made a piggy-back , another lad shouldered him 
+0 1: over he went 
+
+0 2: nearest roared 
+0 2: laughed 
+
+
+0 0: Stretching 
+0 0: yawning 
+
+
+0 0: impersonating her husband 
+0 0: by deceiving her as to the nature of the act 
+
+
+0 0: turned 
+0 0: danced in the air 
+
+
+0 0: this 
+
+0 1: But this was unsuccessful also , for the casualties were unacceptable 
+0 1: though some did reach the masonry , over all the ditches , few burdened with ladders and scaling-ropes managed to do so , and these were easily repulsed by the defenders on the wall-tops 
+
+0 2: ladders 
+0 2: scaling-ropes 
+
+0 3: though some did reach the masonry , over all the ditches 
+0 3: few burdened with ladders and scaling-ropes managed to do so 
+0 3: these were easily repulsed by the defenders on the wall-tops 
+
+
+0 0: embalmed 
+
+
+0 0: the production of surplus crops 
+0 0: their sale 
+
+
+0 0: Dr Who 's Tardis , the bath that was used by Madonna 
+0 0: an alligator that James Bond wrestled with 
+
+
+0 0: foins 
+
+
+0 0: Nina 
+0 0: Modi 
+
+
+0 0: Imperieuse 
+0 0: Warspite 
+
+
+0 0: in the fallopian tubes or in vitro 
+
+0 1: the fallopian tubes 
+0 1: in vitro 
+
+
+0 0: second 
+0 0: third 
+
+0 1: discharging the patient on the second or third day after the procedure with the drain from the gall bladder eitherspigotted 
+0 1: if pain occurred , discharging into a bag as in the procedure of percutaneous cholecystolithotomy 
+
+
+0 0: she was occupied with Mrs Hatton , dabbing at her face and smoothing her hair 
+
+0 1: with Mrs Hatton 
+0 1: dabbing at her face 
+0 1: smoothing her hair 
+
+
+0 0: was so painful next morning 
+0 0: looked so inflamed that Breeze , as soon as she had foraged for some breakfast , went down to the village to find the doctor 
+
+
+0 0: humming to himself 
+0 0: glancing repeatedly at his drinks cabinet , when the door bell rings 
+
+
+0 0: Paul 
+0 0: Joseph 
+
+0 1: the two boys 
+0 1: aged eleven 
+0 1: thirteen 
+
+0 2: had hoisted the two boys , aged eleven and thirteen , onto their shoulders 
+0 2: were encouraging them to joust at one another with chopsticks from the table 
+
+
+0 0: the system of laws in place at any one time in a democracy worthy of the name has a permanence about it 
+
+0 1: formality 
+0 1: bureaucracy 
+
+0 2: the formality and bureaucracy of the institutions which sustain it 
+0 2: more importantly 
+
+
+0 0: Seth 
+0 0: his followers 
+
+0 1: grasped their opportunity 
+0 1: immediately 
+
+0 2: quickly grasped their opportunity and immediately closed the lid 
+0 2: fastened it securely 
+
+
+0 0: stripping streets of luxury cars 
+0 0: ramming the gates of car showrooms 
+
+0 1: ramming the gates of car showrooms 
+0 1: disappearing with the entire fleet of vehicles 
+
+
+0 0: then 
+
+0 1: the ears 
+0 1: I 
+
+
+0 0: hopes for the League disintegrated 
+0 0: the Peace Ballot consensus broke apart 
+
+
+0 0: red herrings 
+0 0: some really useful information that is only revealed when you 've asked the computer the right question , correctly phrased 
+
+
+0 0: The front skid 
+0 0: main wheel 
+
+0 1: The front skid or main wheel will also need to be chocked 
+0 1: an easy , effective way of doing this is to run the main wheel into a rut in the ground 
+
+
+0 0: leaned back in his chair 
+0 0: waggled his bare feet 
+
+
+0 0: an unsettled , painful time 
+
+
+0 0: got up 
+0 0: limped forward 
+
+
+0 0: pleasure 
+0 0: her cheeks burned when she realized that if he came back he could just take up where he had left off and she would not do a thing to stop him 
+
+0 1: she realized that if he came back he could just take up where he had left off 
+0 1: she would not do a thing to stop him 
+
+
+0 0: , shimmering the mud flats in a golden glow -- 
+0 0: there were the graceful avocets , sweeping long curved bills from side to side through the fine silt , scooping up their favorite opossum shrimps and rag worms : a marvelous sight 
+
+0 1: their favorite opossum shrimps 
+0 1: rag worms 
+
+
+0 0: Most smaller crustacea have exoskeletons that are rather delicate 
+0 0: for this reason the fossil record of the shrimps , for example , is somewhat incomplete 
+
+
+0 0: in his morning suit , his black hair gleaming with a brilliant sheen 
+0 0: his eyes , his once dark and brooding eyes , now alight with the glow of love in them , Marc came swiftly to her side 
+
+0 1: dark 
+0 1: brooding 
+
+
+0 0: those in the manufacturing sector 
+0 0: , more particularly , those in more highly skilled positions , are more likely to place themselves in the latter category 
+
+
+0 0: is signed 
+0 0: dated 1633 
+
+0 1: is signed and dated 1633 
+0 1: is inscribed `` AET : 76 '' 
+
+
+0 0: the king 
+0 0: his father 
+
+
+0 0: safe 
+0 0: effective 
+
+0 1: endoscopic injection treatment is safe and effective 
+0 1: is the first choice in the management of Dieulafoy 's disease with excellent longterm results 
+
+
+0 0: sentences 
+0 0: poems 
+
+0 1: artist 
+0 1: others 
+
+0 2: individual 
+0 2: particular 
+
+0 3: lose individual and particular identity 
+0 3: become a general humming presence 
+
+
+0 0: clause elements 
+0 0: theme/rheme 
+0 0: topic/comment 
+
+0 1: clause elements , theme/rheme and topic/comment 
+0 1: declarative/interrogative/imperative sentence structures 
+
+0 2: the 
+
+0 3: second 
+0 3: third with group structure 
+
+0 4: verb 
+0 4: adverbial 
+
+
+0 0: the blade 
+0 0: handle of the fettling knife in the sponging department making it easier to use and prolonging its usefulness 
+
+0 1: use 
+0 1: prolonging its usefulness 
+
+
+0 0: socialist 
+0 0: anarcho-syndicalist 
+
+0 1: CCOO 
+0 1: UGT 
+
+
+0 0: the cart changed all that 
+
+0 1: the cart changed all that 
+0 1: for now the cort ge was visible to all 
+0 1: was even appreciated by the victim , allowing him to preen himself like a modern pop star , to revel in his moment of glory and accept the crowd 's adulation 
+
+0 2: revel in his moment of glory 
+0 2: accept the crowd 's adulation 
+
+
+0 0: Petiver 
+0 0: Sherard 
+
+
+0 0: chicken 
+0 0: lamb 
+0 0: veal with a cucumber and chive salad 
+
+0 1: cucumber 
+0 1: chive 
+
+
+0 0: any attempt to get on with their writing project 
+
+0 1: there 
+0 1: chatted to each other 
+
+
+0 0: sat down 
+0 0: took off my shoes and socks 
+
+0 1: shoes 
+0 1: socks 
+
+0 2: slacks 
+0 2: trainers 
+
+0 3: -- 
+0 3: then walked across the bay , luxuriating in the feel of the fine warm sand under my bare feet 
+
+
+0 0: stiffened at the soft sound of her voice 
+0 0: his head lifted 
+
+
+0 0: logic 
+0 0: metaphysics 
+
+
+0 0: grown-ups 
+0 0: milk 
+
+0 1: the grown-ups and milk 
+0 1: fresh lemonade for the young 
+
+
+0 0: waited in growing anticipation , then as the carousel began to move she squealed with excitement 
+0 0: began laughing loudly 
+
+
+0 0: prawns 
+0 0: tidbits 
+
+
+0 0: pressure 
+0 0: throttle 
+
+0 1: deftly controlling the crucial rear wheel slide with foot pressure and throttle opening 
+0 1: steering by body positioning and weighting of the footrests 
+
+0 2: body positioning 
+0 2: weighting of the footrests 
+
+
+0 0: one 
+0 0: a half minutes the aircraft began to overshoot , correctly making an initial turn to the west 
+
+
+0 0: brilliant 
+0 0: intense beneath brows drawn together in thoughtful consideration 
+
+
+0 0: withering 
+0 0: sneering 
+
+0 1: Europe 
+0 1: the economy 
+
+
+0 0: washing up 
+0 0: hosing down the car 
+
+
+0 0: huffed impatiently 
+0 0: looked up at the overhead camera 
+
+
+0 0: stroll along the quays 
+0 0: browse among the second-hand book barrows 
+
+
+0 0: a higher risk 
+0 0: less bothered about having their home repossessed 
+
+0 1: Bristol 
+0 1: West 
+
+
+0 0: this 
+
+0 1: if you 're using EQs 
+0 1: gates 
+0 1: compressors 
+
+0 2: the whole output through the effects loop -LRB- good if you 're using EQs , gates or compressors -RRB- 
+
+0 3: the effects loop 
+0 3: straight to the power stage -LRB- best , apparently , for when you have a multi-processor in the loop 
+
+
+0 0: fished in the Soviet Arctic 
+
+0 1: I 've fished in the Soviet Arctic and in Argentina for example 
+0 1: just recently 
+
+
+0 0: partner 
+0 0: supplier 
+
+0 1: energy 
+0 1: raw 
+
+
+0 0: as an input to it 
+0 0: in fact speakers 
+
+0 1: ethnic 
+0 1: status 
+0 1: age 
+
+
+0 0: the German guns seemed to have gained strength , pouring a hail of shells across the river and into the Allied positions 
+
+0 1: a hail of shells across the river 
+
+
+0 0: Our brief discussion of economic objectives 
+0 0: their relationship to the level of national income 
+
+0 1: all 
+0 1: some 
+
+
+0 0: Count Nikolai Tolstoy 
+0 0: Nigel Watts 
+
+0 1: 70,000 Yugoslavs 
+0 1: Russian Cossacks 
+
+
+0 0: Sam 
+0 0: Omero 
+0 0: Minky 
+0 0: all the other animals 
+
+0 1: please obey the signs 
+0 1: do not 
+
+
+0 0: tugged at the zip on the back of her dress while she unbuttoned his shirt 
+0 0: removed his tie 
+
+
+0 0: a deficit 
+0 0: public sector borrowing requirement -LRB- PSBR -RRB- 
+
+
+0 0: It has been forwarded from my previous address 
+0 0: it is well out of date 
+
+
+0 0: fair 
+0 0: followed 
+
+
+0 0: artefacts 
+0 0: problems 
+
+0 1: As the artefacts and problems of the early research became apparent 
+0 1: bubble 
+
+0 2: ceased 
+0 2: then reversed 
+
+
+0 0: silks 
+0 0: veils 
+
+0 1: She moved nearer , her silks and veils rustling about her 
+0 1: we all watched with the same affection that she invoked from family and friends alike 
+
+0 2: family 
+0 2: friends 
+
+
+0 0: January 1 
+
+
+0 0: I was still submerged in stinking , suffocating nest 
+0 0: and 
+
+0 1: I was still submerged in stinking , suffocating nest 
+0 1: but 
+0 1: here 's the rub-a-dub-dub -- I was at least three pits further out 
+
+
+0 0: The path was ankle-deep in weeds 
+0 0: to either side the overgrown rhododendrons , heavy with flowers , crowded in over the mosses and ferns of a mild damp climate 
+
+0 1: mosses 
+0 1: ferns 
+
+
+0 0: Cabinet members 
+0 0: other senior administrators 
+
+0 1: were also obliged to attend indoctrination sessions where major figures , from the president down , lectured them on the virtues of teamwork 
+0 1: exhorted them to remain faithful to the principles of Reaganism 
+
+
+0 0: was experiencing lower abdominal pain , feeling nauseated 
+0 0: worried about the prospect of an operation as she had never been in hospital before and was not often ill 
+
+0 1: had never been in hospital before 
+0 1: was not often ill 
+
+
+0 0: her shabby white cotton blouse 
+0 0: her dark green skirt 
+
+0 1: her blue-black 
+0 1: glossy curls drawn up 
+
+0 2: was , in her shabby white cotton blouse and her dark green skirt , with her blue-black and glossy curls drawn up 
+0 2: knotted simply on the top of her head 
+
+0 3: glowing 
+0 3: vital 
+
+
+0 0: is branded as the Millenium Power System 
+0 0: was introduced in the US in 1990 
+
+
+0 0: for children 
+0 0: on using computers 
+
+0 1: Other publications included guidance on medical evidence , on acting for children and on using computers 
+0 1: the second and third editions respectively of the highly successful Conveyancing Handbook and the Directory of Solicitors and Barristers 
+
+0 2: second 
+0 2: third 
+
+0 3: the highly successful Conveyancing Handbook 
+0 3: the Directory of Solicitors and Barristers 
+
+0 4: Solicitors 
+0 4: Barristers 
+
+
+0 0: left her car in the doctors ' parking area 
+0 0: walked across the darkened expanse , stepping round the puddles 
+
+
+0 0: history 
+0 0: tradition 
+
+0 1: by its ambience of University life 
+0 1: by majestic medieval and renaissance architecture 
+
+0 2: medieval 
+
+
+0 0: bristles 
+0 0: another pair of feathery appendages through which oxygen is absorbed 
+
+0 1: ; 
+0 1: within the body wall , a pair of tubes opening to the exterior from which waste is secreted 
+
+
+0 0: To see a strange room with a view of white hills out of the window 
+0 0: a sheathed sword propped against the table 
+
+
+0 0: the coq au vin the waiter shoveled on to their plates , from a mysteriously divided dish , some wilted vegetables 
+0 0: Richard 
+
+
+0 0: solid character 
+0 0: open mind 
+
+
+0 0: roused 
+0 0: all gates 
+
+
+0 0: GCE 
+0 0: CSE 
+0 0: technical examinations respectively 
+
+
+0 0: emotional 
+
+
+0 0: sick 
+0 0: awed 
+
+
+0 0: Do n't be tempted to use wire of too high a rating for the circuit 
+0 0: NEVER use any other metallic object to rewire a fuse 
+
+
+0 0: establishing a rapport 
+0 0: initiating trust and building confidence 
+
+0 1: trust 
+0 1: building 
+
+0 2: the importance attached to establishing a rapport and initiating trust and building confidence 
+0 2: all that shit -LRB- and I 'm almost flattered they have n't done the old good-cop bad-cop routine , though maybe they just do n't do that at all any more because everybody knows about it from the TV -RRB- , but I really do feel something for McDunn : he 's like my lifeline back to reality , my ray of sanity 
+
+0 3: -LRB- 
+
+0 4: -RRB- 
+0 4: I 
+
+
+0 0: -RSB- 
+0 0: presented in redrafted form in June 
+
+
+0 0: bulging 
+0 0: leaning walls and chimney breasts 
+
+0 1: walls 
+0 1: chimney 
+
+0 2: damp 
+0 2: rotting or infested wood 
+
+0 3: rotting 
+0 3: infested 
+
+0 4: movement 
+0 4: subsidence 
+
+0 5: bulging 
+0 5: sagging floors and ceilings 
+
+0 6: floors 
+0 6: ceilings 
+
+0 7: soft 
+0 7: hollow 
+
+0 8: blocked 
+0 8: inadequate 
+
+0 9: adequate 
+0 9: safe 
+
+0 10: adequate and safe water 
+0 10: gas 
+0 10: electrical services 
+
+
+0 0: were clasped around the small of her back 
+0 0: pulled his arms upward 
+
+
+0 0: A tuft box with two hundred 
+0 0: seventy colors 
+
+0 1: interior designers 
+0 1: architects 
+0 1: specifiers one of the wildest choices available for special designs 
+
+
+0 0: forego some of the geometry accuracy of urban structures 
+0 0: allow your watercolor paper to pay a substantial role in the formation of your image 
+
+
+0 0: Mrs Gaskell 
+0 0: Dickens 
+
+
+0 0: discrimination 
+0 0: social workers 
+
+
+0 0: miscarried 
+0 0: stillborn 
+
+
+0 0: suffered 
+0 0: starved in that particular disgraceful military episode 
+
+
+0 0: -- 
+0 0: if you follow the advice in this article 
+
+0 1: demands the highest possible standards of fish photography -- but if you follow the advice in this article 
+0 1: take a high quality picture of your fish 
+
+
+0 0: of her little boy 
+0 0: she was trembling with the effort of holding him still 
+
+
+0 0: to have a great deal of his own way 
+0 0: seemed able to follow his bent whenever the weather permitted 
+
+
+0 0: disassembled 
+0 0: crated for shipment to London 
+
+0 1: The Tri-Pacer was disassembled and crated for shipment to London 
+0 1: ten days before the rally started the container could n't be found 
+
+
+0 0: another slug of gin 
+0 0: slopped in some tonic water 
+
+
+0 0: Carved 
+0 0: gilded 
+
+0 1: Carved and gilded ornament 
+0 1: chimney pieces 
+0 1: floor boards 
+0 1: the saloon chandelier 
+0 1: window shutters 
+0 1: the dining room carpet 
+
+
+0 0: is action based 
+0 0: the fast sweep of the hand reflects the swirling movement of wind through the trees 
+
+
+0 0: writing 
+0 0: its complete economy 
+
+
+0 0: the all important submerged oxygenating plants 
+0 0: else 
+
+
+0 0: continue 
+0 0: intensify their co-operation in the field of environmental protection on the basis of their agreement of Oct. 25 , 1988 
+
+
+0 0: Father Luke 
+0 0: `` 
+0 0: did n't the Lord give me the privilege of bein ' right be'ind them 
+
+
+0 0: smiled 
+0 0: simpered but , when she glimpsed me , her face became as hard as stone 
+
+0 1: when she glimpsed me 
+
+
+0 0: in Edenic gardens -LRB- pp. 112 , 146 -- 7 -RRB- and the drug-induced languor in darkened recesses of cafes 
+
+0 1: -RRB- 
+0 1: the drug-induced languor 
+
+
+0 0: county 
+0 0: Mr 
+
+
+0 0: wore loose trousers 
+0 0: a shirt of pale colors 
+
+0 1: Like all the other vibrancers in the house , she wore loose trousers and a shirt of pale colors 
+0 1: also affected a bright red embroidered waistcoat to denote her superiority in status 
+
+
+0 0: ; 
+0 0: -LRB- 5 -RRB- will finally retard the speed of development 
+
+
+0 0: are unchanged ... player coach Greg Downs has served his suspension 
+0 0: has named himself as sub ... a man to watch is young Gareth Davies he 's been having trials with Liverpool and may have a future at Anfield 
+
+0 1: 's been having trials with Liverpool 
+0 1: may have a future at Anfield 
+
+
+0 0: my tackle 
+0 0: consequently the bait , will behave as naturally as possible 
+
+
+0 0: has been recuperating from the shoulder wound at the Steadman-Hawkins Clinic 
+0 0: had made enough progress to prompt speculation that she might , after all , be fit to defend her French Open title 
+
+
+0 0: Allen 
+0 0: Dicks 
+
+
+0 0: your own ideas 
+0 0: to discuss possible explanations with colleagues 
+
+
+0 0: fortunately few 
+
+0 1: These people are fortunately few and far between because they are extremely odd 
+0 1: have 
+
+
+0 0: dark 
+0 0: quiet 
+
+0 1: harsh 
+0 1: lonely 
+
+
+0 0: For his summer holiday he went with Henry Legerton to Positano , seeing Italy for the first time 
+
+
+0 0: Height 
+0 0: Weight 
+
+0 1: I am plump -- according to the `` Height and Weight '' charts I am on the heavy side of OK 
+0 1: my weight has stayed the same since I was fourteen 
+
+0 2: overeating 
+
+
+0 0: this type of information 
+
+0 1: have the necessary vision 
+0 1: can read 
+
+0 2: presupposes that the recipients have the necessary vision and can read 
+0 2: that they are sufficiently orientated to understand what they are reading 
+
+
+0 0: time 
+0 0: lack of incentives 
+
+
+0 0: come unzipped 
+0 0: a new strand is synthesized against each pre-existing one 
+
+
+0 0: holiness 
+0 0: rapture 
+
+
+0 0: Isabel 's body 
+0 0: her lashes 
+
+
+0 0: She clicked her false teeth together 
+0 0: announced with something of the normal snap in her voice that she was going to call Margaret right now 
+
+
+0 0: not to set up a Public Enquiry 
+
+
+0 0: painter 
+0 0: decorator 
+
+0 1: painter and decorator -RRB- 
+0 1: one child aged eighteen months 
+
+0 2: a hoover 
+0 2: either a washing machine or access to a launderette 
+
+0 3: a washing machine 
+
+0 4: a washing machine 
+0 4: access to a launderette 
+
+
+0 0: feigned surprise 
+0 0: stated that he had n't given the solution because he did n't know it 
+
+
+0 0: three decrees 
+0 0: a presidential agreement on property rights on Sept. 9 
+
+0 1: property 
+0 1: land 
+
+0 2: 1979 
+0 2: 1990 
+
+
+0 0: Most of Rory 's pals in London were in the International Marxist Croup 
+0 0: here he was ; wandering the hills with an upper class dingbat who just happened to be married to his sister and who lived for huntin ' , shootin ' and fishin ' -LRB- and seemed to spend the absolute minimum amount of time in his castle with his wife -RRB- , and who had just last year rationalized half the work force in the glass factory out of a job 
+
+0 1: wandering the hills with an upper class dingbat who just happened to be married to his sister 
+0 1: who lived for huntin ' , shootin ' and fishin ' -LRB- and seemed to spend the absolute minimum amount of time in his castle with his wife 
+
+0 2: ' 
+0 2: fishin 
+
+0 3: -LRB- 
+
+0 4: wandering the hills with an upper class dingbat who just happened to be married to his sister and who lived for huntin ' , shootin ' and fishin ' -LRB- and seemed to spend the absolute minimum amount of time in his castle with his wife -RRB- 
+0 4: who had just last year rationalized half the work force in the glass factory out of a job 
+
+
+0 0: A German Zeppelin had flown over the Scottish coast at Leith 
+0 0: dropped a bomb which by pure luck hit a bonded warehouse full of whisky , which went up in large flames , thus lighting up the darkened city 
+
+
+0 0: the obligation is based on the sort of reasons that philosophers have adduced in support of an obligation to obey , which have been refuted by various writers in recent years 
+0 0: will be briefly considered below 
+
+
+0 0: piloted in 18 colleges 
+0 0: one school over the last two sessions 
+
+
+0 0: The newspaper cuttings had gone from behind the cassettes on the shelf 
+0 0: they had Polly 's word for it that they were all concerned with kidnapping 
+
+0 1: they had Polly 's word for it that they were all concerned with kidnapping 
+0 1: specifically with ransom notes 
+
+
+0 0: laxative 
+0 0: course 
+
+
+0 0: shuddered 
+0 0: Matchsticks thought it was a huge joke and laughed loudly 
+
+0 1: Matchsticks thought it was a huge joke 
+0 1: laughed loudly 
+
+
+0 0: the lines 
+0 0: curves of the drawing or design 
+
+0 1: drawing 
+0 1: design 
+
+
+0 0: barricades 
+0 0: armed patrols 
+
+0 1: an emergency session of the Croatian Assembly passed a resolution outlawing `` parallel '' government bodies 
+0 1: voluntary armed formations 
+
+
+0 0: processed 
+0 0: distributed information 
+
+
+0 0: plundered 
+0 0: pillaged 
+
+0 1: The abbey was plundered and pillaged , its treasures looted , its roofs pulled off 
+0 1: what was once man 's homage to God became a nesting place for foxes , ravens and kites 
+
+0 2: foxes 
+0 2: ravens 
+0 2: kites 
+
+
+0 0: lay an historic mission : to circumnavigate London using hired transport 
+0 0: return within 80 days 
+
+
+0 0: to link any pioneering agricultural communities 
+0 0: to increase settlement in the `` clay belt '' 
+
+
+0 0: Weberian 
+0 0: Durkheimian 
+
+0 1: -- 
+0 1: perhaps not only the ones which , as we have seen , have already been purloined by Marxism 
+
+
+0 0: rose slowly , meeting the prince 's eyes for the first time 
+0 0: seeing how quickly he re-directed his gaze 
+
+
+0 0: curving 
+0 0: lifting itself to the hardness of his in obedience to the quickening in her loins 
+
+
+0 0: he depicted a shoeshine man , street musicians , a woman ironing , another drilling a road 
+0 0: lovers embracing among a row 
+
+
+0 0: Francis Thompson 
+0 0: in it 
+
+
+0 0: his cheesecloth khurtan 
+0 0: flares 
+0 0: girly locks 
+
+
+0 0: end the conflict with Israel 
+0 0: much to gain by posing , from a safe distance , as its uncompromising foe 
+
+
+0 0: elves 
+0 0: diseased-looking goblins which were meant to enhance the magic of the season 
+
+0 1: The children shuffled forward through the eerie mechanical tableaux of spasmodically slaving elves and diseased-looking goblins which were meant to enhance the magic of the season 
+0 1: braced themselves for weighty problems concerning the value of duplicity -LRB- about having been good all year -RRB- and the reward of same 
+
+0 2: weighty problems concerning the value of duplicity -LRB- about having been good all year -RRB- 
+0 2: the reward of same 
+
+
+0 0: my grave 
+0 0: weep 
+
+
+0 0: skilled 
+0 0: semi-skilled 
+0 0: unskilled 
+
+
+0 0: He clung shivering to the comfortless bed that seemed now the only tenuous security he had 
+0 0: he was plucked away from it and hustled through the doorway 
+
+0 1: plucked away from it 
+0 1: hustled through the doorway 
+
+0 2: cold 
+0 2: sleep 
+
+
+0 0: Howard smiles 
+0 0: frowns , and thinks about it seriously as they all have tea in the orchard , and Miriam , in her dark glasses and clothes for motoring out to the country in , smokes furiously to keep away the insects , and chatters on about what happened when they went to dinner with the Chases the previous week , and Michael Wayland forgot Prue 's name 
+
+0 1: frowns 
+0 1: thinks about it 
+
+0 2: Miriam 
+
+0 3: her dark glasses 
+0 3: clothes for motoring out to the country in , smokes furiously to keep away the insects , and chatters on about what happened when they went to dinner with the Chases the previous week 
+
+0 4: in , smokes furiously to keep away the insects 
+0 4: chatters on about what happened when they went to dinner with the Chases the previous week 
+
+0 5: in her dark glasses and clothes for motoring out to the country in , smokes furiously to keep away the insects , and chatters on about what happened when they went to dinner with the Chases the previous week 
+0 5: Michael 
+
+
+0 0: IR 
+0 0: Raman 
+
+0 1: P 
+0 1: R branches 
+
+
+0 0: He has had to come to terms with the tragic loss of friends from the very start of his climbing career 
+0 0: while he responds politely to my questions on this subject , I do not pierce the necessary shroud of self-protection that surrounds such memories 
+
+
+0 0: feeling the park sway around him as he panted 
+0 0: when the dizzy motion stopped he was looking through the brilliant air at a thatched dwelling , snow-laden , secreted among the trees , its dark jetty seized in ice 
+
+
+0 0: His mother had been crying as she had rifled the house for money for him 
+0 0: as she had made sandwiches to put in greaseproof paper because it would be dangerous for him to stop at cafes on his way to the airport 
+
+
+0 0: out-boxed 
+0 0: out-hit 
+0 0: out-maneuvered 
+
+
+0 0: feeling 
+0 0: charitable works 
+0 0: education 
+
+0 1: monasteries 
+0 1: nunneries 
+
+
+0 0: zest 
+0 0: animation she knew must have been the norm for Penry Vaughan before his marriage 
+
+0 1: zest and animation she knew must have been the norm for Penry Vaughan before his marriage -- 
+
+
+0 0: The station was conceived in the grandest imperial manner 
+0 0: although there was much interesting architectural detail , the statuary which was supposed to adorn the entrance and other parts of the exterior was never sculpted as the colder economic winds of the late 1920s began to blow 
+
+0 1: the entrance 
+0 1: other parts of the exterior 
+
+
+0 0: a tendency to overcompensate and carry out too much fact-finding in a rather loose fashion , or to simply focus on specific information processes with a view to introducing new technology 
+
+0 1: overcompensate 
+0 1: carry out too much fact-finding in a rather loose fashion , or to simply focus on specific information processes with a view to introducing new technology 
+
+0 2: a rather loose fashion 
+0 2: to simply focus on specific information processes with a view to introducing new technology 
+
+
+0 0: rolled in a 100-foot eagle putt on his way to a two-under-par 70 
+
+
+0 0: panpipes 
+0 0: recorders 
+
+0 1: on panpipes and recorders 
+0 1: variously punctuated by the sound of castanets 
+0 1: triangles 
+0 1: whistles 
+
+
+0 0: safety 
+0 0: several lightweights 
+
+
+0 0: Another fifteen years 
+
+
+0 0: shortlisting 
+0 0: interviewing should involve more than one person 
+
+
+0 0: a young man to perfect his English grammar 
+0 0: he despised having to listen to the inarticulate outpourings of the President 
+
+
+0 0: shook his long limbs loose 
+0 0: a frown of puzzlement bunched his forehead 
+
+
+0 0: that he was averse to needles 
+0 0: that he had once fainted when giving a sample of blood 
+
+
+0 0: that she 'd never had before 
+0 0: respect 
+0 0: position as Lady of Duart 
+
+
+0 0: their swinging guitars 
+0 0: electronic keyboards 
+
+
+0 0: Nicodemus was reminded by Jesus , `` The wind -LRB- pneuma -RRB- blows where it will 
+0 0: you hear its sound 
+
+0 1: as Nicodemus was reminded by Jesus , `` The wind -LRB- pneuma -RRB- blows where it will , and you hear its sound 
+0 1: you do not know where it comes from or where it is going 
+
+0 2: know where it comes from 
+0 2: where it is going 
+
+
+0 0: belt 
+0 0: tie 
+0 0: shoelaces 
+0 0: everything in his pockets 
+
+0 1: Lucas had been relieved of belt , tie , shoelaces , and everything in his pockets 
+0 1: now he sat in the far corner on the mattress with his knees drawn up and his arms clasped around them , as if to present the smallest possible outer surface to the world 
+
+0 2: drawn up 
+
+
+0 0: condensed a vacuum is formed under the piston 
+0 0: the piston is forced down the cylinder by steam from the boiler 
+
+
+0 0: evangelize by friendship 
+0 0: by high profile healing meetings 
+
+
+0 0: actions 
+0 0: decisions 
+
+
+0 0: it 
+
+0 1: fanaticism 
+0 1: fear 
+
+0 2: the gramophone records of Paul Robeson were expunged from the catalogs 
+0 2: the novels of Theodore Dreiser and the detective stories of Dashiell Hammett were purged from public libraries 
+
+0 3: Theodore Dreiser 
+0 3: the detective stories of Dashiell Hammett 
+
+
+0 0: the user 
+0 0: a pressure gage which told us how much air we had in our tanks 
+
+0 1: pack 
+0 1: harness 
+
+
+0 0: hesitated then moved to the scrubbed table 
+0 0: sat down abruptly 
+
+
+0 0: set her fingertips tingling 
+0 0: her scalp crackling 
+
+
+0 0: another senior officer 
+0 0: two members of the authority 
+
+
+0 0: acknowledges this 
+0 0: sees the Incarnation as the means by which all men , both living and dead , can be united 
+
+0 1: living 
+0 1: dead 
+
+0 2: Christ 
+0 2: its significance 
+
+0 3: the linear and cyclical experience of the passing of time 
+
+0 4: linear 
+0 4: cyclical 
+
+
+0 0: pattering 
+0 0: gnawing 
+
+
+0 0: was centrifuged 
+0 0: the supernatant retained 
+
+
+0 0: retrieved the mug 
+0 0: clicked her tongue in annoyance 
+
+
+0 0: still higher interest rates 
+0 0: a relaxation in her opposition to the pound 's joining the ERM 
+
+
+0 0: died in 1639 
+0 0: he was predeceased by a son and a daughter 
+
+0 1: a son 
+0 1: a daughter 
+
+
+0 0: collated each month 
+0 0: sent to NACAB central office via the area offices 
+
+
+0 0: a slightly rugose body 
+0 0: a head with multiple points 
+
+
+0 0: two 
+
+
+0 0: hard routes 
+0 0: new lines 
+
+
+0 0: started 
+0 0: sustained by the exploitation of religious beliefs 
+
+0 1: Many wars have been started or sustained by the exploitation of religious beliefs 
+0 1: even if this method of prolonging wars could be removed by a rationalized attitude to `` god '' and religion , it does not necessarily follow that wars would never be started , but nevertheless they might well be greatly shortened 
+
+0 2: '' 
+0 2: religion 
+
+0 3: god '' and religion , it does not necessarily follow that wars would never be started 
+0 3: nevertheless they might well be greatly shortened 
+
+
+0 0: As Gabriel took his seat at the top of the pageant , hidden by a wooden cloud , Garvey robed himself down below in the Mason 's wedding robe 
+0 0: Izzie 
+
+
+0 0: the Langtons 
+0 0: Grossetestes 
+0 0: De Montforts 
+
+0 1: king 
+0 1: pope 
+
+
+0 0: knelt beside her 
+0 0: clasped her hands passionately 
+
+
+0 0: biological 
+0 0: social 
+
+0 1: parenting 
+0 1: alcoholism 
+
+
+0 0: interact 
+0 0: with 
+
+0 1: itself 
+
+0 2: Myc 
+0 2: Max HLH-Z domains 
+
+0 3: investigated the relative affinities of the Myc and Max HLH-Z domains for themselves 
+0 3: for each other using a yeast assay that monitors protein-protein interactions in vivo -LRB- Fig. 3 a -RRB- 
+
+
+0 0: c-type 
+0 0: two 
+
+0 1: two c-type and two a-type IR bands 
+0 1: all coinciding with depolarized Raman bands 
+0 1: one Raman band without a counterpart in the IR spectrum 
+
+
+0 0: after sunbathing 
+
+0 1: soft 
+0 1: moist 
+
+
+0 0: at an impressionable age 
+
+0 1: retain -LSB- them -RSB- at an impressionable age and to mould 
+
+0 2: was not so much to impart skills , `` as to retain -LSB- them -RSB- at an impressionable age and to mould and discipline their character '' 
+0 2: in such cases specialization or technical training would be out of place 
+
+0 3: specialization 
+0 3: technical 
+
+
+0 0: speed 
+0 0: alertness 
+0 0: armor 
+0 0: spinescence 
+0 0: burrowing habits 
+0 0: nocturnal habits 
+0 0: poisonous secretions 
+0 0: nauseous taste 
+0 0: -LRB- camouflage and other kinds of protective coloration -RRB- 
+
+0 1: camouflage 
+0 1: other 
+
+0 2: ; 
+0 2: for offense 
+
+0 3: ambush 
+0 3: allurement 
+0 3: visual acuity 
+0 3: claws 
+0 3: teeth , stings , poison fangs 
+0 3: -LRB- lures -RRB- 
+
+
+0 0: stimulating 
+0 0: co-ordinating 
+
+0 1: the German occupation 
+0 1: the activity of the White armies 
+
+
+0 0: academic 
+0 0: college 
+0 0: research 
+
+0 1: BIS confines itself to activity in the academic , college and research libraries -LRB- where most library instruction takes place -RRB- 
+0 1: the various committees 
+
+0 2: co-operative 
+0 2: co-ordinating 
+
+
+0 0: Roman catholic adoption agencies , the source for the majority of children awaiting adoption 
+
+0 1: are not obliged to assign baptized Roman catholic children to such couples 
+0 1: whether they do or not is not a matter of public knowledge 
+
+0 2: do 
+0 2: not 
+
+
+0 0: pornography 
+0 0: danger 
+
+0 1: those visual devices which seem to suggest pornography and danger 
+0 1: which end up suggesting only titillation and glamor 
+
+0 2: titillation 
+0 2: glamor 
+
+
+0 0: a whole battery of growth factors 
+0 0: cell surface receptors 
+0 0: other tantalizing genes 
+
+
+0 0: plates 
+0 0: cutlery 
+
+
+0 0: boyish 
+0 0: smooth 
+0 0: neat 
+
+
+0 0: object 
+0 0: effect 
+
+
+0 0: opposed Georgian independence 
+0 0: sought to secede 
+
+
+0 0: placed it in her arms 
+
+
+0 0: concentration 
+0 0: attention 
+
+
+0 0: is no longer correlated with the error term v t , since v t does not appear in equation -LRB- 3.17 -RRB- 
+0 0: so 
+
+
+0 0: the tensile strength 
+
+0 1: pre-fracturing 
+0 1: that the tectonic component of 12312 was underestimated 
+
+
+0 0: came in the person of Lance Sieveking , a fastidious producer who came to Canada on loan to CBC 
+0 0: spent a week or so in each of the regions 
+
+0 1: so 
+
+
+0 0: It falls to the floor , an ugly little lump of metal 
+0 0: the boys sit transfixed for minutes before they eat again 
+
+
+0 0: Frank Gilfeather rehearsed his opening 
+0 0: tried to find a point of interest with which to introduce us on screen 
+
+
+0 0: Britain pilot 
+0 0: Lebanese hostage Jackie Mann with a display by Spitfire V AB910 over Lyneham 
+
+
+0 0: fruit 
+0 0: vegetables 
+
+0 1: scrubbed 
+0 1: raw in salads 
+
+0 2: raw in salads 
+
+
+0 0: had to send his justices to the clergy 's deliberations 
+0 0: threatened to take the names of opposers 
+
+0 1: Nevertheless , the king had to send his justices to the clergy 's deliberations and threatened to take the names of opposers 
+0 1: it took all Winchelsey 's good will and best arts to elicit from them a grant of one tenth for the current year and another 
+
+0 2: took all Winchelsey 's good will 
+0 2: best arts 
+
+0 3: elicit from them a grant of one tenth for the current year 
+0 3: another 
+
+
+0 0: See yah around , '' Billy bawled over his shoulder 
+0 0: waved as the bike took off towards the main Bristol road 
+
+
+0 0: reached out 
+0 0: clasped her shoulders 
+
+
+0 0: reduce the sensation of the violence of exploitation 
+0 0: also 
+
+
+0 0: electronics 
+0 0: time 
+
+
+0 0: anticipation 
+0 0: at one with our surroundings 
+
+
+0 0: look at the drop on his right 
+0 0: becoming ever more aware of the cold 
+
+0 1: wind 
+0 1: eerie 
+
+0 2: heaven 
+0 2: earth 
+
+
+0 0: too bad 
+0 0: too nice 
+
+
+0 0: -- 
+0 0: to what at the time is considered perfection -- a grandiose dish of sole in a white wine and cream sauce with a ceremonial garnish of freshwater crayfish , fried gudgeons , oysters , mushrooms and prawns impaled on ornamental skewers 
+
+0 1: wine 
+0 1: cream 
+
+0 2: oysters 
+0 2: mushrooms 
+0 2: prawns impaled on ornamental skewers 
+
+
+0 0: tennis 
+0 0: table 
+
+0 1: ramble 
+0 1: transport 
+
+
+0 0: clear the mind 
+0 0: establish ownership by starting with a proper brainstorming session on what `` Best Imaginable '' really means 
+
+
+0 0: so 
+
+0 1: how weak 
+0 1: cruel 
+0 1: uncaring 
+0 1: lazy 
+0 1: insensitive 
+
+
+0 0: family 
+
+
+0 0: failed to dislodge General Manuel Noriega 
+0 0: squeezed the economy dry 
+
+0 1: some 18,000 people homeless 
+0 1: unemployment soaring 
+
+
+0 0: a bottle 
+0 0: a bed pan 
+
+
+0 0: fluffy frosting 
+0 0: the large tortoise nibbling a piece of lettuce 
+
+
+0 0: cramped 
+0 0: dark 
+
+0 1: manage 
+0 1: flout modern fire safety regulations 
+
+
+0 0: Luke 
+0 0: her nakedness 
+
+
+0 0: Refuelling 
+0 0: re-ammunitioning these vessels and those protecting an anchorage involved a complex fleet-train of ships in the Pacific , sometimes operating nearly 2,000 miles -LRB- 3,700 + km 
+
+0 1: re-ammunitioning these vessels 
+0 1: those protecting an anchorage involved a complex fleet-train of ships in the Pacific , sometimes operating nearly 2,000 miles -LRB- 3,700 + km 
+
+0 2: 3,700 
+
+
+0 0: He has dispensed with Matteo 's landscape 
+0 0: set the figure against a gold background , which with an exact copy of the gilded frame makes for an authoritative , splendid work 
+
+
+0 0: sap 
+0 0: energy 
+
+0 1: develop new growth into which they direct their sap and energy , bear bloom 
+0 1: which then -- as it becomes old and tired -- gradually either becomes starved , by-passed , neglected and finally aborted as the plant constantly turns its attention to new growth , or it develops a barky exterior layer as it settles down to becoming no more than a main road communicating between the raw material goods received from the warehouse in the soil and the production factory upstairs -- quite often , a very long way upstairs 
+
+0 2: old 
+0 2: tired 
+
+0 3: becomes starved 
+
+0 4: neglected 
+0 4: finally aborted as the plant constantly turns its attention to new growth , or it develops a barky exterior layer as it settles down to becoming no more than a main road communicating between the raw material goods received from the warehouse in the soil and the production factory upstairs -- quite often , a very long way upstairs 
+
+0 5: new growth 
+0 5: it develops a barky exterior layer as it settles down to becoming no more than a main road communicating between the raw material goods received from the warehouse in the soil and the production factory upstairs -- quite often 
+
+0 6: the soil 
+0 6: the production factory upstairs 
+
+
+0 0: another criticism of the individualist philosophies of utilitarians 
+0 0: of economists who saw early man as a kind of Robinson Crusoe trying to interact with nature in isolation and according to ideas and institutions which he had created on the spot 
+
+0 1: a kind of Robinson Crusoe trying to interact with nature in isolation 
+0 1: according to ideas and institutions which he had created on the spot 
+
+0 2: ideas 
+0 2: institutions 
+
+
+0 0: that of his modest estate 
+0 0: , in particular , the Irish copyright to his writings 
+
+
+0 0: friends 
+0 0: neighbors 
+
+
+0 0: Other wardens were from time to time granted leave by Henry III to postpone their accounts at the Exchequer 
+0 0: he remitted the debts of others 
+
+
+0 0: poor ventilation 
+0 0: an insufficient exercising area 
+
+
+0 0: ghosted by professional writers 
+0 0: therefore 
+
+
+0 0: the bottom-dwelling 
+0 0: burrowing bivalves 
+
+
+0 0: 10,000,000 
+0 0: Papin 
+
+
+0 0: places 
+0 0: events 
+
+0 1: Dialogue 
+0 1: Dilation 
+
+0 2: denote 
+0 2: signify a blend of the two previously mentioned narrative types 
+
+
+0 0: that he may speak this 
+0 0: that 
+
+
+0 0: would pass into the baby universe 
+0 0: would reemerge as the particles emitted by another black hole 
+
+
+0 0: investment 
+0 0: R&D 
+
+0 1: physical capital investment or R&D to reduce costs , pre-emptive patenting 
+0 1: manipulation of demand conditions by advertising or brand proliferation -LRB- for a skeptical analysis see Smiley , 1988 -RRB- 
+
+0 2: advertising 
+0 2: brand proliferation 
+
+
+0 0: dark 
+0 0: brooding 
+
+
+0 0: huge 
+0 0: dilated 
+
+
+0 0: negotiated 
+0 0: re-negotiated 
+
+0 1: These asymmetries are continually negotiated and re-negotiated 
+0 1: it is significant that they seem to have settled down , in our own period , mainly along a line of division between newer and older means of production , with the market dominant in the new reproductive technologies and subsidy most evident in the older `` live '' forms 
+
+0 2: newer 
+0 2: older 
+
+0 3: the new reproductive technologies 
+0 3: subsidy most evident in the older `` live '' forms 
+
+
+0 0: to harness two Shetland ponies to a dog cart 
+0 0: give all the children who were too small to manage their own 
+
+
+0 0: illegality 
+0 0: at least 
+
+0 1: political 
+0 1: monetary 
+
+
+0 0: The interview schedule , then , is essentially an intermediate stage in research 
+0 0: it fulfills a variety of functions 
+
+
+0 0: Kermit 
+0 0: his staff watched and waited -- they were expecting a blow but they did not or could not comprehend how severe it was to be 
+
+0 1: watched 
+0 1: waited -- they were expecting a blow but they did not or could not comprehend how severe it was to be 
+
+0 2: a blow 
+0 2: they did not or could not comprehend how severe it was to be 
+
+0 3: not 
+0 3: could not comprehend how severe it was to be 
+
+
+0 0: his consistory 
+0 0: Thomas of Marlborough , who had appeared as proctor for the abbey 
+
+
+0 0: John Stephenson 
+0 0: Nasser Hussain getting two of them as Essex romped home with eight overs remaining 
+
+
+0 0: will attempt to claim the high moral ground over the issue of open specifications 
+0 0: is likely to cloak Microsoft in a mantle that was once the preserve of IBM 
+
+
+0 0: As if the world had suddenly , during those last three days , been re-invented 
+0 0: for me alone 
+
+
+0 0: soothing 
+0 0: uplifting 
+
+0 1: mischance 
+0 1: difficulty 
+
+
+0 0: fumbled back to his position to the right of the screen 
+0 0: somehow Busacher got them all through the rest of the act 
+
+
+0 0: intellectual 
+0 0: letter 
+
+0 1: superiors 
+0 1: friends 
+
+0 2: ; 
+0 2: on a variety of counts I have traversed England , and France too many times 
+
+0 3: on a variety of counts I have traversed England 
+0 3: France too many times 
+
+
+0 0: carefully dried out 
+0 0: caused words of thanksgiving to God to be inscribed in it 
+
+
+0 0: the word `` twenty '' has one strong 
+0 0: one weak syllable , forming one foot 
+
+
+0 0: is stand on the terraces with a short sleeve shirt in zero degrees 
+0 0: having someone urinate down your leg 
+
+0 1: is stand on the terraces with a short sleeve shirt in zero degrees and having someone urinate down your leg 
+
+
+0 0: assaulted 
+0 0: knocked unconscious as he walked along Northgate just after 8pm on Friday 
+
+
+0 0: pricked their ears 
+0 0: tried not to smile 
+
+0 1: pricked their ears and tried not to smile 
+0 1: then the surgery door would burst open and eject ... a little old lady , pink with pleasure 
+
+0 2: burst open 
+0 2: eject ... a little old lady , pink with pleasure 
+
+
+0 0: the bovine mRNA 
+0 0: genomic sequences -LRB- not shown -RRB- 
+
+
+0 0: vibrated faintly 
+0 0: rapidly 
+
+
+0 0: slalom 
+0 0: polo 
+
+0 1: short 
+0 1: directionally unstable 
+
+
+0 0: '' 
+
+
+0 0: the families in the little awkward places , at the heads of the small glens , on boggy ground that would not drain -- they were nearly helpless 
+
+0 1: improve the ground 
+0 1: knowing that , even if they did , they could still be turned out next term day and their place annexed to the holding of a better-off neighbor 
+
+0 2: turned out next term day 
+0 2: their place annexed to the holding of a better-off neighbor 
+
+
+0 0: conscientious 
+0 0: uninterested 
+
+0 1: imaginative 
+0 1: perhaps wayward 
+
+
+0 0: out 
+0 0: cut off from the attachment he both yearned for and feared 
+
+0 1: yearned for 
+0 1: feared 
+
+
+0 0: got himself home 
+0 0: called police 
+
+
+0 0: Refrigeration is another large expense 
+0 0: we have economised by 20 % - and that 's enough power to run all the household fridges in Wolverhampton 
+
+0 1: - 
+0 1: that 's enough power to run all the household fridges in Wolverhampton 
+
+
+0 0: Carefully 
+0 0: she slid her left leg off the table 
+0 0: over to the tray , the leg almost on its side and bent at the knee to reach the tray , which was almost level with her hip 
+
+0 1: side 
+0 1: bent 
+
+
+0 0: the highest branches 
+0 0: the best view of the dancers below 
+
+

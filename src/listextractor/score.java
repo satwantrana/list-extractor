@@ -98,18 +98,27 @@ public class score{
 		// pextract e = new pextract(d);
 		deptree d = new deptree();
 		dextract e = new dextract(d);
-		Scanner in = new Scanner(new File("inp.txt"));
+		Scanner in = new Scanner(new File("inp_large.txt"));
 		String inp = "";
-		while(in.hasNext()) inp += in.nextLine() + "\n";
+		Integer sentcnt=0;
+		while(in.hasNext()){
+			inp += in.nextLine() + "\n";
+			sentcnt++;
+		}
+		// System.out.println(sentcnt);
 		e.process(inp);
-		Integer[][][][] gold,cand = e.lists(); Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
-		
+		// ee.process(inp);
+		// Integer[] sentszd = ee.sentsize();
+		Integer[][][][] gold,cand = e.lists(); Integer[][] temp; Integer[] sentsz = e.sentsize(), sentszg; Integer t,n,m,x,y;
+		// System.out.println("Starts!");
 		t = cand.length;
-		
+		// System.out.println(t);
 		for(Integer i=0;i<t;i++){
 			n = cand[i].length;
+			// System.out.println(n);
 			for(Integer j=0;j<n;j++){
 				m = cand[i][j].length;
+				// System.out.println(t+":"+i+" "+n+":"+j+" "+m);
 				temp = new Integer[m][sentsz[i]];
 				for(Integer k=0;k<m;k++){
 					Arrays.fill(temp[k],0);
@@ -134,18 +143,23 @@ public class score{
 
 		gold g = new gold();
 		gold = g.list(sentsz);
-
+		sentszg = g.sentsize();
 		score s;
 
 		double[] sentsc; double avg=0,cnt=0,cntc=0,cntg=0,pre=0,rec=0;
-
-		for(Integer i=0;i<29;i++){
+		// System.out.println(cand.length+" "+gold.length);
+		for(Integer i=0;i<gold.length;i++){
 			System.out.println("Sentence #"+i+":");
-			System.out.println("Candidate Lists: "+cand[i].length+"\tGold Lists: "+gold[i].length);
+			// System.out.println("Candidate Lists: "+cand[i].length+"\tGold Lists: "+gold[i].length);
+			if(sentsz[i]!=sentszg[i]){
+				System.out.println();
+				continue;
+			}
 			s = new score(cand[i],gold[i],sentsz[i]);
 			sentsc = s.solve();
 			for(Integer j=0;j<sentsc.length;j++){
-				System.out.print("List #"+j+": "+sentsc[j]+"\t");
+				// System.out.print("List #"+j+": "+sentsc[j]+"\t");
+				if(sentsc[j]>0)System.out.print(sentsc[j]+" ");
 				avg += sentsc[j];
 			}
 			cnt += cand[i].length;
@@ -156,6 +170,6 @@ public class score{
 		avg /= cnt;
 		pre /= cntc;
 		rec /= cntg;
-		System.out.println("Average Score: "+avg+"\tPrecision: "+pre+"\tRecall: "+rec);
+		// System.out.println(cnt+" Average Score: "+avg+"\tPrecision: "+pre+"\tRecall: "+rec);
 	}
 }

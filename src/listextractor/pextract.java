@@ -29,11 +29,12 @@ public class pextract
 	}
 
 	public void process(String sent) throws Exception{
-		Pair<List<Tree>,List<List<TaggedWord> > > p = t.get(sent);
+		Pair<List<Tree>,List<List<TaggedWord> > > p = t.get(sent.split("\n"));
 		trees = p.getValue0();
 		tokens = p.getValue1();
 		cclist = new Integer[trees.size()][];
 		list = new Integer[trees.size()][][][];
+		System.out.println(list.length);
 		for(Integer i=0;i<trees.size();i++) listextractor(i);
 	}
 
@@ -61,8 +62,14 @@ public class pextract
 		Integer flag=-1;
 		for(Integer i=0;i<child.length;i++){
 			listheads(idx,child[i]);
-			if(child[i].value().equals("CC") && !child[i].isLeaf()) flag=i;
+			if(child[i].value().startsWith("CC") && !child[i].isLeaf()) calclistheads(i,idx,nd);
+			// System.out.println("Tag: "+child[i].value()+" "+child[i].label()+" "+child[i].nodeString()+" "+child[i].value()+" "+flag);
 		}
+	}
+	public void calclistheads(int flag, Integer idx,Tree nd){
+		// System.out.println(nd.value()+" ");
+		// if(flag>=0)System.out.println(flag+" "+child[flag].value());
+		Tree[] child = nd.children();
 		if(flag>=0){
 			Integer cnt=0,mn=flag,mx=flag,comma=1;
 			for(Integer i=flag-1;i>=0;i--){
@@ -86,13 +93,13 @@ public class pextract
 			list[idx][tot] = new Integer[cnt][2];
 			cnt=0;
 			cclist[idx][tot] = index.get(child[flag].children()[0].nodeNumber(trees.get(idx)));
-			System.out.println(idx+" "+tot+" "+cclist[idx][tot]);
+			// System.out.println(idx+" "+tot+" "+cclist[idx][tot]);
 			for(Integer i=mn;i<=mx;i++){
 				if(i==flag) continue;
 				if(child[i].value().equals(",") || child[i].value().equals(".")) continue;
 				list[idx][tot][cnt] = listelems(child[i],idx);
-				child[i].pennPrint();
-				System.out.println(list[idx][tot][cnt][0]+" "+list[idx][tot][cnt][1]);
+				// child[i].pennPrint();
+				// System.out.println("Range: "+list[idx][tot][cnt][0]+" "+list[idx][tot][cnt][1]);
 				String temp = tokens.get(idx).get(list[idx][tot][cnt][1]).tag();
 				if(temp.equals(",")||temp.equals(".")) list[idx][tot][cnt][1]--;
 				cnt++;
@@ -137,7 +144,7 @@ public class pextract
 		list[idx] = new Integer[tot][][];
 		cclist[idx] = new Integer[tot];
 		tot=0;
-		// System.out.println(trees.get(idx));
+		// System.out.println("Sentence "+idx+": "+trees.get(idx));
 		listheads(idx, trees.get(idx));
 	}
 
@@ -155,7 +162,7 @@ public class pextract
 		for(Integer idx=0;idx<list.length;idx++){
 			ret[idx] = new String[list[idx].length][];
 			for(Integer i=0;i<list[idx].length;i++){
-				if(list[idx][i]==null) continue;
+				// if(list[idx][i]==null) continue;
 				ret[idx][i] = new String[list[idx][i].length];
 				for(Integer j=0;j<list[idx][i].length;j++){
 					ret[idx][i][j] = "";
@@ -163,7 +170,7 @@ public class pextract
 						ret[idx][i][j]+=(word(tokens.get(idx).get(k).toString())+" ");
 					}
 					// System.out.println(list[idx][i][j][0]+" "+list[idx][i][j][1]+":\t"+ret[idx][i][j]);
-					System.out.println(ret[idx][i][j]);
+					System.out.println(idx+" "+i+": "+ret[idx][i][j]);
 				}
 				System.out.println();
 			}	
