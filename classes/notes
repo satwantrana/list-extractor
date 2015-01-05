@@ -1,0 +1,4 @@
+1. Tweak DP for null edges.
+2. Add start and end token in Language Model.
+3. Find best parameters.
+4. Degrade to base line.

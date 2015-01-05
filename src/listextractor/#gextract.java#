@@ -11,17 +11,29 @@ import java.lang.*;
 import java.lang.Math;
 import org.javatuples.*;
 
+import opennlp.tools.postag.*;
+import opennlp.tools.chunker.*;
+import opennlp.tools.util.*;
+import opennlp.tools.tokenize.*;
+import opennlp.tools.parser.*;
+import opennlp.tools.cmdline.postag.POSModelLoader;
+import opennlp.tools.cmdline.parser.ParserTool;
+import opennlp.tools.namefind.TokenNameFinderModel;
+import opennlp.tools.namefind.NameFinderME;
+
 public class gextract{
 	extract e;
 	langmodel l;
 	similarity s;
 	String[][][] dep;
 	Integer[][][][] list;
-	public gextract(deptree t, String simserver, int simport, String lmserver, int lmport) throws Exception{
+    ChunkerME chunker;
+    public gextract(deptree t, String simserver, int simport, String lmserver, int lmport) throws Exception{
 		e = new extract(t);
 		s = new similarity(simserver, simport);
 		l = new langmodel(lmserver, lmport);
-	}
+	        chunker = new ChunkerME(new ChunkerModel(new FileInputStream("en-chunker.bin")));
+    }
 	public Integer[] sentsize(){
 		return e.sentsize();
 	}
@@ -32,18 +44,25 @@ public class gextract{
 	    var /= lis.size();
 	    return 1./var;
         }
-	Double problist(Integer[][] clist, String[][] cdep, Double p, Double q){
-		ArrayList< ArrayList< String> > a = new ArrayList< ArrayList <String> > ();
+    
+    ArrayList<ArrayList<String> > chunk(String[] tokens, String[] tags){
+	String[] chunks = chunkers
+    }
+    
+    Double problist(Integer[][] clist, String[][] cdep, Double p, Double q){
+		ArrayList< ArrayList< ArrayList< String> > > a = new ArrayList< ArrayList <ArrayList <String> > >();
 		ArrayList<String> b;
 		Double sprob=0., lprob = 0.;
 		ArrayList<Double> lprobs = new ArrayList<Double>();
 		for(Integer i=0;i<clist.length;i++){
-		        b = new ArrayList<String>();
+		    String bt = new String[Math.max(clist[i][1]-clist[i][0]+1,0)], bp = new String[Math.max(clist[i][1]-clist[i][0]+1,0)];
 			for(Integer j=clist[i][0]; j<=clist[i][1]; j++){
-			    if(cdep[j][6].equals("num")) b.add(cdep[j][2]);
-			    else b.add(cdep[j][1]);
+			    if(cdep[j][6].equals("num")) bt[j-clist[i][0]] = (cdep[j][2]);
+			    else bt[j-clist[i][0]] = (cdep[j][1]);
+			    bp[j-clist[i][0]] = cdep[j][3];
 			}
-			a.add(b);
+			c = chunk(bt,bp);
+			a.add(c);
 			b = new ArrayList<String>();
 			b.add("<s>");
 			for(Integer j=0;j<clist[0][0]; j++){

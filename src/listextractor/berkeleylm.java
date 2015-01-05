@@ -16,7 +16,14 @@ public class berkeleylm extends Thread{
 	public berkeleylm(String vocabFile, String binaryFile,int port) throws Exception{
 		lm = LmReaders.readGoogleLmBinary(binaryFile, vocabFile);
 		serverSocket = new ServerSocket(port);
-      	//serverSocket.setSoTimeout(10000);
+		/*String line = "I live here .";
+		Scanner in = new Scanner(System.in);
+		while(!(line = in.nextLine()).equals("#")){
+		    List<String> words = Arrays.asList(line.trim().split("\\s+"));
+		    float logProb = lm.getLogProb(words);
+		    System.out.println(words+" "+logProb);
+		}*/
+		//serverSocket.setSoTimeout(10000);
 	}
 
 	public float ngramprob(ArrayList<String> ngram){

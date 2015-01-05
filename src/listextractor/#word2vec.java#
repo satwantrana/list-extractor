@@ -43,7 +43,7 @@ public class word2vec extends Thread{
 	    a = a.toLowerCase();
 	    b = b.toLowerCase();
 	    if( !map.containsKey(a) || !map.containsKey(b))
-		return Math.log(1e-18); 
+		return Math.log(1e-1); 
 	    int i = map.get(a);
 	    int j = map.get(b);
 	    double ret = 0;
@@ -55,7 +55,7 @@ public class word2vec extends Thread{
 	    }
 	    A = Math.sqrt(A);
 	    B = Math.sqrt(B);
-	    Syste
+	    //System.out.println(a+" "+b+" "+A+" "+B+" "+ret);
 	    return Math.log(ret/ (A * B));
 	}
     }
@@ -75,7 +75,7 @@ public class word2vec extends Thread{
 		//System.out.println(Math.log(vec.similarity(a,b)));
 	    return vec.cosine(a,b); 
 	}
-	public ArrayList<String> readData(Socket server) {
+q	public ArrayList<String> readData(Socket server) {
 	    try {
 		    InputStream socketStream = server.getInputStream();
 		    ObjectInputStream objectInput = new ObjectInputStream(new GZIPInputStream(socketStream));

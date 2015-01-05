@@ -45,7 +45,7 @@ public class score{
 		}
 		hungarian h = new hungarian(cost,n);
 		h.solve();
-		pre += h.match()/h.mcount(); rec += h.ymatch()/h.ymcount();
+		pre += h.match()/(1.*cand[x].length); rec += h.ymatch()/(1.*gold[y].length);
 		pcnt++; rcnt++;
 		return h.match()/n;
 	}
@@ -84,22 +84,34 @@ public class score{
 		return sc;
 	}
 
+    
 	public static void main(String[] args) throws FileNotFoundException,Exception{
 		
 		deptree d = new deptree();
-		extract e = new extract(d);
-		//gextract e = new gextract(d,"localhost",Integer.parseInt(args[0]),"localhost",Integer.parseInt(args[1]));
-		Scanner in = new Scanner(new File("inp.txt"));
-		String inp = "";
-		while(in.hasNext()) inp += in.nextLine() + "\n";
-		e.process(inp);
+		//extract e = new extract(d);
+		gextract e = new gextract(d,"localhost",Integer.parseInt(args[0]),"localhost",Integer.parseInt(args[1]));
+		BufferedReader in = new BufferedReader(new FileReader(new File("inp.txt"))); 
+		ArrayList<String> inp = new ArrayList<String>();
+		String line; 
+		while((line = in.readLine()) != null)inp.add(line);
+		int[] lens = new int[inp.size()];
+		for (int i=0;i<inp.size();i++){
+		    lens[i] = inp.get(i).split(" ").length;
+		}
+		//System.out.println(inp.get(0)+"\n"+inp.get(inp.size()-1)+"\n");
 		Integer[][][][] gold,cand;
-		//cand = e.lists(Double.parseDouble(args[2]),Double.parseDouble(args[3]));
-		cand = e.lists();
-		Integer[][] temp; Integer[] sentsz = e.sentsize(); Integer t,n,m,x,y;
-		
+		cand = new Integer[lens.length][][][];
+		Integer[][] temp; Integer[] sentsz = new Integer[lens.length]; Integer t,n,m,x,y;
+		//System.out.println("Num of sentences: "+inp.size()+" "+lens.length+" "+sentsz.length);
+
+	        for(int i=0;i<cand.length;i++){
+		    e.process(inp.get(i));
+		    //cand[i]  = e.lists()[0];
+		    cand[i] = e.lists(Double.parseDouble(args[2]),Double.parseDouble(args[3]))[0]; 
+		    sentsz[i] = e.sentsize()[0];
+		}
+
 		t = cand.length;
-		
 		for(Integer i=0;i<t;i++){
 			n = cand[i].length;
 			for(Integer j=0;j<n;j++){
@@ -127,29 +139,34 @@ public class score{
 		}
 
 		gold g = new gold();
-		gold = g.list(sentsz);
+		
+		gold = g.list(lens);
 
 		score s;
 
 		double[] sentsc; double avg=0,cnt=0,cntc=0,cntg=0,pre=0,rec=0;
-
-		for(Integer i=0;i<cand.length;i++){
+		Integer scnt = 0;
+		//System.out.println(cand.length+" "+gold.length);
+		for(Integer i=0;i<Math.min(sentsz.length, lens.length);i++){
 			System.out.println("Sentence #"+i+":");
 			System.out.println("Candidate Lists: "+cand[i].length+"\tGold Lists: "+gold[i].length);
-			s = new score(cand[i],gold[i],sentsz[i]);
-			sentsc = s.solve();
-			for(Integer j=0;j<sentsc.length;j++){
+			if(lens[i] == sentsz[i]){
+			    s = new score(cand[i],gold[i],sentsz[i]);
+			    sentsc = s.solve();
+			    for(Integer j=0;j<sentsc.length;j++){
 				System.out.print("List #"+j+": "+sentsc[j]+"\t");
 				avg += sentsc[j];
+			    }
+			    cnt += cand[i].length;
+			    pre += s.pre; rec += s.rec;
+			    cntc += s.pcnt; cntg += s.rcnt;
+			    scnt++;
+			    System.out.println();
 			}
-			cnt += cand[i].length;
-			pre += s.pre; rec += s.rec;
-			cntc += s.pcnt; cntg += s.rcnt;
-			System.out.println();
 		}
 		avg /= cnt;
 		pre /= cntc;
 		rec /= cntg;
-		System.out.println("Average Score: "+avg+"\tPrecision: "+pre+"\tRecall: "+rec);
+		System.out.println("Average Score: "+avg+"\tPrecision: "+pre+"\tRecall: "+rec+"\tSentences: "+scnt);
 	}
 }

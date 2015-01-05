@@ -59,6 +59,8 @@ public class langmodel{
 	    }
 	}
 	public float ngramprob(List<String> a){
+	    //if(langMap.size() > 1000000)
+	    //System.out.println("Language model map size: "  + langMap.size()); 
 	    if(langMap.get(a)!=null) return langMap.get(a);
 		try{
 			server = new Socket(serverName, port);
@@ -80,12 +82,12 @@ public class langmodel{
 	double computeProb(List<String> words){
 		double prob=0.; double cnt=0.;
 		try {
-			for(int i=0;i<words.size();i++){
-				float cur = ngramprob(words.subList(i,Math.min(words.size(),i+2)));
+			for(int i=0;i<words.size()-1;i++){
+				float cur = ngramprob(words.subList(i,i+2));
 				if (Float.isNaN(cur)){
 					cur = (float)0.4*ngramprob(words.subList(i,i+1));
 					if(Float.isNaN(cur)){
-					    System.out.println("Probability is Nan "+i+" "+words.get(i));
+					    //System.out.println("Probability is Nan "+i+" "+words.get(i));
 					    continue;
 					}
 					//System.out.println(i+" "+words.get(i)+" : "+words.get(Math.min(i+1,words.size()-1)));

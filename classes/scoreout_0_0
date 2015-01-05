@@ -1,0 +1,630 @@
+Sentence #0:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 1.0	
+Sentence #1:
+Candidate Lists: 2	Gold Lists: 1
+List #0: 0.8174603174603176	List #1: 0.0	
+Sentence #2:
+Candidate Lists: 3	Gold Lists: 3
+List #0: 1.0	List #1: 0.18004778972520907	List #2: 0.1657142857142857	
+Sentence #3:
+Candidate Lists: 5	Gold Lists: 4
+List #0: 0.0	List #1: 0.7368421052631579	List #2: 0.7602339181286549	List #3: 0.597953216374269	List #4: 0.6962962962962962	
+Sentence #4:
+Candidate Lists: 5	Gold Lists: 4
+List #0: 0.0	List #1: 0.4797799583705025	List #2: 0.7338709677419355	List #3: 0.4168269230769231	List #4: 0.6678773204196933	
+Sentence #5:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 0.7555555555555555	List #1: 0.5382395382395382	
+Sentence #6:
+Candidate Lists: 2	Gold Lists: 1
+List #0: 0.775	List #1: 0.0	
+Sentence #7:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.18055555555555555	
+Sentence #8:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8225806451612904	
+Sentence #9:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8222222222222223	
+Sentence #10:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8205128205128206	
+Sentence #11:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8166666666666668	
+Sentence #12:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8209876543209876	
+Sentence #13:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 0.4869281045751634	List #1: 0.6486486486486487	
+Sentence #14:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 0.5579365079365078	List #1: 0.7787234042553192	
+Sentence #15:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8157894736842105	
+Sentence #16:
+Candidate Lists: 2	Gold Lists: 1
+List #0: 0.0	List #1: 1.0	
+Sentence #17:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.8232323232323232	
+Sentence #18:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #19:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #20:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #21:
+Candidate Lists: 2	Gold Lists: 3
+Sentence #22:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #23:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #24:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #25:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #26:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #27:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #28:
+Candidate Lists: 1	Gold Lists: 3
+Sentence #29:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #30:
+Candidate Lists: 1	Gold Lists: 2
+List #0: 0.18906810035842295	
+Sentence #31:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #32:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #33:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #34:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #35:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #36:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #37:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #38:
+Candidate Lists: 4	Gold Lists: 1
+Sentence #39:
+Candidate Lists: 3	Gold Lists: 3
+Sentence #40:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #41:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #42:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #43:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #44:
+Candidate Lists: 4	Gold Lists: 2
+Sentence #45:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #46:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #47:
+Candidate Lists: 2	Gold Lists: 4
+Sentence #48:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #49:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #50:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #51:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #52:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #53:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #54:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #55:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #56:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #57:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #58:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #59:
+Candidate Lists: 0	Gold Lists: 1
+Sentence #60:
+Candidate Lists: 2	Gold Lists: 3
+Sentence #61:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #62:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #63:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #64:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #65:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #66:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #67:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 0.26666666666666666	List #1: 0.328125	
+Sentence #68:
+Candidate Lists: 3	Gold Lists: 2
+Sentence #69:
+Candidate Lists: 1	Gold Lists: 3
+Sentence #70:
+Candidate Lists: 6	Gold Lists: 1
+Sentence #71:
+Candidate Lists: 2	Gold Lists: 4
+Sentence #72:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #73:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #74:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #75:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #76:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #77:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #78:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #79:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #80:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #81:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #82:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #83:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #84:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #85:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #86:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #87:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #88:
+Candidate Lists: 3	Gold Lists: 3
+Sentence #89:
+Candidate Lists: 2	Gold Lists: 3
+Sentence #90:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #91:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #92:
+Candidate Lists: 6	Gold Lists: 1
+Sentence #93:
+Candidate Lists: 1	Gold Lists: 6
+Sentence #94:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #95:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #96:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #97:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #98:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #99:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.13076923076923078	
+Sentence #100:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #101:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #102:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #103:
+Candidate Lists: 1	Gold Lists: 2
+List #0: 0.3111035111719106	
+Sentence #104:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #105:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #106:
+Candidate Lists: 3	Gold Lists: 2
+Sentence #107:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #108:
+Candidate Lists: 4	Gold Lists: 1
+Sentence #109:
+Candidate Lists: 2	Gold Lists: 3
+Sentence #110:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #111:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #112:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #113:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #114:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.14791666666666667	
+Sentence #115:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #116:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #117:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #118:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #119:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #120:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #121:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #122:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #123:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #124:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #125:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #126:
+Candidate Lists: 3	Gold Lists: 2
+Sentence #127:
+Candidate Lists: 4	Gold Lists: 3
+Sentence #128:
+Candidate Lists: 1	Gold Lists: 3
+Sentence #129:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #130:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #131:
+Candidate Lists: 4	Gold Lists: 1
+Sentence #132:
+Candidate Lists: 2	Gold Lists: 4
+Sentence #133:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #134:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #135:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #136:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #137:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #138:
+Candidate Lists: 4	Gold Lists: 1
+Sentence #139:
+Candidate Lists: 1	Gold Lists: 4
+Sentence #140:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #141:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #142:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #143:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #144:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #145:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #146:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #147:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #148:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #149:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #150:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #151:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #152:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #153:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #154:
+Candidate Lists: 3	Gold Lists: 2
+Sentence #155:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #156:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #157:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #158:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #159:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #160:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #161:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #162:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #163:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #164:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #165:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #166:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #167:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #168:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #169:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #170:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #171:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #172:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #173:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #174:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #175:
+Candidate Lists: 3	Gold Lists: 2
+Sentence #176:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #177:
+Candidate Lists: 1	Gold Lists: 3
+Sentence #178:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #179:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #180:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #181:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #182:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #183:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #184:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #185:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #186:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #187:
+Candidate Lists: 1	Gold Lists: 3
+Sentence #188:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #189:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #190:
+Candidate Lists: 4	Gold Lists: 1
+Sentence #191:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #192:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #193:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #194:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #195:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #196:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #197:
+Candidate Lists: 3	Gold Lists: 2
+Sentence #198:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #199:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #200:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #201:
+Candidate Lists: 4	Gold Lists: 1
+Sentence #202:
+Candidate Lists: 1	Gold Lists: 4
+Sentence #203:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #204:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #205:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #206:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #207:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #208:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #209:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #210:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #211:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #212:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #213:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #214:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #215:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #216:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #217:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #218:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #219:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #220:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #221:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #222:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #223:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #224:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #225:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #226:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #227:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #228:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #229:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #230:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #231:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #232:
+Candidate Lists: 5	Gold Lists: 1
+Sentence #233:
+Candidate Lists: 1	Gold Lists: 4
+Sentence #234:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #235:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #236:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #237:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #238:
+Candidate Lists: 4	Gold Lists: 1
+Sentence #239:
+Candidate Lists: 1	Gold Lists: 3
+Sentence #240:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #241:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #242:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #243:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #244:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #245:
+Candidate Lists: 4	Gold Lists: 1
+Sentence #246:
+Candidate Lists: 0	Gold Lists: 4
+Sentence #247:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #248:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #249:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.444078947368421	
+Sentence #250:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.6133333333333333	
+Sentence #251:
+Candidate Lists: 2	Gold Lists: 1
+List #0: 0.0	List #1: 0.8252032520325203	
+Sentence #252:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #253:
+Candidate Lists: 2	Gold Lists: 1
+List #0: 0.5888888888888888	List #1: 0.0	
+Sentence #254:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #255:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #256:
+Candidate Lists: 2	Gold Lists: 1
+List #0: 1.0	List #1: 0.0	
+Sentence #257:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.512263099219621	
+Sentence #258:
+Candidate Lists: 2	Gold Lists: 2
+List #0: 0.2587301587301587	List #1: 0.8722222222222221	
+Sentence #259:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #260:
+Candidate Lists: 3	Gold Lists: 3
+Sentence #261:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 1.0	
+Sentence #262:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.5571428571428572	
+Sentence #263:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.41964285714285715	
+Sentence #264:
+Candidate Lists: 4	Gold Lists: 3
+Sentence #265:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #266:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.6873563218390805	
+Sentence #267:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 0.24684873949579833	
+Sentence #268:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #269:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 1.0	
+Sentence #270:
+Candidate Lists: 1	Gold Lists: 1
+List #0: 1.0	
+Sentence #271:
+Candidate Lists: 0	Gold Lists: 1
+Sentence #272:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #273:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #274:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #275:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #276:
+Candidate Lists: 1	Gold Lists: 3
+Sentence #277:
+Candidate Lists: 3	Gold Lists: 1
+Sentence #278:
+Candidate Lists: 3	Gold Lists: 3
+Sentence #279:
+Candidate Lists: 3	Gold Lists: 2
+Sentence #280:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #281:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #282:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #283:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #284:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #285:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #286:
+Candidate Lists: 1	Gold Lists: 1
+Sentence #287:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #288:
+Candidate Lists: 2	Gold Lists: 2
+Sentence #289:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #290:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #291:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #292:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #293:
+Candidate Lists: 2	Gold Lists: 1
+Sentence #294:
+Candidate Lists: 1	Gold Lists: 2
+Sentence #295:
+Candidate Lists: 0	Gold Lists: 4
+Average Score: 0.5364800357273571	Precision: 0.7078733234135273	Recall: 0.658646148187538

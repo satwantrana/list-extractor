@@ -50,6 +50,8 @@ public class similarity {
 	    }
 	}
 	public Double wordsim(String a, String b){
+	    //if(simMap.size() > 100000)
+	    //	System.out.println("Word vector map size: " + simMap.size());
 	    if(simMap.get(Pair.with(a,b)) != null) return simMap.get(Pair.with(a,b));
 	        try{
 			server = new Socket(serverName, port);
@@ -110,8 +112,8 @@ public class similarity {
 			py = tpy;
 		}
 		//System.out.println();
-		if(cnt[n][m]>0) dp[n][m]/=cnt[n][m];
-		return dp[n][m];
+		// if(cnt[n][m]>0) dp[n][m]/=cnt[n][m];
+		return dp[n][m] /( n * m ) ;
     }
 
     public static void main(String[] args) throws Exception{

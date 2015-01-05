@@ -43,7 +43,7 @@ public class word2vec extends Thread{
 	    a = a.toLowerCase();
 	    b = b.toLowerCase();
 	    if( !map.containsKey(a) || !map.containsKey(b))
-		return Math.log(1e-18); 
+		return Math.log(1e-1); 
 	    int i = map.get(a);
 	    int j = map.get(b);
 	    double ret = 0;
