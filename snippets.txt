@@ -1,2 +1,0 @@
-javac -d classes -cp :classes:../../lib/stanford/*:../../lib/clearnlp/*:../../lib/random/* src/listextractor/score.java
-java -Xmx4G -XX:+UseConcMarkSweepGC -cp :../../../lib/stanford/*:../../../lib/clearnlp/*:../../../lib/random/* listextractor/score ../../../lib/stanford/english-left3words-distsim.tagger ../../../lib/stanford/englishSR.beam.ser.gz <inp_large.txt >pout_large.txt 
