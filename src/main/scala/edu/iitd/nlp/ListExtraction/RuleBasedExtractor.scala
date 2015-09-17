@@ -16,30 +16,42 @@ class RuleBasedExtractor {
   def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange]) = {
     val (tokens, parse) = parser.dependencyGraph(tokenizer, postagger)(sentence)
 
-    val adjMap = parse.edges.map(e => (e.source,(e.dest,e.label))).groupBy(_._1)
-      .map{case (n,s) => (n,s.map(_._2))}
-
-    val lists = mutable.ArrayBuffer[ListRange]()
-
-    def dfs(node: DependencyNode): (Boolean,Int,Int) = {
-      val res = if(adjMap.getOrElse(node,Seq()).isEmpty){
-        Seq(((tokens(node.id).isCoordinatingConjunction, node.id,node.id),""))
-      }
-      else{
-        val dfsRes = adjMap(node).map{case (n,l) => (dfs(n),l)}.toSeq
-        val ranges = dfsRes ++ Seq(((tokens(node.id).isCoordinatingConjunction, node.id, node.id),""))
-        ranges
-      }
-      val coordinatingConjuncts = res.filter(x => x._1._1).map(x => x._1._2)
-      val ccId = if(coordinatingConjuncts.nonEmpty) coordinatingConjuncts.last else -1
-      val filteredRes = res.filter(x => !x._1._1 && x._2 == "conj").map(x => (x._1._2,x._1._3))
-      if (ccId != -1 && filteredRes.nonEmpty){
-        lists += ListRange(ccId, filteredRes)
-      }
-      val curRange = (tokens(node.id).isCoordinatingConjunction, res.map(x => x._1._2).min, res.map(x => x._1._3).max)
-      curRange
+    val adjMap = parse.edges.foldLeft(Map[DependencyNode,Set[(DependencyNode, String)]]()) {
+      case (m, e) => m.updated(e.source, m.getOrElse(e.source,Set()) + ((e.dest,e.label)))
+                      .updated(e.dest, m.getOrElse(e.dest,Set()) + ((e.source,e.label)))
     }
-    dfs(parse.root.get)
+    val childMap = parse.edges.foldLeft(Map[DependencyNode,Set[(DependencyNode, String)]]()) {
+      case (m, e) => m.updated(e.source, m.getOrElse(e.source,Set()) + ((e.dest,e.label)))
+    }
+
+    def dfs(node: DependencyNode): (Int,Int) = {
+      val children = childMap.getOrElse(node, Set()).filter(x => x._2 != "cc" && x._2 != "conj")
+
+      val res = if (children.isEmpty) Set((node.id, node.id))
+      else children.map(c => dfs(c._1)) + ((node.id, node.id))
+
+      val range = (res.map(_._1).min, res.map(_._2).max)
+      range
+    }
+
+    val pruneFromEnd = Set(",", ".")
+
+    val lists = adjMap.filter{
+      case (n,s) =>
+        val labels = s.map(_._2)
+        labels.contains("cc") && labels.contains("conj")
+    }.map{
+      case (n,s) =>
+        val cc = s.filter(_._2 == "cc").last._1
+        val elems = s.filter(_._2 == "conj").map(_._1) + n
+        val elemsRange = elems.map(dfs).map{
+          case (s,e) =>
+            if(s<e && e < tokens.size && pruneFromEnd.contains(tokens(e).string)) (s,e-1)
+            else (s,e)
+        }.toSeq.sorted
+        ListRange(cc.id, elemsRange)
+    }.toSeq
+
     (tokens, parse, lists)
   }
 
@@ -58,5 +70,5 @@ object RuleBasedExtractorMain extends LoggingWithUncaughtExceptions with App{
   logger.info(s"Sentence: $sent")
   val (tokens, parse, listRanges) = extractor.extractListRange(sent)
   val lists = extractor.extractLists(tokens, listRanges)
-  logger.info(s"Parse Tree: $parse\nLists: $lists")
+  logger.info(s"Tokens: $tokens\nParse Tree: $parse\nLists: $lists")
 }
