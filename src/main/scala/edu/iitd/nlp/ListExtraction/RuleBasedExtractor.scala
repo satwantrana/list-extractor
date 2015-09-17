@@ -7,12 +7,7 @@ import org.allenai.nlpstack.parse.{defaultDependencyParser => parser}
 import org.allenai.nlpstack.postag.{ defaultPostagger => postagger }
 import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
 
-import scala.collection.mutable
-
-case class ListRange(ccPos: Int, elemsRange: Seq[(Int, Int)])
-case class List(cc: String, elems: Seq[String])
-
-class RuleBasedExtractor {
+class RuleBasedExtractor extends ListExtractor{
   def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange]) = {
     val (tokens, parse) = parser.dependencyGraph(tokenizer, postagger)(sentence)
 
