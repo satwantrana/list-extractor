@@ -14,10 +14,11 @@ libraryDependencies ++= Seq(
   nlpstackModule("chunk"),
   nlpstackModule("lemmatize"),
   nlpstackModule("parse"),
-  nlpstackModule("segment")
+  nlpstackModule("segment"),
+  unitTesting
 )
 
-javaOptions in Revolver.reStart += "-Xmx14G"
+javaOptions += "-Xmx4G"
 
 conflictManager := ConflictManager.default
 
