@@ -22,6 +22,7 @@ trait ListScorer {
   def scoreList(candidateList: ListRange, goldList: ListRange): Score
   def addSentence(sentence: String, candidateLists: Seq[ListRange], goldLists: Seq[ListRange]): Unit
   def getScoreVector: Seq[(String, ListRange, Score)]
+  def getLastScore: Score
   def getAverageScore: Score
 }
 
@@ -64,5 +65,6 @@ class MaxMatchScorer extends ListScorer {
 
   def getScoreVector = scoreVector.toSeq
 
+  def getLastScore = scoreVector.last._3
   def getAverageScore = scoreSum / scoreVector.size.toDouble
 }

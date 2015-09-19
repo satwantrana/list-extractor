@@ -5,6 +5,7 @@ import org.scalatest._
 
 import scala.collection.mutable
 import scala.io.Source
+import scala.util.Random
 
 class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
   val extractor = new RuleBasedExtractor
@@ -35,6 +36,9 @@ class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions
 
     var skippedSentencesCount = 0
     val numSentences = data.next().toInt
+    val listPrintProb = 0.01
+    val r = new Random(0L)
+
     for (i <- 0 until numSentences) {
       val sent = data.next()
       val sentTokenCount = sent.split(" ").size
@@ -53,11 +57,19 @@ class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions
       }
       val (tokens, parse, candListsRange) = extractor.extractListRange(sent)
       if (tokens.size != sentTokenCount) skippedSentencesCount += 1
-      else scorer.addSentence(sent, candListsRange, goldListsRange)
+      else {
+        if (r.nextDouble() < listPrintProb) {
+          val goldLists = extractor.extractLists(tokens, goldListsRange)
+          val candLists = extractor.extractLists(tokens, candListsRange)
+          val score = scorer.getLastScore
+          logger.debug(s"Sentence: $sent\nGold Lists: $goldLists\nCandidate Lists: $candLists\nScore: $score")
+        }
+        scorer.addSentence(sent, candListsRange, goldListsRange)
+      }
     }
 
     val avgScore = scorer.getAverageScore
-    logger.info(s"Average score on British News Tree Bank dataset: $avgScore with $skippedSentencesCount sengtences skipped")
+    logger.info(s"Average score on British News Tree Bank dataset: $avgScore with $skippedSentencesCount sentences skipped")
 
     assert(avgScore.precision >= 0.7)
   }
