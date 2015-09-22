@@ -7,6 +7,9 @@ import org.allenai.nlpstack.parse.{ defaultDependencyParser => parser }
 import org.allenai.nlpstack.postag.{ defaultPostagger => postagger }
 import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
 
+import scala.collection.mutable
+import scala.collection.JavaConversions._
+
 class RuleBasedExtractor extends ListExtractor {
   def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange]) = {
     val (tokens, parse) = parser.dependencyGraph(tokenizer, postagger)(sentence)
@@ -44,18 +47,10 @@ class RuleBasedExtractor extends ListExtractor {
             if (s < e && e < tokens.size && pruneFromEnd.contains(tokens(e).string)) (s, e - 1)
             else (s, e)
         }.toSeq.sorted
-        ListRange(cc.id, elemsRange)
+        ListRange(cc.id, mutable.ArrayBuffer(elemsRange : _*))
     }.toSeq
 
     (tokens, parse, lists)
-  }
-
-  def extractLists(tokens: Seq[PostaggedToken], lists: Seq[ListRange]): Seq[List] = {
-    lists.map {
-      case ListRange(ccId, elems) => List(
-        tokens(ccId).string, elems.map(e => tokens.slice(e._1, e._2 + 1).map(_.string).mkString(" "))
-      )
-    }
   }
 }
 
@@ -69,7 +64,7 @@ object RuleBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
   logger.info(s"Tokens: $tokens\nParse Tree: $parse\nLists: $lists\n")
 
   val scorer = new MaxMatchScorer
-  val goldListRanges = Seq(ListRange(6, Seq((3, 3), (5, 5), (7, 7))))
+  val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7))))
   scorer.addSentence(sent, listRanges, goldListRanges)
   logger.info(s"Cand: $listRanges\nGold: $goldListRanges\nScore: ${scorer.getAverageScore}")
 }

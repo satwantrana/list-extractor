@@ -10,6 +10,14 @@ case class Score(precision: Double, recall: Double) {
   def /(num: Double): Score = {
     Score(precision / num, recall / num)
   }
+
+  def <(other: Score): Boolean = {
+    precision < other.precision
+  }
+
+  def >(other: Score): Boolean = {
+    ! <(other)
+  }
 }
 
 object ScoreImplicits {

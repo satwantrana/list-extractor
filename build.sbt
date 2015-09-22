@@ -15,7 +15,8 @@ libraryDependencies ++= Seq(
   nlpstackModule("lemmatize"),
   nlpstackModule("parse"),
   nlpstackModule("segment"),
-  unitTesting
+  unitTesting,
+  word2vec
 )
 
 javaOptions += "-Xmx4G"
