@@ -11,13 +11,15 @@ import scala.collection.mutable
 
 class DPBasedExtractor(lambda: Double = 1) extends ListExtractor{
   val ruleBasedExtractor = new RuleBasedExtractor
-
-  def getSimilarityScore(sentence: String, listRange: ListRange): Double = {
+  val langModelWrapper = new LanguageModelWrapper
+  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
     0
   }
 
-  def getLanguageModelScore(sentence: String, listRange: ListRange): Double = {
-    0
+  def getLanguageModelScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
+    val elemsProb =
+      listRange.elemsRange.map{case (x,y) => tokens.slice(x,y+1).map(_.string)}.map(langModelWrapper.computeAverageProb)
+    elemsProb.sum / elemsProb.size.toDouble
   }
 
   def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange]) = {
@@ -34,8 +36,8 @@ class DPBasedExtractor(lambda: Double = 1) extends ListExtractor{
         val augmentedListRange = listRange
         augmentedListRange.elemsRange(0) = (i, augmentedListRange.elemsRange.head._2)
         augmentedListRange.elemsRange(augmentedListRange.elemsRange.size-1) = (augmentedListRange.elemsRange.last._1, j)
-        val simScore = getSimilarityScore(sentence, augmentedListRange)
-        val langScore = getLanguageModelScore(sentence, augmentedListRange)
+        val simScore = getSimilarityScore(tokens, augmentedListRange)
+        val langScore = getLanguageModelScore(tokens, augmentedListRange)
         val totalScore = simScore + lambda*langScore
         if(totalScore > bestTotalScore.get){
           bestTotalScore.set(totalScore)

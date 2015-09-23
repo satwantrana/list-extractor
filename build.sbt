@@ -15,11 +15,10 @@ libraryDependencies ++= Seq(
   nlpstackModule("lemmatize"),
   nlpstackModule("parse"),
   nlpstackModule("segment"),
-  unitTesting,
-  word2vec
+  unitTesting
 )
 
-javaOptions += "-Xmx4G"
+javaOptions += "-Xmx16G"
 
 conflictManager := ConflictManager.default
 
