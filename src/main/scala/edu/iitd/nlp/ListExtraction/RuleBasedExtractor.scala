@@ -47,7 +47,7 @@ class RuleBasedExtractor extends ListExtractor {
             if (s < e && e < tokens.size && pruneFromEnd.contains(tokens(e).string)) (s, e - 1)
             else (s, e)
         }.toSeq.sorted
-        ListRange(cc.id, mutable.ArrayBuffer(elemsRange : _*))
+        ListRange(cc.id, mutable.ArrayBuffer(elemsRange : _*), 1.0)
     }.toSeq
 
     (tokens, parse, lists)
@@ -64,7 +64,7 @@ object RuleBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
   logger.info(s"Tokens: $tokens\nParse Tree: $parse\nLists: $lists\n")
 
   val scorer = new MaxMatchScorer
-  val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7))))
+  val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
   scorer.addSentence(sent, listRanges, goldListRanges)
   logger.info(s"Cand: $listRanges\nGold: $goldListRanges\nScore: ${scorer.getAverageScore}")
 }

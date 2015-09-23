@@ -13,7 +13,7 @@ class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions
   "RuleBasedExtractor" should "run correctly on a simple sentence" in {
     val sent = "I like playing hockey, cricket and football."
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
-    val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7))))
+    val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
 
     assert(listRanges == goldListRanges)
   }
@@ -21,7 +21,7 @@ class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions
   it should "give correct score on a simple sentence with MaxMatchScorer" in {
     val sent = "I like playing hockey, cricket and football."
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
-    val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7))))
+    val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
     val scorer = new MaxMatchScorer
     scorer.addSentence(sent, listRanges, goldListRanges)
     val score = scorer.getAverageScore
@@ -53,7 +53,7 @@ class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions
           val elemRange = data.next().split(" ").map(_.toInt)
           elemPos += ((elemRange.head, elemRange.last))
         }
-        goldListsRange += ListRange(ccId, elemPos)
+        goldListsRange += ListRange(ccId, elemPos, 1.0)
       }
       val (tokens, parse, candListsRange) = extractor.extractListRange(sent)
       if (tokens.size != sentTokenCount) skippedSentencesCount += 1

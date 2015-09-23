@@ -18,8 +18,9 @@ class LanguageModelWrapper {
   }
 
   def computeAverageProb(listElem: Seq[String]): Double = {
+    val listElemWithMarkers = Seq("<s>") ++ listElem ++ Seq("</s>")
     val windowLength = 2
-    val windowProbs = listElem.sliding(windowLength).map(nGramProb).filter(!_.isNaN).toList
+    val windowProbs = listElemWithMarkers.sliding(windowLength).map(nGramProb).filter(!_.isNaN).toList
     if(windowProbs.isEmpty) 0
     else windowProbs.sum / windowProbs.size.toDouble
   }
