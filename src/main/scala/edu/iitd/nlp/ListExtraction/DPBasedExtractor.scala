@@ -9,12 +9,19 @@ import org.allenai.nlpstack.core.parse.graph.DependencyGraph
 
 import scala.collection.mutable
 
-class DPBasedExtractor(var lambda: (Double, Double) = (0,1)) extends ListExtractor{
+class DPBasedExtractor(var lambda: (Double, Double) = (1,1)) extends ListExtractor{
   lambda = (lambda._1/(lambda._1 + lambda._2), lambda._2/(lambda._1 + lambda._2))
   val ruleBasedExtractor = new RuleBasedExtractor
   val langModelWrapper = new LanguageModelWrapper
+  val wordVectorWrapper = new WordVectorWrapper
+
   def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
-    0
+    val elems = listRange.elemsRange.map{
+      case (x,y) => tokens.slice(x,y+1).map(_.string)
+    }.sliding(2).map{
+      case l => wordVectorWrapper.getBagOfWordsPhraseSimilarity(l(0),l(1))
+    }
+    elems.sum / elems.size.toDouble
   }
 
   def getLanguageModelScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
@@ -22,7 +29,7 @@ class DPBasedExtractor(var lambda: (Double, Double) = (0,1)) extends ListExtract
     val rightTokens = tokens.slice(listRange.elemsRange.last._2+1,tokens.size).map(_.string)
     val elemsProb = listRange.elemsRange.map{
         case (x,y) => leftTokens ++  tokens.slice(x,y+1).map(_.string) ++ rightTokens
-      }.map(langModelWrapper.computeAverageProb)
+      }.map(langModelWrapper.getAverageProb)
     elemsProb.sum / elemsProb.size.toDouble
   }
 
@@ -43,6 +50,9 @@ class DPBasedExtractor(var lambda: (Double, Double) = (0,1)) extends ListExtract
         val simScore = getSimilarityScore(tokens, augmentedListRange)
         val langScore = getLanguageModelScore(tokens, augmentedListRange)
         val totalScore = lambda._1*simScore + lambda._2*langScore
+        logger.info(
+          s"ListRange: $augmentedListRange\tSimScore: $simScore\tLangScore: $langScore\tTotalScore: $totalScore"
+        )
         if(totalScore > bestTotalScore.get){
           bestTotalScore.set(totalScore)
           bestLeftIdx.set(i)

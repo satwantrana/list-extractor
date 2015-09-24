@@ -8,27 +8,28 @@ import edu.berkeley.nlp.lm.io._
 
 import scala.collection.JavaConversions
 
-class LanguageModelWrapper {
+class LanguageModelWrapper extends LoggingWithUncaughtExceptions{
   val vocabFile = "models/vocab_cs.gz"
   val binaryFile = "models/eng.blm.gz"
   val langModel = LmReaders.readGoogleLmBinary(binaryFile, vocabFile)
-
-  def nGramProb(nGram: Seq[String]): Double = {
+  logger.info("Loaded Language Model")
+  
+  def getNGramLogProb(nGram: Seq[String]): Double = {
     langModel.getLogProb(JavaConversions.seqAsJavaList(nGram))
   }
 
-  def computeAverageProb(listElem: Seq[String]): Double = {
+  def getAverageProb(listElem: Seq[String]): Double = {
     val listElemWithMarkers = Seq("<s>") ++ listElem ++ Seq("</s>")
     val windowLength = 2
-    val windowProbs = listElemWithMarkers.sliding(windowLength).map(nGramProb).filter(!_.isNaN).toList
+    val windowProbs = listElemWithMarkers.sliding(windowLength).map(getNGramLogProb).filter(!_.isNaN).toList
     if(windowProbs.isEmpty) 0
-    else windowProbs.sum / windowProbs.size.toDouble
+    else Math.exp(windowProbs.sum / windowProbs.size.toDouble)
   }
 }
 
 object LanguageModelWrapperMain extends App with LoggingWithUncaughtExceptions{
   val languageModelWrapper = new LanguageModelWrapper
   val string = Seq("I","like","playing","cricket", ",")
-  val prob = languageModelWrapper.computeAverageProb(string)
+  val prob = languageModelWrapper.getAverageProb(string)
   logger.info(s"String: $string\tProbability: $prob")
 }
