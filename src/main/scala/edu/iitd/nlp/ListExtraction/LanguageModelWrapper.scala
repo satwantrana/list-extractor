@@ -8,12 +8,12 @@ import edu.berkeley.nlp.lm.io._
 
 import scala.collection.JavaConversions
 
-class LanguageModelWrapper extends LoggingWithUncaughtExceptions{
+class LanguageModelWrapper extends LoggingWithUncaughtExceptions {
   val vocabFile = "models/vocab_cs.gz"
   val binaryFile = "models/eng.blm.gz"
   val langModel = LmReaders.readGoogleLmBinary(binaryFile, vocabFile)
   logger.info("Loaded Language Model")
-  
+
   def getNGramLogProb(nGram: Seq[String]): Double = {
     langModel.getLogProb(JavaConversions.seqAsJavaList(nGram))
   }
@@ -22,14 +22,14 @@ class LanguageModelWrapper extends LoggingWithUncaughtExceptions{
     val listElemWithMarkers = Seq("<s>") ++ listElem ++ Seq("</s>")
     val windowLength = 2
     val windowProbs = listElemWithMarkers.sliding(windowLength).map(getNGramLogProb).filter(!_.isNaN).toList
-    if(windowProbs.isEmpty) 0
+    if (windowProbs.isEmpty) 0
     else Math.exp(windowProbs.sum / windowProbs.size.toDouble)
   }
 }
 
-object LanguageModelWrapperMain extends App with LoggingWithUncaughtExceptions{
+object LanguageModelWrapperMain extends App with LoggingWithUncaughtExceptions {
   val languageModelWrapper = new LanguageModelWrapper
-  val string = Seq("I","like","playing","cricket", ",")
+  val string = Seq("I", "like", "playing", "cricket", ",")
   val prob = languageModelWrapper.getAverageProb(string)
   logger.info(s"String: $string\tProbability: $prob")
 }

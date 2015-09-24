@@ -47,7 +47,7 @@ class RuleBasedExtractor extends ListExtractor {
             if (s < e && e < tokens.size && pruneFromEnd.contains(tokens(e).string)) (s, e - 1)
             else (s, e)
         }.toSeq.sorted
-        ListRange(cc.id, mutable.ArrayBuffer(elemsRange : _*), 1.0)
+        ListRange(cc.id, mutable.ArrayBuffer(elemsRange: _*), 1.0)
     }.toSeq
 
     (tokens, parse, lists)

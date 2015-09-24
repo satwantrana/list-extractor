@@ -9,7 +9,7 @@ import scala.collection.mutable
 case class ListRange(ccPos: Int, elemsRange: mutable.ArrayBuffer[(Int, Int)], var conf: Double)
 case class List(cc: String, elems: Seq[String], var conf: Double)
 
-trait ListExtractor extends LoggingWithUncaughtExceptions{
+trait ListExtractor extends LoggingWithUncaughtExceptions {
   def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange])
   def extractLists(tokens: Seq[PostaggedToken], lists: Seq[ListRange]): Seq[List] = {
     lists.map {
