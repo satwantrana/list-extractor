@@ -7,15 +7,15 @@ import scala.collection.mutable
 import scala.io.Source
 import scala.util.Random
 
-class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
-  val extractor = new RuleBasedExtractor
+class TestDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
+  val extractor = new DPBasedExtractor(1, 0)
 
-  "RuleBasedExtractor" should "run correctly on a simple sentence" in {
+  "DPBasedExtractor" should "run correctly on a simple sentence" in {
     val sent = "I like playing hockey, cricket and football."
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
     val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
 
-    assert(listRanges == goldListRanges)
+    assert(listRanges.map(l => ListRange(l.ccPos, l.elemsRange, 1.0)) == goldListRanges)
   }
 
   it should "give correct score on a simple sentence with MaxMatchScorer" in {

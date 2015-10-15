@@ -14,7 +14,7 @@ trait ListExtractor extends LoggingWithUncaughtExceptions {
   def extractLists(tokens: Seq[PostaggedToken], lists: Seq[ListRange]): Seq[List] = {
     lists.map {
       case ListRange(ccId, elems, conf) => List(
-        tokens(ccId).string, elems.map(e => tokens.slice(e._1, e._2 + 1).map(_.string).mkString(" ")), conf
+        tokens(ccId).string, elems.map(e => s"\"${tokens.slice(e._1, e._2 + 1).map(_.string).mkString(" ")}\""), conf
       )
     }
   }

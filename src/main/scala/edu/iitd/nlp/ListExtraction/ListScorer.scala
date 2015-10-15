@@ -45,20 +45,20 @@ class MaxMatchScorer extends ListScorer {
   def rangeSize(a: (Int, Int)): Int = a._2 - a._1 + 1
 
   def scoreList(candList: ListRange, goldList: ListRange): Score = {
-    if (candList.ccPos != goldList.ccPos) Score(0, 0)
-    else {
-      val elemScores = for {
-        candElem <- candList.elemsRange
-        candSize = rangeSize(candElem)
-        (maxIntersection, goldSize) = goldList.elemsRange.map(g => (rangeIntersection(candElem, g), rangeSize(g))).max
-        precision = maxIntersection.toDouble / candSize.toDouble
-        recall = maxIntersection.toDouble / goldSize.toDouble
-        score = Score(precision, recall)
-      } yield score
-      val avgPrecision = elemScores.map(_.precision).sum / candList.elemsRange.size.toDouble
-      val avgRecall = elemScores.map(_.recall).sum / goldList.elemsRange.size.toDouble
-      Score(avgPrecision, avgRecall)
+    def calcAccuracy(candList: ListRange, goldList: ListRange): Double = {
+      if (candList.ccPos != goldList.ccPos) 0
+      else {
+        val elemAccuracies = for {
+          candElem <- candList.elemsRange
+          candSize = rangeSize(candElem)
+          (maxIntersection, goldSize) = goldList.elemsRange.map(g => (rangeIntersection(candElem, g), rangeSize(g))).max
+          accuracy = maxIntersection.toDouble / candSize.toDouble
+        } yield accuracy
+        elemAccuracies.sum / candList.elemsRange.size.toDouble
+      }
     }
+    val (avgPrecision, avgRecall) = (calcAccuracy(candList, goldList), calcAccuracy(goldList, candList))
+    Score(avgPrecision, avgRecall)
   }
 
   import ScoreImplicits._

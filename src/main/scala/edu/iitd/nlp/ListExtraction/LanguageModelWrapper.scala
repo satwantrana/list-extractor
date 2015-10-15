@@ -15,12 +15,14 @@ class LanguageModelWrapper extends LoggingWithUncaughtExceptions {
   logger.info("Loaded Language Model")
 
   def getNGramLogProb(nGram: Seq[String]): Double = {
-    langModel.getLogProb(JavaConversions.seqAsJavaList(nGram))
+    val prob = langModel.getLogProb(JavaConversions.seqAsJavaList(nGram))
+    if (prob.isNaN) 0.4 * getNGramLogProb(nGram.dropRight(1)) //Stupid Back                                                                                                                                                                                                      off
+    else prob
   }
 
   def getAverageProb(listElem: Seq[String]): Double = {
     val listElemWithMarkers = Seq("<s>") ++ listElem ++ Seq("</s>")
-    val windowLength = 2
+    val windowLength = 3
     val windowProbs = listElemWithMarkers.sliding(windowLength).map(getNGramLogProb).filter(!_.isNaN).toList
     if (windowProbs.isEmpty) 0
     else Math.exp(windowProbs.sum / windowProbs.size.toDouble)

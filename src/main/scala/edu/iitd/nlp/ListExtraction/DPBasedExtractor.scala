@@ -20,13 +20,10 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1) extends List
       case (x, y) => tokens.slice(x, y + 1).map(_.string)
     }.sliding(2).toList
     val elemsSim = elems.map {
-      case l => wordVectorWrapper.getBagOfWordsPhraseSimilarity(l(0), l(1))
+      case l => wordVectorWrapper.getDPPhraseSimilarity(l(0), l(1))
     }
     val res = if (elemsSim.isEmpty) 0
     else elemsSim.sum / elemsSim.size.toDouble
-    if (res.isInfinite) {
-      println("error")
-    }
     res
   }
 
@@ -38,9 +35,6 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1) extends List
     }.map(langModelWrapper.getAverageProb)
     val res = if (elemsProb.isEmpty) 0
     else elemsProb.sum / elemsProb.size.toDouble
-    if (res.isInfinite) {
-      println("error")
-    }
     res
   }
 
@@ -61,9 +55,9 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1) extends List
         val simScore = if (lambda._1 == 0) 0 else getSimilarityScore(tokens, augmentedListRange)
         val langScore = if (lambda._2 == 0) 0 else getLanguageModelScore(tokens, augmentedListRange)
         val totalScore = lambda._1 * simScore + lambda._2 * langScore
-        logger.info(
-          s"ListRange: $augmentedListRange\tSimScore: $simScore\tLangScore: $langScore\tTotalScore: $totalScore"
-        )
+        //        logger.info(
+        //          s"ListRange: $augmentedListRange\tSimScore: $simScore\tLangScore: $langScore\tTotalScore: $totalScore"
+        //        )
         if (totalScore > bestTotalScore.get) {
           bestTotalScore.set(totalScore)
           bestLeftIdx.set(i)
@@ -83,7 +77,7 @@ object DPBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
   val sent = "I like playing hockey, cricket and football."
   logger.info(s"Sentence: $sent")
 
-  val extractor = new DPBasedExtractor(1, 1)
+  val extractor = new DPBasedExtractor(1, 0)
   val (tokens, parse, listRanges) = extractor.extractListRange(sent)
   val lists = extractor.extractLists(tokens, listRanges)
   logger.info(s"Tokens: $tokens\nParse Tree: $parse\nLists: $lists\n")
