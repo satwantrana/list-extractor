@@ -23,7 +23,7 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
       val line = lines.next().split(" ")
       wordVectors(line.head) = line.tail.map(_.toDouble)
       val norm = getVectorNorm(wordVectors(line.head))
-      wordVectors(line.head) = wordVectors(line.head).map(_/norm)
+      wordVectors(line.head) = wordVectors(line.head).map(_ / norm)
     }
     logger.info("Loaded Word Vectors")
   }

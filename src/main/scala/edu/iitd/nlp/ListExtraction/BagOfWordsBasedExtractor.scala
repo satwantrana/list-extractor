@@ -9,7 +9,7 @@ import org.allenai.nlpstack.core.parse.graph.DependencyGraph
 
 import scala.collection.mutable
 
-class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWindowSize: Int = 5) extends ListExtractor {
+class BagOfWordsBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWindowSize: Int = 5) extends ListExtractor {
   val lambda = (simCoeff / (simCoeff + langCoeff), langCoeff / (simCoeff + langCoeff))
   lazy val ruleBasedExtractor = new RuleBasedExtractor
   lazy val langModelWrapper = new LanguageModelWrapper
@@ -20,7 +20,7 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWi
       case (x, y) => tokens.slice(x, y + 1).map(_.string)
     }.sliding(2).toList
     val elemsSim = elems.map {
-      case l => wordVectorWrapper.getDPPhraseSimilarity(l(0), l(1))
+      case l => wordVectorWrapper.getBagOfWordsPhraseSimilarity(l(0), l(1))
     }
     val res = if (elemsSim.isEmpty) 0
     else elemsSim.sum / elemsSim.size.toDouble
@@ -73,11 +73,11 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWi
   }
 }
 
-object DPBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
+object BagOfWordsBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
   val sent = "I like playing hockey, cricket and football."
   logger.info(s"Sentence: $sent")
 
-  val extractor = new DPBasedExtractor(1, 0)
+  val extractor = new BagOfWordsBasedExtractor(1, 0)
   val (tokens, parse, listRanges) = extractor.extractListRange(sent)
   val lists = extractor.extractLists(tokens, listRanges)
   logger.info(s"Tokens: $tokens\nParse Tree: $parse\nLists: $lists\n")
