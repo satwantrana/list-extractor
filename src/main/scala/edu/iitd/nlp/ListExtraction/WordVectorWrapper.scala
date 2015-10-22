@@ -92,6 +92,41 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
     }
     dp(n)(m).value / dp(n)(m).num
   }
+
+  def getChunkDPPhraseSimilarity(a: Seq[String], b: Seq[String]): Double = {
+    case class Entry(var value: Double = Double.NegativeInfinity, var num: Double = 0, var prev: (Int, Int) = (-1, -1)) {
+      def update(other: Entry, sim: Double, idx: Int, jdx: Int) {
+        if (value / num < (other.value + sim) / (other.num + 1)) {
+          value = other.value + sim
+          num = other.num + 1
+          prev = (idx, jdx)
+        }
+      }
+    }
+
+    val (n, m) = (a.size, b.size)
+    val dp = mutable.ArrayBuffer.fill(n + 1)(mutable.ArrayBuffer.fill(m + 1)(new Entry()))
+    dp(0)(0) = new Entry(value = 0, num = 0)
+
+    for (i <- 0 until n; j <- 0 until m) {
+      dp(i + 1)(j + 1).update(dp(i)(j + 1), getWordSimilarity(a(i), b(j)), i, j + 1)
+      dp(i + 1)(j + 1).update(dp(i + 1)(j), getWordSimilarity(a(i), b(j)), i + 1, j)
+      dp(i + 1)(j + 1).update(dp(i)(j), getWordSimilarity(a(i), b(j)), i, j)
+    }
+
+    if (DEBUG) {
+      var (tx, ty) = (n, m)
+      val matches = mutable.ArrayBuffer[(String, String)]()
+      while (tx != -1 || ty != -1) {
+        val (px, py) = dp(tx)(ty).prev
+        if (px == tx - 1 && py == ty - 1 && tx > 0 && ty > 0) matches += ((a(tx - 1), b(ty - 1)))
+        tx = px
+        ty = py
+      }
+      logger.info(s"Matches $dp $matches")
+    }
+    dp(n)(m).value / dp(n)(m).num
+  }
 }
 
 object WordVectorWrapperMain extends App with LoggingWithUncaughtExceptions {

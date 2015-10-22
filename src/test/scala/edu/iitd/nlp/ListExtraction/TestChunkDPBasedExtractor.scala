@@ -9,10 +9,10 @@ import scala.collection.mutable
 import scala.io.Source
 import scala.util.Random
 
-class TestBagOfWordsBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
-  val extractor = new BagOfWordsBasedExtractor(1, 0)
+class TestChunkDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
+  val extractor = new ChunkDPBasedExtractor(1, 0)
 
-  "BagOfWordsBasedExtractor" should "run correctly on a simple sentence" in {
+  "ChunkDPBasedExtractor" should "run correctly on a simple sentence" in {
     val sent = "I like playing hockey, cricket and football."
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
     val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))

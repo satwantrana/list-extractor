@@ -1,5 +1,6 @@
 #project specific
 models/*
+logs/*
 
 *.class
 *.log

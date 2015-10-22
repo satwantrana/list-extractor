@@ -1,15 +1,15 @@
 package edu.iitd.nlp.ListExtraction
 
 import java.util.concurrent.atomic.AtomicInteger
-
 import com.google.common.util.concurrent.AtomicDouble
 import org.allenai.common.LoggingWithUncaughtExceptions
-import org.allenai.nlpstack.core.PostaggedToken
+import org.allenai.nlpstack.core.{ ChunkedToken, PostaggedToken }
 import org.allenai.nlpstack.core.parse.graph.DependencyGraph
+import org.allenai.nlpstack.chunk.{ defaultChunker => chunker }
 
 import scala.collection.mutable
 
-class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWindowSize: Int = 5) extends ListExtractor {
+class ChunkDPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWindowSize: Int = 5) extends ListExtractor {
   val lambda = (simCoeff / (simCoeff + langCoeff), langCoeff / (simCoeff + langCoeff))
   lazy val ruleBasedExtractor = new RuleBasedExtractor
   lazy val langModelWrapper = new LanguageModelWrapper
@@ -20,7 +20,7 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWi
       case (x, y) => tokens.slice(x, y + 1).map(_.string)
     }.sliding(2).toList
     val elemsSim = elems.map {
-      case l => wordVectorWrapper.getDPPhraseSimilarity(l(0), l(1))
+      case l => wordVectorWrapper.getChunkDPPhraseSimilarity(l(0), l(1))
     }
     val res = if (elemsSim.isEmpty) 0
     else elemsSim.sum / elemsSim.size.toDouble
@@ -41,6 +41,7 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWi
   def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange]) = {
     val (tokens, parse, listRanges) = ruleBasedExtractor.extractListRange(sentence)
     val augmentedListRanges = mutable.ArrayBuffer[ListRange]()
+    val chunks = chunker.chunkPostagged(tokens)
     for (listRange <- listRanges) {
       val (leftEnd, rightEnd) = (listRange.elemsRange.head, listRange.elemsRange.last)
       val (bestTotalScore, bestLeftIdx, bestRightIdx) =
@@ -48,7 +49,7 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWi
       for (
         i <- (Math.max(0, leftEnd._1 - augmentingWindowSize + 1) to Math.min(leftEnd._2, leftEnd._1 + augmentingWindowSize)).par;
         j <- (Math.max(rightEnd._1, rightEnd._2 - augmentingWindowSize + 1) until Math.min(tokens.size, rightEnd._2 + augmentingWindowSize)).par
-      ) {
+      ) if (chunks(i).chunk.startsWith("B-") && (j + 1 == tokens.size || chunks(j + 1).chunk.startsWith("B-"))) {
         val augmentedListRange = listRange
         augmentedListRange.elemsRange(0) = (i, augmentedListRange.elemsRange.head._2)
         augmentedListRange.elemsRange(augmentedListRange.elemsRange.size - 1) = (augmentedListRange.elemsRange.last._1, j)
@@ -73,11 +74,12 @@ class DPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWi
   }
 }
 
-object DPBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
-  val sent = "I like playing hockey, cricket and football."
+object ChunkDPBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
+  //  val sent = "I like playing hockey, cricket and football."
+  val sent = "Its weakness was its technical conservatism ; although in 1880 the Admiralty agreed to reintroduce breechloading guns on heavy ships , the armored cruisers Imperieuse and Warspite , which were laid down in the same year , were still designed to carry a full spread of sail ."
   logger.info(s"Sentence: $sent")
 
-  val extractor = new DPBasedExtractor(1, 0)
+  val extractor = new ChunkDPBasedExtractor(1, 0)
   val (tokens, parse, listRanges) = extractor.extractListRange(sent)
   val lists = extractor.extractLists(tokens, listRanges)
   logger.info(s"Tokens: $tokens\nParse Tree: $parse\nLists: $lists\n")

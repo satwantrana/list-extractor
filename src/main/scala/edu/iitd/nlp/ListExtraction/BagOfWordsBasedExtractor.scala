@@ -42,12 +42,12 @@ class BagOfWordsBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augm
     val (tokens, parse, listRanges) = ruleBasedExtractor.extractListRange(sentence)
     val augmentedListRanges = mutable.ArrayBuffer[ListRange]()
     for (listRange <- listRanges) {
-      val (leftEnd, rightEnd) = (listRange.elemsRange.head._1, listRange.elemsRange.last._2)
+      val (leftEnd, rightEnd) = (listRange.elemsRange.head, listRange.elemsRange.last)
       val (bestTotalScore, bestLeftIdx, bestRightIdx) =
-        (new AtomicDouble(Double.NegativeInfinity), new AtomicInteger(leftEnd), new AtomicInteger(rightEnd))
+        (new AtomicDouble(Double.NegativeInfinity), new AtomicInteger(leftEnd._1), new AtomicInteger(rightEnd._2))
       for (
-        i <- (Math.max(0, leftEnd - augmentingWindowSize + 1) to leftEnd).par;
-        j <- (rightEnd until Math.min(tokens.size, rightEnd + augmentingWindowSize)).par
+        i <- (Math.max(0, leftEnd._1 - augmentingWindowSize + 1) to Math.min(leftEnd._2, leftEnd._1 + augmentingWindowSize)).par;
+        j <- (Math.max(rightEnd._1, rightEnd._2 - augmentingWindowSize + 1) until Math.min(tokens.size, rightEnd._2 + augmentingWindowSize)).par
       ) {
         val augmentedListRange = listRange
         augmentedListRange.elemsRange(0) = (i, augmentedListRange.elemsRange.head._2)

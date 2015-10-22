@@ -28,14 +28,13 @@ object ScoreImplicits {
 
 trait ListScorer {
   def scoreList(candidateList: ListRange, goldList: ListRange): Score
-  def addSentence(sentence: String, candidateLists: Seq[ListRange], goldLists: Seq[ListRange]): Unit
-  def getScoreVector: Seq[(String, ListRange, Score)]
-  def getLastScore: Score
+  def addSentence(sentence: String, candidateLists: Seq[ListRange], goldLists: Seq[ListRange]): Seq[(Score, ListRange, ListRange)]
+  def getScoreVector: Seq[(String, ListRange, ListRange, Score)]
   def getAverageScore: Score
 }
 
 class MaxMatchScorer extends ListScorer {
-  val scoreVector = mutable.ArrayBuffer.empty[(String, ListRange, Score)]
+  val scoreVector = mutable.ArrayBuffer.empty[(String, ListRange, ListRange, Score)]
   var scoreSum = Score(0, 0)
 
   def rangeIntersection(a: (Int, Int), b: (Int, Int)): Int = {
@@ -52,7 +51,7 @@ class MaxMatchScorer extends ListScorer {
           candElem <- candList.elemsRange
           candSize = rangeSize(candElem)
           (maxIntersection, goldSize) = goldList.elemsRange.map(g => (rangeIntersection(candElem, g), rangeSize(g))).max
-          accuracy = maxIntersection.toDouble / candSize.toDouble
+          accuracy = maxIntersection.toDouble / Math.max(candSize.toDouble, goldSize.toDouble)
         } yield accuracy
         elemAccuracies.sum / candList.elemsRange.size.toDouble
       }
@@ -62,17 +61,16 @@ class MaxMatchScorer extends ListScorer {
   }
 
   import ScoreImplicits._
-  def addSentence(sentence: String, candidateLists: Seq[ListRange], goldLists: Seq[ListRange]): Unit = {
-    candidateLists.foreach {
+  def addSentence(sentence: String, candidateLists: Seq[ListRange], goldLists: Seq[ListRange]): Seq[(Score, ListRange, ListRange)] = {
+    candidateLists.map {
       case candList =>
-        val maxScore = goldLists.map(scoreList(candList, _)).max
-        scoreVector += ((sentence, candList, maxScore))
+        val (maxScore, goldList) = goldLists.map(l => (scoreList(candList, l), l)).maxBy(_._1)
+        scoreVector += ((sentence, candList, goldList, maxScore))
         scoreSum = scoreSum + maxScore
+        (maxScore, candList, goldList)
     }
   }
 
   def getScoreVector = scoreVector.toSeq
-
-  def getLastScore = scoreVector.last._3
   def getAverageScore = scoreSum / scoreVector.size.toDouble
 }

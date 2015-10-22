@@ -2,7 +2,7 @@ package edu.iitd.nlp.ListExtraction
 
 import org.allenai.common.LoggingWithUncaughtExceptions
 import org.scalatest._
-
+import java.io._
 import scala.collection.mutable
 import scala.io.Source
 import scala.util.Random
@@ -39,6 +39,9 @@ class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions
     val listPrintProb = 0.01
     val r = new Random(0L)
 
+    val logFileName = "logs/" + this.getClass.getName + ".txt"
+    val writer = new PrintWriter(new File(logFileName))
+
     for (i <- 0 until numSentences) {
       val sent = data.next()
       val sentTokenCount = sent.split(" ").size
@@ -58,13 +61,15 @@ class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions
       val (tokens, parse, candListsRange) = extractor.extractListRange(sent)
       if (tokens.size != sentTokenCount) skippedSentencesCount += 1
       else {
-        if (r.nextDouble() < listPrintProb) {
-          val goldLists = extractor.extractLists(tokens, goldListsRange)
-          val candLists = extractor.extractLists(tokens, candListsRange)
-          val score = scorer.getLastScore
-          logger.debug(s"Sentence: $sent\nGold Lists: $goldLists\nCandidate Lists: $candLists\nScore: $score")
-        }
-        scorer.addSentence(sent, candListsRange, goldListsRange)
+        val sentResult = scorer.addSentence(sent, candListsRange, goldListsRange)
+        val matchedGoldListsRange = sentResult.map(_._3)
+        val scores = sentResult.map(_._1)
+        val goldLists = extractor.extractLists(tokens, goldListsRange)
+        val matchedGoldLists = extractor.extractLists(tokens, matchedGoldListsRange)
+        val candLists = extractor.extractLists(tokens, candListsRange)
+        writer.write(s"Sentence: $sent\n\nGold Lists Range: $goldListsRange\nGold Lists: $goldLists\n\n" +
+          s"Matched Gold Lists Range: $matchedGoldListsRange\nMatched Gold Lists: $matchedGoldLists\n\n" +
+          s"Candidate Lists Range: $candListsRange\nCandidate Lists: $candLists\n\nScores: $scores\n\n\n")
       }
     }
 
