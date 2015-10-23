@@ -107,13 +107,13 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
   }
 
   def getFeatureDPPhraseSimilarity(a: Seq[ChunkedToken], b: Seq[ChunkedToken],
-                                   f: FeatureVector = FeatureVector.default): FeatureVector = {
+                                   wv: FeatureVector = FeatureVector.default): FeatureVector = {
     case class Entry(
         var value: FeatureVector = FeatureVector.zeros,
         var num: Double = 0, var prev: (Int, Int) = (-1, -1)
     ) {
       def update(other: Entry, sim: FeatureVector, idx: Int, jdx: Int) {
-        if (num == 0 || value * f / num < (other.value + sim) * f / (other.num + 1)) {
+        if (num == 0 || value * wv / num < (other.value + sim) * wv / (other.num + 1)) {
           value = other.value + sim
           num = other.num + 1
           prev = (idx, jdx)

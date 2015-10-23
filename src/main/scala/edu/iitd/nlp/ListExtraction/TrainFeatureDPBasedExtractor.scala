@@ -34,7 +34,7 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
     }
     res
   }
-  def calcScore(extractor: FeatureDPBasedExtractor, data: Seq[(String, Seq[ListRange])]): Score = {
+  def calcScore(extractor: ListExtractor, data: Seq[(String, Seq[ListRange])]): Score = {
     val scorer = new MaxMatchScorer
     data.foreach {
       case (sent, goldLists) =>
@@ -43,14 +43,19 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
     }
     scorer.getAverageScore
   }
+  val ruleBasedExtractor = new RuleBasedExtractor
   val extractor = new FeatureDPBasedExtractor(1, 0)
   val availData = loadData.slice(0, 10)
   val (trainData, testData) = availData.splitAt(8 * availData.length / 10)
+  val (ruleBasedTestScore, ruleBasedTrainScore) = (calcScore(ruleBasedExtractor, testData),
+    calcScore(ruleBasedExtractor, trainData))
+  logger.info(s"Rule Based: Train Score: $ruleBasedTrainScore\tTest Score: $ruleBasedTestScore")
   var (testScore, trainScore) = (calcScore(extractor, testData), calcScore(extractor, trainData))
-  logger.info(s"Pre: Train Score: $trainScore\tTest Score: $testScore")
+  logger.info(s"Pre Training: Train Score: $trainScore\tTest Score: $testScore")
   val numIter = 10
   val learningRate = 0.1
   for (iter <- 0 until numIter) {
+    logger.info(s"Iteration #$iter starts")
     trainData.foreach {
       case (sent, goldListsRange) =>
         val (tokens, _, candListsRange) = extractor.extractListRange(sent)
@@ -62,13 +67,12 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
           case (_, candL, goldL) =>
             val fv1 = extractor.getSimilarityVector(tokens, candL)
             val fv2 = extractor.getSimilarityVector(tokens, goldL)
-            extractor.featureVector += (fv2 - fv1) * learningRate
-            logger.info(s"FV: ${extractor.featureVector}")
+            extractor.weightVector += (fv2 - fv1) * learningRate
         }
     }
+    testScore = calcScore(extractor, testData)
+    trainScore = calcScore(extractor, trainData)
+    logger.info(s"Iteration $iter:\tFeature Vector: ${extractor.weightVector}")
+    logger.info(s"Iteration $iter:\tTrain Score: $trainScore\tTest Score: $testScore")
   }
-  testScore = calcScore(extractor, testData)
-  trainScore = calcScore(extractor, trainData)
-  logger.info(s"Feature Vector: ${extractor.featureVector}")
-  logger.info(s"Post: Train Score: $trainScore\tTest Score: $testScore")
 }

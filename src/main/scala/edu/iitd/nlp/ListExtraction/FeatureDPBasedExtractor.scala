@@ -38,7 +38,7 @@ object FeatureVector {
 }
 
 class FeatureDPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1,
-    augmentingWindowSize: Int = 5, var featureVector: FeatureVector = FeatureVector.default) extends ListExtractor {
+    augmentingWindowSize: Int = 5, var weightVector: FeatureVector = FeatureVector.default) extends ListExtractor {
   val lambda = (simCoeff / (simCoeff + langCoeff), langCoeff / (simCoeff + langCoeff))
   lazy val ruleBasedExtractor = new RuleBasedExtractor
   lazy val langModelWrapper = new LanguageModelWrapper
@@ -50,7 +50,7 @@ class FeatureDPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1,
       case (x, y) => chunks.slice(x, y + 1)
     }.sliding(2).toList
     val elemsSim = elems.map {
-      case l => wordVectorWrapper.getFeatureDPPhraseSimilarity(l(0), l(1), featureVector)
+      case l => wordVectorWrapper.getFeatureDPPhraseSimilarity(l(0), l(1), weightVector)
     }
     elemsSim.foldLeft(FeatureVector.zeros) { case (a, b) => a + b } / elemsSim.size.toDouble
   }
@@ -61,7 +61,7 @@ class FeatureDPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1,
       case (x, y) => chunks.slice(x, y + 1)
     }.sliding(2).toList
     val elemsSim = elems.map {
-      case l => featureVector * wordVectorWrapper.getFeatureDPPhraseSimilarity(l(0), l(1), featureVector)
+      case l => weightVector * wordVectorWrapper.getFeatureDPPhraseSimilarity(l(0), l(1), weightVector)
     }
     val res = if (elemsSim.isEmpty) 0
     else elemsSim.sum / elemsSim.size.toDouble
