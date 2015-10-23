@@ -51,7 +51,8 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
     calcScore(ruleBasedExtractor, trainData))
   logger.info(s"Rule Based: Train Score: $ruleBasedTrainScore\tTest Score: $ruleBasedTestScore")
   var (testScore, trainScore) = (calcScore(extractor, testData), calcScore(extractor, trainData))
-  logger.info(s"Pre Training: Train Score: $trainScore\tTest Score: $testScore")
+  logger.info(s"Pre Training:\tFeature Vector: ${extractor.weightVector}")
+  logger.info(s"Pre Training:\tTrain Score: $trainScore\tTest Score: $testScore")
   val numIter = 10
   val learningRate = 0.1
   for (iter <- 0 until numIter) {
