@@ -4,13 +4,14 @@ import java.io.{ File, PrintWriter }
 
 import org.allenai.common.LoggingWithUncaughtExceptions
 import org.scalatest._
+import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
 
 import scala.collection.mutable
 import scala.io.Source
 import scala.util.Random
 
 class TestDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
-  val extractor = new DPBasedExtractor(1, 0)
+  val extractor = new DPBasedExtractor(1, 0, 3)
 
   "DPBasedExtractor" should "run correctly on a simple sentence" in {
     val sent = "I like playing hockey, cricket and football."

@@ -1,16 +1,28 @@
 package edu.iitd.nlp.ListExtraction
 
 import org.allenai.common.LoggingWithUncaughtExceptions
+import org.allenai.nlpstack.core.{ ChunkedToken, PostaggedToken }
 
 import scala.collection.mutable
 import scala.io.Source
+
+object FineToCoarsePostags {
+  val FineToCoarsePostagMap = Source.fromFile("data/fine-coarse-postags").getLines()
+    .map {
+      case l =>
+        val s = l.split("\t")
+        (s(0), s(1))
+    }.toMap
+
+  def convert(fine: String) = FineToCoarsePostagMap.getOrElse(fine, "OTHER")
+}
 
 class WordVectorWrapper extends LoggingWithUncaughtExceptions {
   val modelFile = "models/open_ie_embeddings.words"
   val wordVectors = mutable.Map[String, Seq[Double]]()
   var numWords = 0
   var dim = 300
-  val DEBUG = false
+  var DEBUG = false
   readModel()
 
   def readModel(): Unit = {
@@ -74,9 +86,10 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
     dp(0)(0) = new Entry(value = 0, num = 0)
 
     for (i <- 0 until n; j <- 0 until m) {
-      dp(i + 1)(j + 1).update(dp(i)(j + 1), getWordSimilarity(a(i), b(j)), i, j + 1)
-      dp(i + 1)(j + 1).update(dp(i + 1)(j), getWordSimilarity(a(i), b(j)), i + 1, j)
-      dp(i + 1)(j + 1).update(dp(i)(j), getWordSimilarity(a(i), b(j)), i, j)
+      val sim = Math.log(getWordSimilarity(a(i), b(j)))
+      dp(i + 1)(j + 1).update(dp(i)(j + 1), sim, i, j + 1)
+      dp(i + 1)(j + 1).update(dp(i + 1)(j), sim, i + 1, j)
+      dp(i + 1)(j + 1).update(dp(i)(j), sim, i, j)
     }
 
     if (DEBUG) {
@@ -93,30 +106,40 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
     dp(n)(m).value / dp(n)(m).num
   }
 
-  def getChunkDPPhraseSimilarity(a: Seq[String], b: Seq[String]): Double = {
-    case class Entry(var value: Double = Double.NegativeInfinity, var num: Double = 0, var prev: (Int, Int) = (-1, -1)) {
-      def update(other: Entry, sim: Double, idx: Int, jdx: Int) {
-        if (value / num < (other.value + sim) / (other.num + 1)) {
+  def getFeatureDPPhraseSimilarity(a: Seq[ChunkedToken], b: Seq[ChunkedToken],
+                                   f: FeatureVector = FeatureVector.default): FeatureVector = {
+    case class Entry(
+        var value: FeatureVector = FeatureVector.zeros,
+        var num: Double = 0, var prev: (Int, Int) = (-1, -1)
+    ) {
+      def update(other: Entry, sim: FeatureVector, idx: Int, jdx: Int) {
+        if (num == 0 || value * f / num < (other.value + sim) * f / (other.num + 1)) {
           value = other.value + sim
           num = other.num + 1
           prev = (idx, jdx)
         }
       }
     }
-
+    def calculateSimVector(u: ChunkedToken, v: ChunkedToken): FeatureVector = {
+      val sim = getWordSimilarity(u.string, v.string)
+      val samePOS = if (FineToCoarsePostags.convert(u.postag) == FineToCoarsePostags.convert(v.postag)) 1.0 else 0.0
+      val sameChunk = if (u.chunk.drop(2) == v.chunk.drop(2)) 1.0 else 0.0
+      FeatureVector(mutable.ArrayBuffer(sim, samePOS, sameChunk))
+    }
     val (n, m) = (a.size, b.size)
     val dp = mutable.ArrayBuffer.fill(n + 1)(mutable.ArrayBuffer.fill(m + 1)(new Entry()))
-    dp(0)(0) = new Entry(value = 0, num = 0)
+    dp(0)(0) = new Entry(value = FeatureVector.zeros, num = 0)
 
     for (i <- 0 until n; j <- 0 until m) {
-      dp(i + 1)(j + 1).update(dp(i)(j + 1), getWordSimilarity(a(i), b(j)), i, j + 1)
-      dp(i + 1)(j + 1).update(dp(i + 1)(j), getWordSimilarity(a(i), b(j)), i + 1, j)
-      dp(i + 1)(j + 1).update(dp(i)(j), getWordSimilarity(a(i), b(j)), i, j)
+      val sim = calculateSimVector(a(i), b(j))
+      dp(i + 1)(j + 1).update(dp(i)(j + 1), sim, i, j + 1)
+      dp(i + 1)(j + 1).update(dp(i + 1)(j), sim, i + 1, j)
+      dp(i + 1)(j + 1).update(dp(i)(j), sim, i, j)
     }
 
     if (DEBUG) {
       var (tx, ty) = (n, m)
-      val matches = mutable.ArrayBuffer[(String, String)]()
+      val matches = mutable.ArrayBuffer[(ChunkedToken, ChunkedToken)]()
       while (tx != -1 || ty != -1) {
         val (px, py) = dp(tx)(ty).prev
         if (px == tx - 1 && py == ty - 1 && tx > 0 && ty > 0) matches += ((a(tx - 1), b(ty - 1)))
@@ -125,7 +148,8 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
       }
       logger.info(s"Matches $dp $matches")
     }
-    dp(n)(m).value / dp(n)(m).num
+    if(dp(n)(m).num == 0) dp(n)(m).value
+    else dp(n)(m).value / dp(n)(m).num
   }
 }
 

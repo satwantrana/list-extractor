@@ -9,18 +9,59 @@ import org.allenai.nlpstack.chunk.{ defaultChunker => chunker }
 
 import scala.collection.mutable
 
-class ChunkDPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augmentingWindowSize: Int = 5) extends ListExtractor {
+case class FeatureVector(vec: mutable.ArrayBuffer[Double] = FeatureVector.default.vec) {
+  def +(other: FeatureVector): FeatureVector = {
+    FeatureVector(vec.zip(other.vec).map { case (a, b) => a + b })
+  }
+
+  def -(other: FeatureVector): FeatureVector = {
+    FeatureVector(vec.zip(other.vec).map { case (a, b) => a - b })
+  }
+
+  def *(other: FeatureVector): Double = {
+    vec.zip(other.vec).map { case (a, b) => a * b }.sum
+  }
+
+  def *(mult: Double): FeatureVector = {
+    FeatureVector(vec.map(_ * mult))
+  }
+
+  def /(div: Double): FeatureVector = {
+    FeatureVector(vec.map(_ / div))
+  }
+}
+
+object FeatureVector {
+  val default = FeatureVector(mutable.ArrayBuffer(0.0, 1.0, 0.0, 0.0))
+  val zeros = FeatureVector(mutable.ArrayBuffer.fill(4)(0.0))
+  val ninfies = FeatureVector(mutable.ArrayBuffer.fill(4)(Double.NegativeInfinity))
+}
+
+class FeatureDPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1,
+    augmentingWindowSize: Int = 5, var featureVector: FeatureVector = FeatureVector.default) extends ListExtractor {
   val lambda = (simCoeff / (simCoeff + langCoeff), langCoeff / (simCoeff + langCoeff))
   lazy val ruleBasedExtractor = new RuleBasedExtractor
   lazy val langModelWrapper = new LanguageModelWrapper
   lazy val wordVectorWrapper = new WordVectorWrapper
 
-  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
+  def getSimilarityVector(tokens: Seq[PostaggedToken], listRange: ListRange): FeatureVector = {
+    val chunks = chunker.chunkPostagged(tokens)
     val elems = listRange.elemsRange.map {
-      case (x, y) => tokens.slice(x, y + 1).map(_.string)
+      case (x, y) => chunks.slice(x, y + 1)
     }.sliding(2).toList
     val elemsSim = elems.map {
-      case l => wordVectorWrapper.getChunkDPPhraseSimilarity(l(0), l(1))
+      case l => wordVectorWrapper.getFeatureDPPhraseSimilarity(l(0), l(1), featureVector)
+    }
+    elemsSim.foldLeft(FeatureVector.zeros) { case (a, b) => a + b } / elemsSim.size.toDouble
+  }
+
+  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
+    val chunks = chunker.chunkPostagged(tokens)
+    val elems = listRange.elemsRange.map {
+      case (x, y) => chunks.slice(x, y + 1)
+    }.sliding(2).toList
+    val elemsSim = elems.map {
+      case l => featureVector * wordVectorWrapper.getFeatureDPPhraseSimilarity(l(0), l(1), featureVector)
     }
     val res = if (elemsSim.isEmpty) 0
     else elemsSim.sum / elemsSim.size.toDouble
@@ -49,7 +90,7 @@ class ChunkDPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augment
       for (
         i <- (Math.max(0, leftEnd._1 - augmentingWindowSize + 1) to Math.min(leftEnd._2, leftEnd._1 + augmentingWindowSize)).par;
         j <- (Math.max(rightEnd._1, rightEnd._2 - augmentingWindowSize + 1) until Math.min(tokens.size, rightEnd._2 + augmentingWindowSize)).par
-      ) if (chunks(i).chunk.startsWith("B-") && (j + 1 == tokens.size || chunks(j + 1).chunk.startsWith("B-"))) {
+      ) {
         val augmentedListRange = listRange
         augmentedListRange.elemsRange(0) = (i, augmentedListRange.elemsRange.head._2)
         augmentedListRange.elemsRange(augmentedListRange.elemsRange.size - 1) = (augmentedListRange.elemsRange.last._1, j)
@@ -74,12 +115,11 @@ class ChunkDPBasedExtractor(simCoeff: Double = 1, langCoeff: Double = 1, augment
   }
 }
 
-object ChunkDPBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
-  //  val sent = "I like playing hockey, cricket and football."
-  val sent = "Its weakness was its technical conservatism ; although in 1880 the Admiralty agreed to reintroduce breechloading guns on heavy ships , the armored cruisers Imperieuse and Warspite , which were laid down in the same year , were still designed to carry a full spread of sail ."
+object FeatureDPBasedExtractorMain extends LoggingWithUncaughtExceptions with App {
+  val sent = "I like playing hockey, cricket and football."
   logger.info(s"Sentence: $sent")
 
-  val extractor = new ChunkDPBasedExtractor(1, 0)
+  val extractor = new FeatureDPBasedExtractor(1, 0)
   val (tokens, parse, listRanges) = extractor.extractListRange(sent)
   val lists = extractor.extractLists(tokens, listRanges)
   logger.info(s"Tokens: $tokens\nParse Tree: $parse\nLists: $lists\n")
