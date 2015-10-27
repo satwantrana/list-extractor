@@ -1,12 +1,15 @@
 package edu.iitd.nlp.ListExtraction
 
 import java.io._
+
 import org.allenai.common.LoggingWithUncaughtExceptions
-import scala.collection.mutable
-import scala.io.Source
 import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
 
-object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptions {
+import scala.collection.mutable
+import scala.io.Source
+import scala.util.Random
+
+object LocalSearchFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptions {
   def loadData: Seq[(String, Seq[ListRange])] = {
     val file = "data/british_news_treebank_dataset"
     val data = Source.fromFile(file).getLines()
@@ -57,28 +60,24 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
   )
   logger.info(s"Rule Based: Train Score: $ruleBasedTrainScore\tTest Score: $ruleBasedTestScore")
   var (testScore, trainScore) = (calcScore(extractor, testData), calcScore(extractor, trainData))
+  var (bestTestScore, bestTrainScore, bestWeightVector) = (testScore, trainScore, extractor.weightVector)
   logger.info(s"Pre Training:\tFeature Vector: ${extractor.weightVector}")
   logger.info(s"Pre Training:\tTrain Score: $trainScore\tTest Score: $testScore")
   val numIter = 1000
   val learningRate = 0.01
   for (iter <- 0 until numIter) {
-    trainData.foreach {
-      case (sent, goldListsRange) =>
-        val (tokens, _, candListsRange) = extractor.extractListRange(sent)
-        val scorer = new MaxMatchScorer
-        val sentResult = scorer.addSentence(sent, candListsRange, goldListsRange)
-        sentResult.filter {
-          case (_, candL, goldL) => candL.ccPos == goldL.ccPos
-        }.foreach {
-          case (_, candL, goldL) =>
-            val fv1 = extractor.getSimilarityVector(tokens, candL)
-            val fv2 = extractor.getSimilarityVector(tokens, goldL)
-            extractor.weightVector = extractor.weightVector + (fv2 - fv1) * learningRate
-        }
-    }
+    val r = new Random
+    val diff = FeatureVector(mutable.ArrayBuffer.fill(4)((r.nextDouble() - 0.5) * 2.0 * learningRate))
+    extractor.weightVector += diff
     testScore = calcScore(extractor, testData)
     trainScore = calcScore(extractor, trainData)
+    if (testScore > bestTestScore) {
+      bestTestScore = testScore
+      bestTrainScore = trainScore
+      bestWeightVector = extractor.weightVector
+    } else extractor.weightVector -= diff
     logger.info(s"Iteration $iter:\tFeature Vector: ${extractor.weightVector}")
     logger.info(s"Iteration $iter:\tTrain Score: $trainScore\tTest Score: $testScore")
+    logger.info(s"Iteration $iter:\tBest Train Score: $bestTrainScore\tBest Test Score: $bestTestScore")
   }
 }

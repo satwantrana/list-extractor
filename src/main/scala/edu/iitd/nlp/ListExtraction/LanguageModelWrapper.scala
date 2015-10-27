@@ -2,8 +2,7 @@ package edu.iitd.nlp.ListExtraction
 
 import org.allenai.common.LoggingWithUncaughtExceptions
 
-import edu.berkeley.nlp.lm.NgramLanguageModel
-import edu.berkeley.nlp.lm.collections.Iterators
+import edu.berkeley.nlp.lm.{ StupidBackoffLm, NgramLanguageModel }
 import edu.berkeley.nlp.lm.io._
 
 import scala.collection.JavaConversions
@@ -11,11 +10,17 @@ import scala.collection.JavaConversions
 class LanguageModelWrapper extends LoggingWithUncaughtExceptions {
   val vocabFile = "models/vocab_cs.gz"
   val binaryFile = "models/eng.blm.gz"
-  val langModel = LmReaders.readGoogleLmBinary(binaryFile, vocabFile)
-  logger.info("Loaded Language Model")
+  var langModel: Option[StupidBackoffLm[String]] = None
 
   def getNGramLogProb(nGram: Seq[String]): Double = {
-    val prob = langModel.getLogProb(JavaConversions.seqAsJavaList(nGram))
+    langModel.synchronized {
+      if (langModel == null) {
+        logger.info("Loading Language Model")
+        langModel = Some(LmReaders.readGoogleLmBinary(binaryFile, vocabFile))
+        logger.info("Loaded Language Model")
+      }
+    }
+    val prob = langModel.get.getLogProb(JavaConversions.seqAsJavaList(nGram))
     if (prob.isNaN) 0.4 * getNGramLogProb(nGram.dropRight(1)) //Stupid Back                                                                                                                                                                                                      off
     else prob
   }

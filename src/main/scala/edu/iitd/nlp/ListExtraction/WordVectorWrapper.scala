@@ -53,10 +53,14 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
     u.zip(v).map { case (d1, d2) => d1 * d2 }.sum
   }
 
+  val wordSimilarityCache = mutable.Map[(String, String), Double]()
   def getWordSimilarity(a: String, b: String): Double = {
     if (a == b) 1
     else if (!wordVectors.contains(a) || !wordVectors.contains(b)) 0
-    else getVectorDotProduct(wordVectors(a), wordVectors(b))
+    else wordSimilarityCache.synchronized {
+      if (!wordSimilarityCache.contains((a, b))) wordSimilarityCache((a, b)) = (getVectorDotProduct(wordVectors(a), wordVectors(b)) + 1.0) / 2.0
+      wordSimilarityCache((a, b))
+    }
   }
 
   def getBagOfWordsPhraseSimilarity(a: Seq[String], b: Seq[String]): Double = {
@@ -72,10 +76,12 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
 
   def getDPPhraseSimilarity(a: Seq[String], b: Seq[String]): Double = {
     case class Entry(var value: Double = Double.NegativeInfinity, var num: Double = 0, var prev: (Int, Int) = (-1, -1)) {
-      def update(other: Entry, sim: Double, idx: Int, jdx: Int) {
-        if (value / num < (other.value + sim) / (other.num + 1)) {
+      //Negative infinity to avoid matching to an empty set
+      def update(other: Entry, sim: Double, idx: Int, jdx: Int, incrNum: Int = 1) {
+        require(sim >= 0 && sim <= incrNum, s"$sim $incrNum")
+        if (num == 0 || value / num < (other.value + sim) / (other.num + incrNum)) {
           value = other.value + sim
-          num = other.num + 1
+          num = other.num + incrNum
           prev = (idx, jdx)
         }
       }
@@ -84,71 +90,89 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
     val (n, m) = (a.size, b.size)
     val dp = mutable.ArrayBuffer.fill(n + 1)(mutable.ArrayBuffer.fill(m + 1)(new Entry()))
     dp(0)(0) = new Entry(value = 0, num = 0)
-
+    val simWindow = 3
     for (i <- 0 until n; j <- 0 until m) {
-      val sim = Math.log(getWordSimilarity(a(i), b(j)))
-      dp(i + 1)(j + 1).update(dp(i)(j + 1), sim, i, j + 1)
-      dp(i + 1)(j + 1).update(dp(i + 1)(j), sim, i + 1, j)
-      dp(i + 1)(j + 1).update(dp(i)(j), sim, i, j)
+      var sim: Double = 0
+      for (k <- 0 to Math.min(j, simWindow)) {
+        sim += getWordSimilarity(a(i), b(j - k))
+        dp(i + 1)(j + 1).update(dp(i)(j - k), sim, i, j - k, k + 1)
+      }
+      sim = 0
+      for (k <- 0 to Math.min(i, simWindow)) {
+        sim += getWordSimilarity(a(i - k), b(j))
+        dp(i + 1)(j + 1).update(dp(i - k)(j), sim, i - k, j, k + 1)
+      }
     }
 
     if (DEBUG) {
       var (tx, ty) = (n, m)
       val matches = mutable.ArrayBuffer[(String, String)]()
       while (tx != -1 || ty != -1) {
+        matches += ((a(tx), b(ty)))
         val (px, py) = dp(tx)(ty).prev
-        if (px == tx - 1 && py == ty - 1 && tx > 0 && ty > 0) matches += ((a(tx - 1), b(ty - 1)))
         tx = px
         ty = py
       }
       logger.info(s"Matches $dp $matches")
     }
-    dp(n)(m).value / dp(n)(m).num
+    if (dp(n)(m).value == Double.NegativeInfinity) 0
+    else if (dp(n)(m).num == 0) dp(n)(m).value
+    else dp(n)(m).value / dp(n)(m).num
   }
 
+  def sigmoid(inp: Double) = inp // 1.0 / (1.0 + Math.exp(-inp))
+
   def getFeatureDPPhraseSimilarity(a: Seq[ChunkedToken], b: Seq[ChunkedToken],
-                                   wv: FeatureVector = FeatureVector.default): FeatureVector = {
+    wv: FeatureVector = FeatureVector.Default): FeatureVector = {
     case class Entry(
-        var value: FeatureVector = FeatureVector.zeros,
+        var value: FeatureVector = FeatureVector.NegativeInfinities,
         var num: Double = 0, var prev: (Int, Int) = (-1, -1)
     ) {
-      def update(other: Entry, sim: FeatureVector, idx: Int, jdx: Int) {
-        if (num == 0 || value * wv / num < (other.value + sim) * wv / (other.num + 1)) {
+      def update(other: Entry, sim: FeatureVector, idx: Int, jdx: Int, incrNum: Int = 1) {
+        if (num == 0 || sigmoid(value * wv.normalised / num) < sigmoid((other.value + sim) * wv.normalised / (other.num + incrNum))) {
           value = other.value + sim
-          num = other.num + 1
+          num = other.num + incrNum
           prev = (idx, jdx)
         }
       }
     }
-    def calculateSimVector(u: ChunkedToken, v: ChunkedToken): FeatureVector = {
+    def getWordSimVector(u: ChunkedToken, v: ChunkedToken): FeatureVector = {
       val sim = getWordSimilarity(u.string, v.string)
       val samePOS = if (FineToCoarsePostags.convert(u.postag) == FineToCoarsePostags.convert(v.postag)) 1.0 else 0.0
       val sameChunk = if (u.chunk.drop(2) == v.chunk.drop(2)) 1.0 else 0.0
-      FeatureVector(mutable.ArrayBuffer(sim, samePOS, sameChunk))
+      FeatureVector(mutable.ArrayBuffer(1.0, sim, samePOS, sameChunk))
     }
     val (n, m) = (a.size, b.size)
     val dp = mutable.ArrayBuffer.fill(n + 1)(mutable.ArrayBuffer.fill(m + 1)(new Entry()))
-    dp(0)(0) = new Entry(value = FeatureVector.zeros, num = 0)
+    dp(0)(0) = new Entry(value = FeatureVector.Zeros, num = 0)
 
+    val simWindow = 3
     for (i <- 0 until n; j <- 0 until m) {
-      val sim = calculateSimVector(a(i), b(j))
-      dp(i + 1)(j + 1).update(dp(i)(j + 1), sim, i, j + 1)
-      dp(i + 1)(j + 1).update(dp(i + 1)(j), sim, i + 1, j)
-      dp(i + 1)(j + 1).update(dp(i)(j), sim, i, j)
+      var sim = FeatureVector.Zeros
+      for (k <- 0 to Math.min(j, simWindow)) {
+        sim += getWordSimVector(a(i), b(j - k))
+        dp(i + 1)(j + 1).update(dp(i)(j - k), sim, i, j - k, k + 1)
+      }
+      sim = FeatureVector.Zeros
+      for (k <- 0 to Math.min(i, simWindow)) {
+        sim += getWordSimVector(a(i - k), b(j))
+        dp(i + 1)(j + 1).update(dp(i - k)(j), sim, i - k, j, k + 1)
+      }
     }
 
     if (DEBUG) {
       var (tx, ty) = (n, m)
       val matches = mutable.ArrayBuffer[(ChunkedToken, ChunkedToken)]()
       while (tx != -1 || ty != -1) {
+        matches += ((a(tx), b(ty)))
         val (px, py) = dp(tx)(ty).prev
-        if (px == tx - 1 && py == ty - 1 && tx > 0 && ty > 0) matches += ((a(tx - 1), b(ty - 1)))
         tx = px
         ty = py
       }
       logger.info(s"Matches $dp $matches")
     }
-    if(dp(n)(m).num == 0) dp(n)(m).value
+    if (dp(n)(m).value == FeatureVector.NegativeInfinities) FeatureVector.Zeros
+    else if (dp(n)(m).num == 0) dp(n)(m).value
     else dp(n)(m).value / dp(n)(m).num
   }
 }
