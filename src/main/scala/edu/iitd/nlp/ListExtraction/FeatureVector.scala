@@ -2,16 +2,19 @@ package edu.iitd.nlp.ListExtraction
 
 import scala.collection.mutable
 
-case class FeatureVector(vec: mutable.ArrayBuffer[Double] = FeatureVector.Default.vec) {
+case class FeatureVector(vec: mutable.ArrayBuffer[Double] = FeatureVector.Default().vec) {
   def +(other: FeatureVector): FeatureVector = {
+    require(this.vec.length == other.vec.length)
     FeatureVector(vec.zip(other.vec).map { case (a, b) => a + b })
   }
 
   def -(other: FeatureVector): FeatureVector = {
+    require(this.vec.length == other.vec.length)
     FeatureVector(vec.zip(other.vec).map { case (a, b) => a - b })
   }
 
   def *(other: FeatureVector): Double = {
+    require(this.vec.length == other.vec.length)
     vec.zip(other.vec).map { case (a, b) => a * b }.sum
   }
 
@@ -24,6 +27,7 @@ case class FeatureVector(vec: mutable.ArrayBuffer[Double] = FeatureVector.Defaul
   }
 
   def ==(other: FeatureVector): Boolean = {
+    require(this.vec.length == other.vec.length)
     this.vec == other.vec || (this - other).vec.map(Math.abs).max < FeatureVector.eps
   }
 
@@ -35,7 +39,21 @@ case class FeatureVector(vec: mutable.ArrayBuffer[Double] = FeatureVector.Defaul
 
 object FeatureVector {
   val eps = 1e-6
-  val Default = FeatureVector(mutable.ArrayBuffer(0.0, 1.0, 0.0, 0.0))
-  val Zeros = FeatureVector(mutable.ArrayBuffer.fill(4)(0.0))
-  val NegativeInfinities = FeatureVector(mutable.ArrayBuffer.fill(4)(Double.NegativeInfinity))
+  val defaultNumFeatures = 6
+  def Default(n: Int = defaultNumFeatures) = {
+    val res = Zeros(n)
+    res.vec(1) = 1.0
+    res
+  }
+  def Zeros(n: Int = defaultNumFeatures) = FeatureVector(mutable.ArrayBuffer.fill(n)(0.0))
+  def NegativeInfinities(n: Int = defaultNumFeatures) = FeatureVector(mutable.ArrayBuffer.fill(n)(Double.NegativeInfinity))
+  def baseLine(n: Int = defaultNumFeatures) = {
+    require(n == defaultNumFeatures)
+    val res = Zeros(n)
+    res.vec(4) = -1.0
+    res.vec(5) = -1.0
+    res
+  }
 }
+
+case class Params(leftDis: Int = 0, rightDis: Int = 0)

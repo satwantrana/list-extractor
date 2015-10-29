@@ -11,7 +11,7 @@ import scala.collection.mutable
 
 trait SimilarityBasedExtractor extends ListExtractor {
   var simCoeff: Double = 1
-  var langCoeff: Double = 1
+  var langCoeff: Double = 0
   var augmentingWindowSize: Int = 5
   val lambda = (simCoeff / (simCoeff + langCoeff), langCoeff / (simCoeff + langCoeff))
   lazy val ruleBasedExtractor = new RuleBasedExtractor
@@ -19,7 +19,9 @@ trait SimilarityBasedExtractor extends ListExtractor {
   lazy val wordVectorWrapper = new WordVectorWrapper
   var DEBUG = false
 
-  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double
+  def getSimilarityVector(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params): FeatureVector
+
+  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params = Params()): Double
 
   def getLanguageModelScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = 0
   //  {
@@ -44,11 +46,14 @@ trait SimilarityBasedExtractor extends ListExtractor {
         augmentedListRange = listRange
         _ = augmentedListRange.elemsRange(0) = (i, augmentedListRange.elemsRange.head._2)
         _ = augmentedListRange.elemsRange(augmentedListRange.elemsRange.size - 1) = (augmentedListRange.elemsRange.last._1, j)
-        simScore = if (lambda._1 == 0) 0 else getSimilarityScore(tokens, augmentedListRange)
+        params = Params(i - leftEnd._1, j - rightEnd._2)
+        simVector = if (lambda._1 == 0) FeatureVector.Zeros() else getSimilarityVector(tokens, augmentedListRange, params)
+        simScore = if (lambda._1 == 0) 0 else getSimilarityScore(tokens, augmentedListRange, params)
         langScore = if (lambda._2 == 0) 0 else getLanguageModelScore(tokens, augmentedListRange)
         totalScore = lambda._1 * simScore + lambda._2 * langScore
         _ = if (DEBUG) logger.info(
-          s"ListRange: $augmentedListRange\tSimScore: $simScore\tLangScore: $langScore\tTotalScore: $totalScore"
+          s"ListRange: $augmentedListRange\tParams: ${Params(i - leftEnd._1, j - rightEnd._2)}\tSimVector: $simVector" +
+            s"\tSimScore: $simScore\tLangScore: $langScore\tTotalScore: $totalScore"
         )
         scoreTuple = (totalScore, i, j)
       } yield scoreTuple).max

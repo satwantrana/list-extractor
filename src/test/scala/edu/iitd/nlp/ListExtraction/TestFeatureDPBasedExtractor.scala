@@ -10,11 +10,14 @@ import scala.io.Source
 import scala.util.Random
 
 class TestFeatureDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
-  val extractor = new FeatureDPBasedExtractor(1, 0)
-
+  val extractor = new FeatureDPBasedExtractor(1, 0, 5, FeatureVector.baseLine())
   "FeatureDPBasedExtractor" should "run correctly on a simple sentence" in {
     val sent = "I like playing hockey, cricket and football."
+    extractor.DEBUG = true
+//    extractor.wordVectorWrapper.DEBUG = true
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
+    extractor.DEBUG = false
+//    extractor.wordVectorWrapper.DEBUG = false
     val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
     logger.info(s"Cand: $listRanges\nGold: $goldListRanges")
     assert(listRanges.map(l => ListRange(l.ccPos, l.elemsRange, 1.0)) == goldListRanges)

@@ -16,7 +16,7 @@ class TestFeatureVector extends FlatSpec with LoggingWithUncaughtExceptions {
   it should "subtract correctly" in {
     val a = FeatureVector(mutable.ArrayBuffer(1.0, 2.0, 3.0, 4.0))
     val b = FeatureVector(mutable.ArrayBuffer(1.0, 2.0, 3.0, 4.0))
-    assert(a - b == FeatureVector.Zeros)
+    assert(a - b == FeatureVector.Zeros(4))
   }
 
   it should "dot product correctly" in {

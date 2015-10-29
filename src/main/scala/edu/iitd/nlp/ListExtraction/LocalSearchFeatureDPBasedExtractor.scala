@@ -64,18 +64,23 @@ object LocalSearchFeatureDPBasedExtractor extends App with LoggingWithUncaughtEx
   logger.info(s"Pre Training:\tFeature Vector: ${extractor.weightVector}")
   logger.info(s"Pre Training:\tTrain Score: $trainScore\tTest Score: $testScore")
   val numIter = 1000
-  val learningRate = 0.01
+  val incRate = 0.1
   for (iter <- 0 until numIter) {
     val r = new Random
-    val diff = FeatureVector(mutable.ArrayBuffer.fill(4)((r.nextDouble() - 0.5) * 2.0 * learningRate))
+    val restartProb = 0.1
+    if (r.nextDouble() < restartProb) extractor.weightVector =
+      FeatureVector(mutable.ArrayBuffer.fill(FeatureVector.defaultNumFeatures)((r.nextDouble() - 0.5) * 2.0 / incRate))
+    val diff = FeatureVector(mutable.ArrayBuffer.fill(FeatureVector.defaultNumFeatures)((r.nextDouble() - 0.5) * 2.0 * incRate))
     extractor.weightVector += diff
     testScore = calcScore(extractor, testData)
     trainScore = calcScore(extractor, trainData)
-    if (testScore > bestTestScore) {
+    val hillClimbProb = 0.3
+    if (r.nextDouble() > hillClimbProb && trainScore < bestTrainScore) extractor.weightVector -= diff
+    else if (trainScore > bestTrainScore) {
       bestTestScore = testScore
       bestTrainScore = trainScore
       bestWeightVector = extractor.weightVector
-    } else extractor.weightVector -= diff
+    }
     logger.info(s"Iteration $iter:\tFeature Vector: ${extractor.weightVector}")
     logger.info(s"Iteration $iter:\tTrain Score: $trainScore\tTest Score: $testScore")
     logger.info(s"Iteration $iter:\tBest Train Score: $bestTrainScore\tBest Test Score: $bestTestScore")

@@ -13,7 +13,13 @@ class BagOfWordsBasedExtractor(_simCoeff: Double = 1, _langCoeff: Double = 1, _a
   simCoeff = _simCoeff
   langCoeff = _langCoeff
   augmentingWindowSize = _augmentingWindowSize
-  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
+
+  def getSimilarityVector(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params): FeatureVector = {
+    val res = getSimilarityScore(tokens, listRange, params)
+    FeatureVector(mutable.ArrayBuffer(res))
+  }
+
+  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params = Params()): Double = {
     val elems = listRange.elemsRange.map {
       case (x, y) => tokens.slice(x, y + 1).map(_.string)
     }.sliding(2).toList

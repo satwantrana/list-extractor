@@ -10,28 +10,29 @@ import org.allenai.nlpstack.chunk.{ defaultChunker => chunker }
 import scala.collection.mutable
 
 class FeatureDPBasedExtractor(_simCoeff: Double = 1, _langCoeff: Double = 1, _augmentingWindowSize: Int = 5,
-    var weightVector: FeatureVector = FeatureVector.Default) extends SimilarityBasedExtractor {
+      var weightVector: FeatureVector = FeatureVector.Default(6)) extends SimilarityBasedExtractor {
   simCoeff = _simCoeff
   langCoeff = _langCoeff
   augmentingWindowSize = _augmentingWindowSize
-  def getSimilarityVector(tokens: Seq[PostaggedToken], listRange: ListRange): FeatureVector = {
+  def getSimilarityVector(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params): FeatureVector = {
     val chunks = chunker.chunkPostagged(tokens)
     val elems = listRange.elemsRange.map {
       case (x, y) => chunks.slice(x, y + 1)
     }.sliding(2).toList
     val elemsSim = elems.map {
-      case l => wordVectorWrapper.getFeatureDPPhraseSimilarity(l.head, l.last, weightVector)
+      case l => wordVectorWrapper.getFeatureDPPhraseSimilarity(l.head, l.last, weightVector, params)
     }
-    elemsSim.foldLeft(FeatureVector.Zeros) { case (a, b) => a + b } / elemsSim.size.toDouble
+    elemsSim.foldLeft(FeatureVector.Zeros(6)) { case (a, b) => a + b } / elemsSim.size.toDouble
   }
 
-  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
+  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params): Double = {
     val chunks = chunker.chunkPostagged(tokens)
     val elems = listRange.elemsRange.map {
       case (x, y) => chunks.slice(x, y + 1)
     }.sliding(2).toList
     val elemsSim = elems.map {
-      case l => wordVectorWrapper.sigmoid(weightVector * wordVectorWrapper.getFeatureDPPhraseSimilarity(l(0), l(1), weightVector))
+      case l => wordVectorWrapper.sigmoid(weightVector *
+        wordVectorWrapper.getFeatureDPPhraseSimilarity(l(0), l(1), weightVector, params))
     }
     val res = if (elemsSim.isEmpty) 0
     else elemsSim.sum / elemsSim.size.toDouble

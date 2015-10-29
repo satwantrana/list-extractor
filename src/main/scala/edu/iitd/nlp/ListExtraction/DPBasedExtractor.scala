@@ -4,6 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger
 
 import com.google.common.util.concurrent.AtomicDouble
 import org.allenai.common.LoggingWithUncaughtExceptions
+import org.allenai.nlpstack.chunk._
 import org.allenai.nlpstack.core.PostaggedToken
 import org.allenai.nlpstack.core.parse.graph.DependencyGraph
 
@@ -13,7 +14,13 @@ class DPBasedExtractor(_simCoeff: Double = 1, _langCoeff: Double = 1, _augmentin
   simCoeff = _simCoeff
   langCoeff = _langCoeff
   augmentingWindowSize = _augmentingWindowSize
-  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = {
+
+  def getSimilarityVector(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params): FeatureVector = {
+    val res = getSimilarityScore(tokens, listRange, params)
+    FeatureVector(mutable.ArrayBuffer(res))
+  }
+
+  def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params = Params()): Double = {
     val elems = listRange.elemsRange.map {
       case (x, y) => tokens.slice(x, y + 1).map(_.string)
     }.sliding(2).toList

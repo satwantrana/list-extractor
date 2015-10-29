@@ -122,10 +122,11 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
 
   def sigmoid(inp: Double) = inp // 1.0 / (1.0 + Math.exp(-inp))
 
+  val numFeatures = FeatureVector.defaultNumFeatures
   def getFeatureDPPhraseSimilarity(a: Seq[ChunkedToken], b: Seq[ChunkedToken],
-    wv: FeatureVector = FeatureVector.Default): FeatureVector = {
+    wv: FeatureVector = FeatureVector.Default(numFeatures), params: Params): FeatureVector = {
     case class Entry(
-        var value: FeatureVector = FeatureVector.NegativeInfinities,
+        var value: FeatureVector = FeatureVector.Zeros(numFeatures),
         var num: Double = 0, var prev: (Int, Int) = (-1, -1)
     ) {
       def update(other: Entry, sim: FeatureVector, idx: Int, jdx: Int, incrNum: Int = 1) {
@@ -140,20 +141,20 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
       val sim = getWordSimilarity(u.string, v.string)
       val samePOS = if (FineToCoarsePostags.convert(u.postag) == FineToCoarsePostags.convert(v.postag)) 1.0 else 0.0
       val sameChunk = if (u.chunk.drop(2) == v.chunk.drop(2)) 1.0 else 0.0
-      FeatureVector(mutable.ArrayBuffer(1.0, sim, samePOS, sameChunk))
+      FeatureVector(mutable.ArrayBuffer(1.0, sim, samePOS, sameChunk, Math.abs(params.leftDis), Math.abs(params.rightDis)))
     }
     val (n, m) = (a.size, b.size)
     val dp = mutable.ArrayBuffer.fill(n + 1)(mutable.ArrayBuffer.fill(m + 1)(new Entry()))
-    dp(0)(0) = new Entry(value = FeatureVector.Zeros, num = 0)
+    dp(0)(0) = new Entry(value = FeatureVector.Zeros(numFeatures), num = 0)
 
     val simWindow = 3
     for (i <- 0 until n; j <- 0 until m) {
-      var sim = FeatureVector.Zeros
+      var sim = FeatureVector.Zeros(numFeatures)
       for (k <- 0 to Math.min(j, simWindow)) {
         sim += getWordSimVector(a(i), b(j - k))
         dp(i + 1)(j + 1).update(dp(i)(j - k), sim, i, j - k, k + 1)
       }
-      sim = FeatureVector.Zeros
+      sim = FeatureVector.Zeros(numFeatures)
       for (k <- 0 to Math.min(i, simWindow)) {
         sim += getWordSimVector(a(i - k), b(j))
         dp(i + 1)(j + 1).update(dp(i - k)(j), sim, i - k, j, k + 1)
@@ -163,15 +164,15 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
     if (DEBUG) {
       var (tx, ty) = (n, m)
       val matches = mutable.ArrayBuffer[(ChunkedToken, ChunkedToken)]()
-      while (tx != -1 || ty != -1) {
-        matches += ((a(tx), b(ty)))
+      while (tx > 0 && ty > 0) {
+        matches += ((a(tx-1), b(ty-1)))
         val (px, py) = dp(tx)(ty).prev
         tx = px
         ty = py
       }
-      logger.info(s"Matches $dp $matches")
+      logger.info(s"Matches: $matches\nDP: $dp'")
     }
-    if (dp(n)(m).value == FeatureVector.NegativeInfinities) FeatureVector.Zeros
+    if (dp(n)(m).value == FeatureVector.NegativeInfinities(numFeatures)) FeatureVector.Zeros(numFeatures)
     else if (dp(n)(m).num == 0) dp(n)(m).value
     else dp(n)(m).value / dp(n)(m).num
   }

@@ -48,7 +48,7 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
   val logFileName = "logs/" + this.getClass.getName + ".txt"
   val writer = new PrintWriter(new File(logFileName))
   val ruleBasedExtractor = new RuleBasedExtractor
-  val extractor = new FeatureDPBasedExtractor(1, 0, 3)
+  val extractor = new FeatureDPBasedExtractor(1, 0)
   val availData = loadData
   val (trainData, testData) = availData.splitAt(8 * availData.length / 10)
   val (ruleBasedTestScore, ruleBasedTrainScore) = (
@@ -71,8 +71,10 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
           case (_, candL, goldL) => candL.ccPos == goldL.ccPos
         }.foreach {
           case (_, candL, goldL) =>
-            val fv1 = extractor.getSimilarityVector(tokens, candL)
-            val fv2 = extractor.getSimilarityVector(tokens, goldL)
+            val (i, j) = (candL.elemsRange.head._1, candL.elemsRange.last._2)
+            val (l, r) = (goldL.elemsRange.head._1, goldL.elemsRange.last._2)
+            val fv1 = extractor.getSimilarityVector(tokens, candL, Params(i - l, j - r))
+            val fv2 = extractor.getSimilarityVector(tokens, goldL, Params())
             extractor.weightVector = extractor.weightVector + (fv2 - fv1) * learningRate
         }
     }
