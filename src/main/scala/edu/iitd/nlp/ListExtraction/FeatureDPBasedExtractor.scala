@@ -10,7 +10,7 @@ import org.allenai.nlpstack.chunk.{ defaultChunker => chunker }
 import scala.collection.mutable
 
 class FeatureDPBasedExtractor(_simCoeff: Double = 1, _langCoeff: Double = 1, _augmentingWindowSize: Int = 5,
-      var weightVector: FeatureVector = FeatureVector.Default(6)) extends SimilarityBasedExtractor {
+    var weightVector: FeatureVector = FeatureVector.Default(6)) extends SimilarityBasedExtractor {
   simCoeff = _simCoeff
   langCoeff = _langCoeff
   augmentingWindowSize = _augmentingWindowSize

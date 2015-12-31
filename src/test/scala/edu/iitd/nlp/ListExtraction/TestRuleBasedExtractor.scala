@@ -78,4 +78,54 @@ class TestRuleBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions
 
     assert(avgScore.precision >= 0.7)
   }
+
+  it should "give >= 70% score on Penn Tree Bank dataset with MaxMatchScorer" in {
+    val file = "data/penn_treebank_dataset"
+    val data = Source.fromFile(file).getLines()
+    val scorer = new MaxMatchScorer
+
+    var skippedSentencesCount = 0
+    val numSentences = data.next().toInt
+    val listPrintProb = 0.01
+    val r = new Random(0L)
+
+    val logFileName = "logs/" + this.getClass.getName + ".txt"
+    val writer = new PrintWriter(new FileOutputStream(new File(logFileName), true))
+
+    for (i <- 0 until numSentences) {
+      val sent = data.next()
+      val sentTokenCount = sent.split(" ").size
+
+      val listCount = data.next().toInt
+      val goldListsRange = mutable.ArrayBuffer[ListRange]()
+      for (j <- 0 until listCount) {
+        val Seq(ccId, elemCount) = data.next().split(" ").map(_.toInt).toSeq
+        val elemPos = mutable.ArrayBuffer[(Int, Int)]()
+        for (k <- 0 until elemCount) {
+          val elemSize = data.next().toInt
+          val elemRange = data.next().split(" ").map(_.toInt)
+          elemPos += ((elemRange.head, elemRange.last))
+        }
+        goldListsRange += ListRange(ccId, elemPos, 1.0)
+      }
+      val (tokens, parse, candListsRange) = extractor.extractListRange(sent)
+      if (tokens.size != sentTokenCount) skippedSentencesCount += 1
+      else {
+        val sentResult = scorer.addSentence(sent, candListsRange, goldListsRange)
+        val matchedGoldListsRange = sentResult.map(_._3)
+        val scores = sentResult.map(_._1)
+        val goldLists = extractor.extractLists(tokens, goldListsRange)
+        val matchedGoldLists = extractor.extractLists(tokens, matchedGoldListsRange)
+        val candLists = extractor.extractLists(tokens, candListsRange)
+        writer.write(s"Sentence: $sent\n\nGold Lists Range: $goldListsRange\nGold Lists: $goldLists\n\n" +
+          s"Matched Gold Lists Range: $matchedGoldListsRange\nMatched Gold Lists: $matchedGoldLists\n\n" +
+          s"Candidate Lists Range: $candListsRange\nCandidate Lists: $candLists\n\nScores: $scores\n\n\n")
+      }
+    }
+
+    val avgScore = scorer.getAverageScore
+    logger.info(s"Average score on Penn News Tree Bank dataset: $avgScore with $skippedSentencesCount sentences skipped")
+
+    assert(avgScore.precision >= 0.7)
+  }
 }

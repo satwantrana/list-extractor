@@ -165,7 +165,7 @@ class WordVectorWrapper extends LoggingWithUncaughtExceptions {
       var (tx, ty) = (n, m)
       val matches = mutable.ArrayBuffer[(ChunkedToken, ChunkedToken)]()
       while (tx > 0 && ty > 0) {
-        matches += ((a(tx-1), b(ty-1)))
+        matches += ((a(tx - 1), b(ty - 1)))
         val (px, py) = dp(tx)(ty).prev
         tx = px
         ty = py

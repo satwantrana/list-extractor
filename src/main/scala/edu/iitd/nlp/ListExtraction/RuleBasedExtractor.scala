@@ -11,9 +11,7 @@ import scala.collection.mutable
 import scala.collection.JavaConversions._
 
 class RuleBasedExtractor extends ListExtractor {
-  def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange]) = {
-    val (tokens, parse) = parser.dependencyGraph(tokenizer, postagger)(sentence)
-
+  def extractListRangeParsed(tokens: Seq[PostaggedToken], parse: DependencyGraph): Seq[ListRange] = {
     val adjMap = parse.edges.foldLeft(Map[DependencyNode, Set[(DependencyNode, String)]]()) {
       case (m, e) => m.updated(e.source, m.getOrElse(e.source, Set()) + ((e.dest, e.label)))
         .updated(e.dest, m.getOrElse(e.dest, Set()) + ((e.source, e.label)))
@@ -49,8 +47,12 @@ class RuleBasedExtractor extends ListExtractor {
         }.toSeq.sorted
         ListRange(cc.id, mutable.ArrayBuffer(elemsRange: _*), 1.0)
     }.toSeq
+    lists
+  }
 
-    (tokens, parse, lists)
+  def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange]) = {
+    val (tokens, parse) = parser.dependencyGraph(tokenizer, postagger)(sentence)
+    (tokens, parse, extractListRangeParsed(tokens, parse))
   }
 }
 
