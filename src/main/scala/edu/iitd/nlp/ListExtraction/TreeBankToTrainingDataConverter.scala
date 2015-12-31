@@ -58,9 +58,9 @@ object TreeBankToTrainingDataConverter extends LoggingWithUncaughtExceptions {
         linecnt += 1
         for (elem <- list.elemsRange) {
           output += s"${elem._2 - elem._1 + 1}\n"
-//          val range = (for {
-//            j <- elem._1 to elem._2
-//          } yield j).mkString(" ")
+          //          val range = (for {
+          //            j <- elem._1 to elem._2
+          //          } yield j).mkString(" ")
           val range = s"${elem._1} ${elem._2}"
           output += s"$range\n"
           linecnt += 2

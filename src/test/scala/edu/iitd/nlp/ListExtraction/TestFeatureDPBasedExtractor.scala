@@ -10,7 +10,7 @@ import scala.io.Source
 import scala.util.Random
 
 class TestFeatureDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
-  val extractor = new FeatureDPBasedExtractor(1, 0, 5, FeatureVector.baseLine())
+  val extractor = new FeatureDPBasedExtractor(1, 0, 5, FeatureVector.syntacticSimilarity())
   "FeatureDPBasedExtractor" should "run correctly on a simple sentence" in {
     val sent = "I like playing hockey, cricket and football."
     extractor.DEBUG = true
@@ -34,8 +34,8 @@ class TestFeatureDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExcep
     assert(score == Score(1, 1))
   }
 
-  it should "give >= 70% score on British News Tree Bank dataset with MaxMatchScorer" in {
-    val file = "data/british_news_treebank_dataset"
+  it should "give >= 70% score on Penn Tree Bank dataset with MaxMatchScorer" in {
+    val file = "data/penn_treebank_dataset"
     val data = Source.fromFile(file).getLines()
     val scorer = new MaxMatchScorer
 
@@ -79,7 +79,7 @@ class TestFeatureDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExcep
     }
 
     val avgScore = scorer.getAverageScore
-    logger.info(s"Average score on British News Tree Bank dataset: $avgScore with $skippedSentencesCount sentences skipped")
+    logger.info(s"Average score on Penn Tree Bank dataset: $avgScore with $skippedSentencesCount sentences skipped")
 
     assert(avgScore.precision >= 0.7)
   }

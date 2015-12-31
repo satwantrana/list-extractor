@@ -54,6 +54,12 @@ object FeatureVector {
     res.vec(5) = -1.0
     res
   }
+  def syntacticSimilarity(n: Int = defaultNumFeatures) = {
+    val res = Zeros(n)
+    res.vec(2) = 1.0
+    res.vec(3) = 1.0
+    res
+  }
 }
 
 case class Params(leftDis: Int = 0, rightDis: Int = 0)

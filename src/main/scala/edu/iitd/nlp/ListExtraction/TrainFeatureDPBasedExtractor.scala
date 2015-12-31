@@ -8,7 +8,7 @@ import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
 
 object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptions {
   def loadData: Seq[(String, Seq[ListRange])] = {
-//    val file = "data/british_news_treebank_dataset"
+    //    val file = "data/british_news_treebank_dataset"
     val file = "data/penn_treebank_dataset"
     val data = Source.fromFile(file).getLines()
     val scorer = new MaxMatchScorer

@@ -32,8 +32,8 @@ class TestDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
     assert(score == Score(1, 1))
   }
 
-  it should "give >= 70% score on British News Tree Bank dataset with MaxMatchScorer" in {
-    val file = "data/british_news_treebank_dataset"
+  it should "give >= 70% score on Penn Tree Bank dataset with MaxMatchScorer" in {
+    val file = "data/penn_treebank_dataset"
     val data = Source.fromFile(file).getLines()
     val scorer = new MaxMatchScorer
 
@@ -77,7 +77,7 @@ class TestDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
     }
 
     val avgScore = scorer.getAverageScore
-    logger.info(s"Average score on British News Tree Bank dataset: $avgScore with $skippedSentencesCount sentences skipped")
+    logger.info(s"Average score on Penn Tree Bank dataset: $avgScore with $skippedSentencesCount sentences skipped")
 
     assert(avgScore.precision >= 0.7)
   }
