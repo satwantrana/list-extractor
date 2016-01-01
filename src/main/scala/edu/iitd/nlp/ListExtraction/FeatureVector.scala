@@ -56,7 +56,7 @@ object FeatureVector {
   }
   def syntacticSimilarity(n: Int = defaultNumFeatures) = {
     val res = Zeros(n)
-    res.vec(2) = 1.0
+//    res.vec(2) = 1.0
     res.vec(3) = 1.0
     res
   }

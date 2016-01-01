@@ -13,7 +13,7 @@ trait SimilarityBasedExtractor extends ListExtractor {
   var simCoeff: Double = 1
   var langCoeff: Double = 0
   var augmentingWindowSize: Int = 5
-  val lambda = (simCoeff / (simCoeff + langCoeff), langCoeff / (simCoeff + langCoeff))
+  def lambda = (simCoeff / (simCoeff + langCoeff), langCoeff / (simCoeff + langCoeff))
   lazy val ruleBasedExtractor = new RuleBasedExtractor
   lazy val langModelWrapper = new LanguageModelWrapper
   lazy val wordVectorWrapper = new WordVectorWrapper
@@ -23,17 +23,17 @@ trait SimilarityBasedExtractor extends ListExtractor {
 
   def getSimilarityScore(tokens: Seq[PostaggedToken], listRange: ListRange, params: Params = Params()): Double
 
-  def getLanguageModelScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = 0
-  //  {
-  //    val leftTokens = tokens.slice(0, listRange.elemsRange.head._1).map(_.string)
-  //    val rightTokens = tokens.slice(listRange.elemsRange.last._2 + 1, tokens.size).map(_.string)
-  //    val elemsProb = listRange.elemsRange.map {
-  //      case (x, y) => leftTokens ++ tokens.slice(x, y + 1).map(_.string) ++ rightTokens
-  //    }.map(langModelWrapper.getAverageProb)
-  //    val res = if (elemsProb.isEmpty) 0
-  //    else elemsProb.sum / elemsProb.size.toDouble
-  //    res
-  //  }
+  def getLanguageModelScore(tokens: Seq[PostaggedToken], listRange: ListRange): Double = //0
+    {
+      val leftTokens = tokens.slice(0, listRange.elemsRange.head._1).map(_.string)
+      val rightTokens = tokens.slice(listRange.elemsRange.last._2 + 1, tokens.size).map(_.string)
+      val elemsProb = listRange.elemsRange.map {
+        case (x, y) => leftTokens ++ tokens.slice(x, y + 1).map(_.string) ++ rightTokens
+      }.map(langModelWrapper.getAverageProb)
+      val res = if (elemsProb.isEmpty) 0
+      else elemsProb.sum / elemsProb.size.toDouble
+      res
+    }
 
   def extractListRange(sentence: String): (Seq[PostaggedToken], DependencyGraph, Seq[ListRange]) = {
     val (tokens, parse, listRanges) = ruleBasedExtractor.extractListRange(sentence)
@@ -53,7 +53,7 @@ trait SimilarityBasedExtractor extends ListExtractor {
         totalScore = lambda._1 * simScore + lambda._2 * langScore
         _ = if (DEBUG) logger.info(
           s"ListRange: $augmentedListRange\tParams: ${Params(i - leftEnd._1, j - rightEnd._2)}\tSimVector: $simVector" +
-            s"\tSimScore: $simScore\tLangScore: $langScore\tTotalScore: $totalScore"
+            s"\tSimScore: $simCoeff $simScore\tLangScore: $langCoeff $langScore\tTotalScore: $totalScore"
         )
         scoreTuple = (totalScore, i, j)
       } yield scoreTuple).max

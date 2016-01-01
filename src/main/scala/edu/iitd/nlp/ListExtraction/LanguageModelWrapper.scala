@@ -14,7 +14,7 @@ class LanguageModelWrapper extends LoggingWithUncaughtExceptions {
 
   def getNGramLogProb(nGram: Seq[String]): Double = {
     langModel.synchronized {
-      if (langModel == null) {
+      if (!langModel.isDefined) {
         logger.info("Loading Language Model")
         langModel = Some(LmReaders.readGoogleLmBinary(binaryFile, vocabFile))
         logger.info("Loaded Language Model")
