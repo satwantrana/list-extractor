@@ -4,7 +4,6 @@ import java.io.{ File, PrintWriter }
 
 import org.allenai.common.LoggingWithUncaughtExceptions
 import org.scalatest._
-import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
 
 import scala.collection.mutable
 import scala.io.Source
@@ -13,8 +12,9 @@ import scala.util.Random
 class TestDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
   val extractor = new DPBasedExtractor(1, 1)
 
-  "DPBasedExtractor" should "run correctly on a simple sentence" in {
+  "DPBasedExtractor" should "run correctly on a simple sentence" ignore {
     val sent = "I like playing hockey, cricket and football."
+    extractor.trimModelsToSentences(None, Some(Seq(sent)))
     extractor.DEBUG = true
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
     extractor.DEBUG = false
@@ -23,8 +23,9 @@ class TestDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
     assert(listRanges.map(l => ListRange(l.ccPos, l.elemsRange, 1.0)) == goldListRanges)
   }
 
-  it should "give correct score on a simple sentence with MaxMatchScorer" in {
+  it should "give correct score on a simple sentence with MaxMatchScorer" ignore {
     val sent = "I like playing hockey, cricket and football."
+    extractor.trimModelsToSentences(None, Some(Seq(sent)))
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
     val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
     val scorer = new MaxMatchScorer
@@ -36,6 +37,7 @@ class TestDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
 
   it should "give >= 70% score on British News Tree Bank dataset with MaxMatchScorer" in {
     val file = "data/british_news_treebank_dataset"
+    extractor.trimModelsToSentences(Some(file), None)
     val data = Source.fromFile(file).getLines()
     val scorer = new MaxMatchScorer
 
@@ -79,8 +81,9 @@ class TestDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
     }
 
     val avgScore = scorer.getAverageScore
+    val avgScoreByLength = scorer.getAverageScoreByLength.toSeq.sortBy(_._1)
     logger.info(s"Average score on British News Tree Bank dataset: $avgScore with $skippedSentencesCount sentences skipped")
-
+    logger.info(s"Average score by max length of list elements: $avgScoreByLength")
     assert(avgScore.precision >= 0.7)
   }
 }

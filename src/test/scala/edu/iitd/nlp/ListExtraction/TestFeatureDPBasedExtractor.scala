@@ -13,11 +13,10 @@ class TestFeatureDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExcep
   val extractor = new FeatureDPBasedExtractor(1, 0, 5, FeatureVector.syntacticSimilarity())
   "FeatureDPBasedExtractor" should "run correctly on a simple sentence" in {
     val sent = "I like playing hockey, cricket and football."
+    extractor.trimModelsToSentences(None, Some(Seq(sent)))
     extractor.DEBUG = true
-    //    extractor.wordVectorWrapper.DEBUG = true
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
     extractor.DEBUG = false
-    //    extractor.wordVectorWrapper.DEBUG = false
     val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
     logger.info(s"Cand: $listRanges\nGold: $goldListRanges")
     assert(listRanges.map(l => ListRange(l.ccPos, l.elemsRange, 1.0)) == goldListRanges)
@@ -25,6 +24,7 @@ class TestFeatureDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExcep
 
   it should "give correct score on a simple sentence with MaxMatchScorer" in {
     val sent = "I like playing hockey, cricket and football."
+    extractor.trimModelsToSentences(None, Some(Seq(sent)))
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
     val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
     val scorer = new MaxMatchScorer
@@ -34,8 +34,9 @@ class TestFeatureDPBasedExtractor extends FlatSpec with LoggingWithUncaughtExcep
     assert(score == Score(1, 1))
   }
 
-  it should "give >= 70% score on Penn Tree Bank dataset with MaxMatchScorer" in {
-    val file = "data/penn_treebank_dataset"
+  it should "give >= 70% score on British News Tree Bank dataset with MaxMatchScorer" in {
+    val file = "data/british_news_treebank_dataset"
+    extractor.trimModelsToSentences(Some(file), None)
     val data = Source.fromFile(file).getLines()
     val scorer = new MaxMatchScorer
 

@@ -4,12 +4,10 @@ import java.io._
 import org.allenai.common.LoggingWithUncaughtExceptions
 import scala.collection.mutable
 import scala.io.Source
-import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
+import tokenize.{ defaultTokenizer => tokenizer }
 
 object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptions {
-  def loadData: Seq[(String, Seq[ListRange])] = {
-    //    val file = "data/british_news_treebank_dataset"
-    val file = "data/penn_treebank_dataset"
+  def loadData(file: String): Seq[(String, Seq[ListRange])] = {
     val data = Source.fromFile(file).getLines()
     val scorer = new MaxMatchScorer
     val res = mutable.ArrayBuffer[(String, Seq[ListRange])]()
@@ -46,11 +44,15 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
     }
     scorer.getAverageScore
   }
+  val pennTreeBankDataFile = "data/penn_treebank_dataset"
+  val britishNewsTreeBankDataFile = "data/british_news_treebank_dataset"
+  val dataFile = britishNewsTreeBankDataFile
   val logFileName = "logs/" + this.getClass.getName + ".txt"
   val writer = new PrintWriter(new File(logFileName))
   val ruleBasedExtractor = new RuleBasedExtractor
   val extractor = new FeatureDPBasedExtractor(1, 0)
-  val availData = loadData
+  extractor.trimModelsToSentences(Some(dataFile), None)
+  val availData = loadData(dataFile)
   val (trainData, testData) = availData.splitAt(8 * availData.length / 10)
   val (ruleBasedTestScore, ruleBasedTrainScore) = (
     calcScore(ruleBasedExtractor, testData),
@@ -58,10 +60,11 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
   )
   logger.info(s"Rule Based: Train Score: $ruleBasedTrainScore\tTest Score: $ruleBasedTestScore")
   var (testScore, trainScore) = (calcScore(extractor, testData), calcScore(extractor, trainData))
+  var (bestTestScore, bestTrainScore, bestWeightVector) = (Score(0,0), Score(0,0), FeatureVector.Zeros())
   logger.info(s"Pre Training:\tFeature Vector: ${extractor.weightVector}")
   logger.info(s"Pre Training:\tTrain Score: $trainScore\tTest Score: $testScore")
   val numIter = 1000
-  val learningRate = 0.01
+  val learningRate = 0.1
   for (iter <- 0 until numIter) {
     trainData.foreach {
       case (sent, goldListsRange) =>
@@ -74,14 +77,24 @@ object TrainFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptio
           case (_, candL, goldL) =>
             val (i, j) = (candL.elemsRange.head._1, candL.elemsRange.last._2)
             val (l, r) = (goldL.elemsRange.head._1, goldL.elemsRange.last._2)
-            val fv1 = extractor.getSimilarityVector(tokens, candL, Params(i - l, j - r))
-            val fv2 = extractor.getSimilarityVector(tokens, goldL, Params())
+            val (p, q) = (candL.defaultIndices.leftDis, candL.defaultIndices.rightDis)
+            val fv1 = extractor.getSimilarityVector(tokens, candL, Params(i - p, j - q))
+            val fv2 = extractor.getSimilarityVector(tokens, goldL, Params(l - p, r - q))
+            if(1 == 0 && (i != l || j != r)) {
+              logger.info(s"$sent $candL $goldL $fv1 $fv2")
+            }
             extractor.weightVector = extractor.weightVector + (fv2 - fv1) * learningRate
         }
     }
     testScore = calcScore(extractor, testData)
     trainScore = calcScore(extractor, trainData)
-    logger.info(s"Iteration $iter:\tFeature Vector: ${extractor.weightVector}")
+    if(trainScore > bestTrainScore){
+      bestTrainScore = trainScore
+      bestTestScore = testScore
+      bestWeightVector = extractor.weightVector
+    }
+    logger.info(s"Iteration $iter:\tWeight Vector: ${extractor.weightVector}")
     logger.info(s"Iteration $iter:\tTrain Score: $trainScore\tTest Score: $testScore")
+    logger.info(s"Iteration $iter:\tBest Train Score: $bestTrainScore\tCorresponding Test Score: $bestTestScore\tCorresponding Weight Vector: $bestWeightVector")
   }
 }

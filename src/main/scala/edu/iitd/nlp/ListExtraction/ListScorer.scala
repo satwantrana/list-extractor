@@ -35,6 +35,7 @@ trait ListScorer {
 
 class MaxMatchScorer extends ListScorer {
   val scoreVector = mutable.ArrayBuffer.empty[(String, ListRange, ListRange, Score)]
+  val scoreSumByLength = mutable.Map[Int, (Score, Int)]()
   var scoreSum = Score(0, 0)
 
   def rangeIntersection(a: (Int, Int), b: (Int, Int)): Int = {
@@ -65,7 +66,11 @@ class MaxMatchScorer extends ListScorer {
     candidateLists.map {
       case candList =>
         val (maxScore, goldList) = goldLists.map(l => (scoreList(candList, l), l)).maxBy(_._1)
+        val maxElemLen = goldList.elemsRange.map(t => t._2 - t._1 + 1).max -
+          goldList.elemsRange.map(t => t._2 - t._1 + 1).min
         scoreVector += ((sentence, candList, goldList, maxScore))
+        if(!scoreSumByLength.contains(maxElemLen)) scoreSumByLength(maxElemLen) = (Score(0,0), 0)
+        scoreSumByLength(maxElemLen) = (scoreSumByLength(maxElemLen)._1 + maxScore, scoreSumByLength(maxElemLen)._2 + 1)
         scoreSum = scoreSum + maxScore
         (maxScore, candList, goldList)
     }
@@ -73,4 +78,5 @@ class MaxMatchScorer extends ListScorer {
 
   def getScoreVector = scoreVector.toSeq
   def getAverageScore = scoreSum / scoreVector.size.toDouble
+  def getAverageScoreByLength = scoreSumByLength.map{case (l,t) => (l, (t._1/t._2.toDouble, t._2))}
 }

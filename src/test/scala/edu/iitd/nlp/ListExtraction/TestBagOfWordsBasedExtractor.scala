@@ -12,16 +12,19 @@ import scala.util.Random
 class TestBagOfWordsBasedExtractor extends FlatSpec with LoggingWithUncaughtExceptions {
   val extractor = new BagOfWordsBasedExtractor(1, 0)
 
-  "BagOfWordsBasedExtractor" should "run correctly on a simple sentence" in {
+  "BagOfWordsBasedExtractor" should "run correctly on a simple sentence" ignore {
     val sent = "I like playing hockey, cricket and football."
+    extractor.trimModelsToSentences(None, Some(Seq(sent)))
+    extractor.DEBUG = true
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
+    extractor.DEBUG = false
     val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
-
     assert(listRanges.map(l => ListRange(l.ccPos, l.elemsRange, 1.0)) == goldListRanges)
   }
 
-  it should "give correct score on a simple sentence with MaxMatchScorer" in {
+  it should "give correct score on a simple sentence with MaxMatchScorer" ignore {
     val sent = "I like playing hockey, cricket and football."
+    extractor.trimModelsToSentences(None, Some(Seq(sent)))
     val (tokens, parse, listRanges) = extractor.extractListRange(sent)
     val goldListRanges = Seq(ListRange(6, mutable.ArrayBuffer((3, 3), (5, 5), (7, 7)), 1.0))
     val scorer = new MaxMatchScorer
@@ -33,6 +36,7 @@ class TestBagOfWordsBasedExtractor extends FlatSpec with LoggingWithUncaughtExce
 
   it should "give >= 70% score on British News Tree Bank dataset with MaxMatchScorer" in {
     val file = "data/british_news_treebank_dataset"
+    extractor.trimModelsToSentences(Some(file), None)
     val data = Source.fromFile(file).getLines()
     val scorer = new MaxMatchScorer
 

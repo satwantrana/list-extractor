@@ -3,15 +3,14 @@ package edu.iitd.nlp.ListExtraction
 import java.io._
 
 import org.allenai.common.LoggingWithUncaughtExceptions
-import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
+import tokenize.{ defaultTokenizer => tokenizer }
 
 import scala.collection.mutable
 import scala.io.Source
 import scala.util.Random
 
 object LocalSearchFeatureDPBasedExtractor extends App with LoggingWithUncaughtExceptions {
-  def loadData: Seq[(String, Seq[ListRange])] = {
-    val file = "data/british_news_treebank_dataset"
+  def loadData(file: String): Seq[(String, Seq[ListRange])] = {
     val data = Source.fromFile(file).getLines()
     val scorer = new MaxMatchScorer
     val res = mutable.ArrayBuffer[(String, Seq[ListRange])]()
@@ -51,8 +50,11 @@ object LocalSearchFeatureDPBasedExtractor extends App with LoggingWithUncaughtEx
   val logFileName = "logs/" + this.getClass.getName + ".txt"
   val writer = new PrintWriter(new File(logFileName))
   val ruleBasedExtractor = new RuleBasedExtractor
-  val extractor = new FeatureDPBasedExtractor(1, 0, 3)
-  val availData = loadData
+  val extractor = new FeatureDPBasedExtractor(1, 0)
+  val file = "data/british_news_treebank_dataset"
+  extractor.trimModelsToSentences(Some(file), None)
+  extractor.weightVector = FeatureVector.baseLine()
+  val availData = loadData(file)
   val (trainData, testData) = availData.splitAt(8 * availData.length / 10)
   val (ruleBasedTestScore, ruleBasedTrainScore) = (
     calcScore(ruleBasedExtractor, testData),
@@ -83,6 +85,6 @@ object LocalSearchFeatureDPBasedExtractor extends App with LoggingWithUncaughtEx
     }
     logger.info(s"Iteration $iter:\tFeature Vector: ${extractor.weightVector}")
     logger.info(s"Iteration $iter:\tTrain Score: $trainScore\tTest Score: $testScore")
-    logger.info(s"Iteration $iter:\tBest Train Score: $bestTrainScore\tBest Test Score: $bestTestScore")
+    logger.info(s"Iteration $iter:\tBest Train Score: $bestTrainScore\tTest Score: $bestTestScore\tWeight Vector: $bestWeightVector")
   }
 }

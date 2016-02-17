@@ -8,7 +8,7 @@ import org.allenai.nlpstack.core.PostaggedToken
 import org.allenai.nlpstack.parse.{ defaultDependencyParser => parser }
 import org.allenai.nlpstack.core.parse.graph.{ DependencyGraph, DependencyNode }
 import org.allenai.nlpstack.postag.{ defaultPostagger => postagger }
-import org.allenai.nlpstack.tokenize.{ defaultTokenizer => tokenizer }
+import tokenize.{ defaultTokenizer => tokenizer }
 
 import scala.collection.JavaConversions._
 import scala.io.Source
